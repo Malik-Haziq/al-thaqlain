@@ -15,7 +15,7 @@ export function Navbar() {
       <nav className="bg-white border-gray-200 max-w-screen-xl mx-auto">
         <div className="flex flex-wrap items-center justify-between p-4">
           <Link to="/">
-            <img src={logo} className="h-14" alt="Al Thaqlain Logo" />
+            <img src={logo} className="h-16" alt="Al Thaqlain Logo" />
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <Button text={"Get started"} />
