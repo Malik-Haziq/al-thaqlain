@@ -17,7 +17,10 @@ export default {
           "linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.9)), url('/src/assets/home/Arbaeen.jpg.webp')",
       },
     },
-    fontFamily: { playfairDisplay: "Playfair Display" },
+    fontFamily: {
+      playfairDisplay: "Playfair Display",
+      openSans: "Open Sans",
+    },
   },
   plugins: [],
 };

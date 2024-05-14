@@ -16,8 +16,12 @@
     @apply text-4xl sm:text-5xl xl:text-6xl font-medium;
   }
 
+  h3 {
+    @apply font-openSans;
+  }
+
   section {
-    @apply max-w-screen-xl mx-auto p-4 mb-10;
+    @apply max-w-screen-xl mx-auto p-4 mb-20;
   }
 
   .destination-overlay:hover .destination-img {

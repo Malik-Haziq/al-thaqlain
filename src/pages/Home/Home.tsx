@@ -1,5 +1,7 @@
 import { Button } from "../../components/Button";
+import { CTA } from "../../components/CTA";
 import { Link } from "react-router-dom";
+
 import najaf from "../../assets/destinations/najaf.webp";
 import kufa from "../../assets/destinations/kufa.webp";
 import basra from "../../assets/destinations/basra.webp";
@@ -22,18 +24,18 @@ export function Home() {
   ];
   return (
     <>
-      <header className="bg-headerBg h-[80vh] bg-no-repeat bg-cover flex justify-center mb-10">
+      <header className="bg-headerBg h-[80vh] bg-no-repeat bg-cover flex justify-center mb-20">
         <div className="max-w-screen-xl p-4 mx-auto flex flex-col gap-4 justify-center">
           <h1 className="text-white">
             Helping you visit&nbsp;
             <span className="text-secondary-400">Islamic regions</span>
           </h1>
-          <p className="text-white text-lg sm:text-xl md:text-2xl sm:w-2/3 mb-6">
+          <p className="text-white text-lg sm:text-xl md:text-2xl sm:w-2/3 mb-6 font-openSans">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nulla
             eos! Eum natus odio vitae libero repellat, reprehenderit quas
             numquam.
           </p>
-          <Button text="Get in touch" />
+          <Button text="Get in touch" to="/contact" />
         </div>
       </header>
       <section className="flex flex-col items-center justify-center gap-6">
@@ -51,6 +53,7 @@ export function Home() {
           })}
         </div>
       </section>
+      <CTA />
     </>
   );
 }
@@ -69,7 +72,7 @@ function DestinationCard(_props: {
           className="destination-img w-96 h-full overflow-hidden cursor-pointer"
         />
         <div className="destination-overlay h-full w-full absolute top-0 flex items-center flex-col justify-center bg-[rgba(1,1,1,.2)] hover:bg-[rgba(1,1,1,.6)] duration-300">
-          <h3 className="destination-name uppercase text-3xl font-semibold text-white duration-300">
+          <h3 className="destination-name uppercase text-3xl font-medium text-white duration-300">
             {_props.placeName}
           </h3>
           <span className="destination-discover text-sm text-white border-b uppercase -translate-y-6 opacity-0 scale-50 duration-300">
