@@ -12,7 +12,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="bg-white border-gray-200 max-w-screen-xl mx-auto font-openSans">
+      <nav className="border-gray-200 max-w-screen-xl mx-auto font-openSans">
         <div className="flex flex-wrap items-center justify-between p-4">
           <Link to="/">
             <img src={logo} className="h-16" alt="Al Thaqlain Logo" />
@@ -48,7 +48,7 @@ export function Navbar() {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-cta"
           >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black-400 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black-400 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <Link
                   to="/"
@@ -95,7 +95,7 @@ export function Navbar() {
                   className={
                     dropdownOpen
                       ? `z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 `
-                      : `z-10 font-normal bg-white divide-y divide-gray-100 bg-white-400 rounded-lg shadow w-44 absolute top-8 left-0`
+                      : `z-10 font-normal bg-white divide-y divide-gray-100 bg-black-400 rounded-lg shadow w-44 absolute top-8 left-0`
                   }
                 >
                   <ul

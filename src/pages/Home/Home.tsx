@@ -52,6 +52,7 @@ export function Home() {
                 href={place.href}
                 placeName={place.placeName}
                 img={place.img}
+                key={place.placeName}
               />
             );
           })}
@@ -72,7 +73,7 @@ function DestinationCard(_props: {
       <Link to={_props.href} className="relative">
         <img
           src={_props.img}
-          alt="najaf"
+          alt={_props.placeName}
           className="destination-img w-96 h-full overflow-hidden cursor-pointer"
         />
         <div className="destination-overlay h-full w-full absolute top-0 flex items-center flex-col justify-center bg-[rgba(1,1,1,.4)] hover:bg-[rgba(1,1,1,.6)] duration-300">
