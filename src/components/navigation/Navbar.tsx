@@ -18,11 +18,11 @@ export function Navbar() {
             <img src={logo} className="h-16" alt="Al Thaqlain Logo" />
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <Button text={"Get started"} to="/contact" filled={true} />
+            <Button text={"Get started"} to="/contact" />
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-cta"
               aria-expanded="false"
             >
@@ -48,7 +48,7 @@ export function Navbar() {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-cta"
           >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black-400 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
               <li>
                 <Link
                   to="/"
@@ -61,7 +61,7 @@ export function Navbar() {
               <li>
                 <Link
                   to="/about"
-                  className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary-500"
+                  className="block py-2 px-3 md:p-0 text-white-300 duration-300 rounded md:hover:bg-transparent md:hover:text-white-400"
                 >
                   About
                 </Link>
@@ -70,7 +70,7 @@ export function Navbar() {
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  className="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondary-500 md:p-0 md:w-auto"
+                  className="flex items-center justify-between w-full py-2 px-3 text-white-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-white-400 md:p-0 md:w-auto"
                   onClick={() => handleDropdown()}
                 >
                   Services
@@ -95,17 +95,17 @@ export function Navbar() {
                   className={
                     dropdownOpen
                       ? `z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 `
-                      : `z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44  absolute top-8 left-0`
+                      : `z-10 font-normal bg-white divide-y divide-gray-100 bg-white-400 rounded-lg shadow w-44 absolute top-8 left-0`
                   }
                 >
                   <ul
-                    className="py-2 text-sm text-gray-700"
+                    className="py-2 text-sm text-black-300 font-medium"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <Link
                         to="hotel-booking"
-                        className="block px-4 py-2 hover:bg-gray-100"
+                        className="block px-4 py-2"
                         onClick={() => handleDropdown()}
                       >
                         Hotel Booking
@@ -114,7 +114,7 @@ export function Navbar() {
                     <li>
                       <Link
                         to="visa"
-                        className="block px-4 py-2 hover:bg-gray-100"
+                        className="block px-4 py-2"
                         onClick={() => handleDropdown()}
                       >
                         Visa
@@ -127,7 +127,7 @@ export function Navbar() {
               <li>
                 <Link
                   to="/contact"
-                  className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary-500"
+                  className="block py-2 px-3 md:p-0 text-white-300 rounded md:hover:bg-transparent md:hover:text-white-400"
                 >
                   Contact
                 </Link>
