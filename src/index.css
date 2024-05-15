@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  h1,
+  h2 {
+    @apply font-playfairDisplay;
+  }
+
+  h1 {
+    @apply text-5xl sm:text-7xl xl:text-8xl font-medium;
+  }
+
+  h2 {
+    @apply text-4xl sm:text-5xl xl:text-6xl font-medium;
+  }
+
+  h3 {
+    @apply font-openSans;
+  }
+
+  section {
+    @apply max-w-screen-xl mx-auto p-4 mb-20;
+  }
+
+  .destination-overlay:hover .destination-img {
+    @apply scale-0;
+  }
+
+  .destination-overlay:hover .destination-discover {
+    @apply scale-100 opacity-100 -translate-y-2;
+  }
+
+  .destination-overlay:hover .destination-name {
+    @apply -translate-y-4;
+  }
+}
