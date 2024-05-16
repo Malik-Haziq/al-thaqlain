@@ -16,7 +16,9 @@
     @apply text-4xl sm:text-5xl xl:text-6xl font-medium;
   }
 
-  h3 {
+  h3,
+  p,
+  a {
     @apply font-openSans;
   }
 
@@ -34,5 +36,9 @@
 
   .destination-overlay:hover .destination-name {
     @apply -translate-y-4;
+  }
+
+  .on-hover::before {
+    @apply before:content-['fsakdfh'] before:w-full before:h-[2px] before:bg-white-400 before:absolute before:top-0;
   }
 }
