@@ -22,6 +22,34 @@ export function Home() {
     { href: "/kazmia", placeName: "kazmia", img: kazmia },
     { href: "/baghdad", placeName: "baghdad", img: baghdad },
   ];
+
+  const benefits = [
+    {
+      benefit: "24/7 Customer Support",
+      details:
+        "Benefit from round-the-clock assistance to handle any travel-related queries or emergencies.",
+    },
+    {
+      benefit: "Affordable Packages",
+      details:
+        "Discover budget-friendly travel packages that offer great value without compromising on quality.",
+    },
+    {
+      benefit: "Super Fast Booking",
+      details:
+        "Experience lightning-fast booking processes that save you time and effort.",
+    },
+    {
+      benefit: "Exclusive Deals and Discounts",
+      details:
+        "Access special offers and discounts that are not available to the general public.",
+    },
+    {
+      benefit: "Visa and Documentation Assistance",
+      details:
+        " Receive help with visa applications and other necessary travel documents.",
+    },
+  ];
   return (
     <>
       <header className="bg-headerBg h-[80vh] bg-no-repeat bg-cover flex justify-center mb-20">
@@ -52,12 +80,24 @@ export function Home() {
                 href={place.href}
                 placeName={place.placeName}
                 img={place.img}
+                key={place.placeName}
               />
             );
           })}
         </div>
       </section>
       <CTA />
+      <section className="flex flex-col items-center justify-center">
+        <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
+          Benefits
+        </span>
+        <h2 className="text-center mb-16">Why choose us?</h2>
+        <div className="flex items-center justify-center gap-10 flex-wrap">
+          {benefits.map((obj) => (
+            <BenefitCard heading={obj.benefit} details={obj.details} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
@@ -72,7 +112,7 @@ function DestinationCard(_props: {
       <Link to={_props.href} className="relative">
         <img
           src={_props.img}
-          alt="najaf"
+          alt={_props.placeName}
           className="destination-img w-96 h-full overflow-hidden cursor-pointer"
         />
         <div className="destination-overlay h-full w-full absolute top-0 flex items-center flex-col justify-center bg-[rgba(1,1,1,.4)] hover:bg-[rgba(1,1,1,.6)] duration-300">
@@ -83,6 +123,21 @@ function DestinationCard(_props: {
             Discover
           </span>
         </div>
+      </Link>
+    </div>
+  );
+}
+
+function BenefitCard(_props: { heading: string; details: string }) {
+  return (
+    <div className="border-2 border-black-500 flex flex-col gap-3 px-6 py-10 md:max-w-[350px]">
+      <h3 className="text-2xl font-medium">{_props.heading}</h3>
+      <p className="mb-3 text-white-200">{_props.details}</p>
+      <Link
+        to="/"
+        className="on-hover w-fit text-white-300 border-b-[2px] border-white-100 hover:border-white-500 hover:text-white-500 duration-200 relative"
+      >
+        View more
       </Link>
     </div>
   );
