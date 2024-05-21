@@ -2,6 +2,7 @@ import { Button } from "../../components/Button";
 import { CTA } from "../../components/CTA";
 import { Link } from "react-router-dom";
 
+// destination images
 import najaf from "../../assets/destinations/najaf.webp";
 import kufa from "../../assets/destinations/kufa.webp";
 import basra from "../../assets/destinations/basra.webp";
@@ -10,6 +11,14 @@ import hillah from "../../assets/destinations/hillah.webp";
 import samara from "../../assets/destinations/samara.webp";
 import kazmia from "../../assets/destinations/kazmia.webp";
 import baghdad from "../../assets/destinations/baghdad.webp";
+
+// services images
+import accommodation from "../../assets/services/accommodation.webp";
+import transportation from "../../assets/services/transportation.webp";
+import ziyarat from "../../assets/services/ziyarat.webp";
+import insurance from "../../assets/services/insurance.webp";
+import airline from "../../assets/services/airline.webp";
+import customerSupport from "../../assets/services/customer-support.webp";
 
 export function Home() {
   const destinations = [
@@ -50,6 +59,42 @@ export function Home() {
         " Receive help with visa applications and other necessary travel documents.",
     },
   ];
+
+  const services = [
+    {
+      img: insurance,
+      service: "Travel Insurance",
+      details: "Comprehensive travel insurance plans for peace of mind.",
+    },
+    {
+      img: transportation,
+      service: "Transportation",
+      details:
+        "Comprehensive transportation options including buses, trains, and private transfers for seamless travel.",
+    },
+    {
+      img: airline,
+      service: "Airline Ticketing",
+      details: "Book domestic and international flights with ease.",
+    },
+    {
+      img: accommodation,
+      service: "Hotel Reservations",
+      details:
+        "Secure accommodations ranging from budget-friendly to luxury hotels.",
+    },
+    {
+      img: ziyarat,
+      service: "Ziyarat Tour Planning",
+      details:
+        "Create a customized Ziyarat Tour plan based on your interests and preferences",
+    },
+    {
+      img: customerSupport,
+      service: "24/7 Customer Support",
+      details: "Round-the-clock assistance for travel emergencies and queries.",
+    },
+  ];
   return (
     <>
       <header className="bg-headerBg h-[80vh] bg-no-repeat bg-cover flex justify-center mb-20">
@@ -57,7 +102,7 @@ export function Home() {
           <h1 className="text-white-500">
             Welcome to&nbsp;
             <span className="text-secondary-400">
-              Al&nbsp;Thaqlain Travel and Tours
+              Al&nbsp;Thaqlain Travel & Tours
             </span>
           </h1>
           <p className="text-white-400 text-lg sm:text-xl md:text-2xl sm:w-2/3 mb-6 font-openSans">
@@ -93,8 +138,25 @@ export function Home() {
         </span>
         <h2 className="text-center mb-16">Why choose us?</h2>
         <div className="flex items-center justify-center gap-10 flex-wrap">
-          {benefits.map((obj) => (
-            <BenefitCard heading={obj.benefit} details={obj.details} />
+          {benefits.map((obj, i) => (
+            <BenefitCard heading={obj.benefit} details={obj.details} key={i} />
+          ))}
+        </div>
+      </section>
+      <section className="flex flex-col items-center justify-center">
+        <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
+          Our services
+        </span>
+        <h2 className="text-center mb-16">What we provide?</h2>
+        <div className="flex justify-center items-center gap-8 flex-wrap">
+          {services.map((service, i) => (
+            <ServiceCard
+              img={service.img}
+              alt={service.service}
+              service={service.service}
+              details={service.details}
+              key={i}
+            />
           ))}
         </div>
       </section>
@@ -138,6 +200,41 @@ function BenefitCard(_props: { heading: string; details: string }) {
         className="on-hover w-fit text-white-300 border-b-[2px] border-white-100 hover:border-white-500 hover:text-white-500 duration-200 relative"
       >
         View more
+      </Link>
+    </div>
+  );
+}
+
+function ServiceCard(_props: {
+  img: string;
+  alt: string;
+  service: string;
+  details: string;
+}) {
+  return (
+    <div>
+      <Link to="/" className="relative">
+        <img
+          src={_props.img}
+          alt={_props.alt}
+          className="destination-img w-96 h-full overflow-hidden cursor-pointer"
+        />
+        <div className="destination-overlay h-full w-full absolute top-0 flex items-start flex-col justify-end px-4 pb-4 bg-[rgba(1,1,1,.4)] hover:bg-[rgba(1,1,1,.6)] duration-300">
+          <h3 className="destination-name text-3xl font-medium text-white-500 duration-300 mb-2">
+            {_props.service}
+          </h3>
+          <div className="destination-discover opacity-0 duration-300">
+            <p className="destination-discover text-sm text-white-400 opacity-0 duration-300">
+              {_props.details}
+            </p>
+            <Link
+              to="/"
+              className="on-hover w-fit text-white-300 border-b-[2px] border-white-100 hover:border-white-500 hover:text-white-500 duration-200 relative"
+            >
+              View more
+            </Link>
+          </div>
+        </div>
       </Link>
     </div>
   );
