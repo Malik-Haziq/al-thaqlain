@@ -132,18 +132,7 @@ export function Home() {
         </div>
       </section>
       <CTA />
-      <section className="flex flex-col items-center justify-center">
-        <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
-          Benefits
-        </span>
-        <h2 className="text-center mb-16">Why choose us?</h2>
-        <div className="flex items-center justify-center gap-10 flex-wrap">
-          {benefits.map((obj, i) => (
-            <BenefitCard heading={obj.benefit} details={obj.details} key={i} />
-          ))}
-        </div>
-      </section>
-      <section className="flex flex-col items-center justify-center">
+      <section className="flex flex-col items-center justify-center ">
         <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
           Our services
         </span>
@@ -159,6 +148,45 @@ export function Home() {
             />
           ))}
         </div>
+      </section>
+      <div className="bg-black-100">
+        <section className="flex flex-col items-center justify-center py-14">
+          <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
+            Benefits
+          </span>
+          <h2 className="text-center mb-16">Why choose us?</h2>
+          <div className="flex items-center justify-center gap-10 flex-wrap">
+            {benefits.map((obj, i) => (
+              <BenefitCard
+                heading={obj.benefit}
+                details={obj.details}
+                key={i}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
+      <section className="flex items-center justify-center flex-col">
+        <div className="mb-16 flex items-center justify-center flex-col text-center gap-4">
+          <h2>Join our news letter</h2>
+          <p>
+            Sign up for our newsletter to receive the latest travel deals, tips,
+            and news straight to your inbox.
+          </p>
+        </div>
+        <form action="submit">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="sm:w-96 p-3 outline-none rounded-none bg-black-300 border-2"
+          />
+          <button
+            type="submit"
+            className="py-3 px-5 outline-none rounded-none bg-black-300 border-2"
+          >
+            Submit
+          </button>
+        </form>
       </section>
     </>
   );
@@ -192,7 +220,7 @@ function DestinationCard(_props: {
 
 function BenefitCard(_props: { heading: string; details: string }) {
   return (
-    <div className="border-2 border-black-500 flex flex-col gap-3 px-6 py-10 md:max-w-[350px]">
+    <div className="border-2 border-white-400 flex flex-col gap-3 px-6 py-10 md:max-w-[350px]">
       <h3 className="text-2xl font-medium">{_props.heading}</h3>
       <p className="mb-3 text-white-200">{_props.details}</p>
       <Link
