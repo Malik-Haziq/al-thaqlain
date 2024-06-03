@@ -150,7 +150,7 @@ export function Home() {
         </div>
       </section>
       <div className="bg-black-100">
-        <section className="flex flex-col items-center justify-center py-14">
+        <section className="flex flex-col items-center justify-center py-14 mb-0">
           <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
             Benefits
           </span>
@@ -166,28 +166,30 @@ export function Home() {
           </div>
         </section>
       </div>
-      <section className="flex items-center justify-center flex-col">
-        <div className="mb-16 flex items-center justify-center flex-col text-center gap-4">
-          <h2>Join our news letter</h2>
-          <p>
-            Sign up for our newsletter to receive the latest travel deals, tips,
-            and news straight to your inbox.
-          </p>
-        </div>
-        <form action="submit">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="sm:w-96 p-3 outline-none rounded-none bg-black-300 border-2"
-          />
-          <button
-            type="submit"
-            className="py-3 px-5 outline-none rounded-none bg-black-300 border-2"
-          >
-            Submit
-          </button>
-        </form>
-      </section>
+      <div className="bg-secondary-600 text-white-500">
+        <section className="flex items-center justify-center flex-col py-14">
+          <div className="mb-16 flex items-center justify-center flex-col text-center gap-4">
+            <h2>Join our news letter</h2>
+            <p>
+              Sign up for our newsletter to receive the latest travel deals,
+              tips, and news straight to your inbox.
+            </p>
+          </div>
+          <form action="submit">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="sm:w-96 p-3 outline-none rounded-none bg-white-500 border-2 focus:border-white-100"
+            />
+            <button
+              type="submit"
+              className="py-3 px-5 outline-none rounded-none bg-white-500 border-2 border-l-0 focus:border-white-100 text-black-300 font-medium"
+            >
+              Submit
+            </button>
+          </form>
+        </section>
+      </div>
     </>
   );
 }
@@ -220,7 +222,7 @@ function DestinationCard(_props: {
 
 function BenefitCard(_props: { heading: string; details: string }) {
   return (
-    <div className="border-2 border-white-400 flex flex-col gap-3 px-6 py-10 md:max-w-[350px]">
+    <div className="border-2 border-white-100 flex flex-col gap-3 px-6 py-10 md:max-w-[350px]">
       <h3 className="text-2xl font-medium">{_props.heading}</h3>
       <p className="mb-3 text-white-200">{_props.details}</p>
       <Link
