@@ -20,6 +20,9 @@ import insurance from "../../assets/services/insurance.webp";
 import airline from "../../assets/services/airline.webp";
 import customerSupport from "../../assets/services/customer-support.webp";
 
+import location from "../../assets/contact/location.svg";
+import phone from "../../assets/contact/phone.svg";
+
 export function Home() {
   const destinations = [
     { href: "/najaf", placeName: "najaf", img: najaf },
@@ -150,7 +153,7 @@ export function Home() {
         </div>
       </section>
       <div className="bg-black-100">
-        <section className="flex flex-col items-center justify-center py-14">
+        <section className="flex flex-col items-center justify-center py-14 mb-0">
           <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
             Benefits
           </span>
@@ -166,27 +169,133 @@ export function Home() {
           </div>
         </section>
       </div>
-      <section className="flex items-center justify-center flex-col">
-        <div className="mb-16 flex items-center justify-center flex-col text-center gap-4">
-          <h2>Join our news letter</h2>
-          <p>
-            Sign up for our newsletter to receive the latest travel deals, tips,
-            and news straight to your inbox.
-          </p>
-        </div>
-        <form action="submit">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="sm:w-96 p-3 outline-none rounded-none bg-black-300 border-2"
-          />
+      <div className="bg-secondary-600 text-white-500">
+        <section className="flex items-center justify-center flex-col py-14">
+          <div className="mb-16 flex items-center justify-center flex-col text-center gap-4">
+            <h2>Join our news letter</h2>
+            <p>
+              Sign up for our newsletter to receive the latest travel deals,
+              tips, and news straight to your inbox.
+            </p>
+          </div>
+          <form action="submit">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="sm:w-96 p-3 outline-none rounded-none bg-white-500 border-2 focus:border-white-100"
+            />
+            <button
+              type="submit"
+              className="py-3 px-5 outline-none rounded-none bg-white-500 border-2 border-l-0 focus:border-white-100 text-black-300 font-medium"
+            >
+              Submit
+            </button>
+          </form>
+        </section>
+      </div>
+      <section className="bg-black-100 flex gap-4 flex-col sm:flex-row p-0">
+        <form action="#" className="basis-2/3 px-6 py-8">
+          <h3 className="text-3xl mdx:text-4xl mb-9 font-medium uppercase">
+            Send Us Message
+          </h3>
+          <div className="flex justify-start flex-col mdx:flex-row items-stretch mdx:items-center gap-4 mb-7">
+            <label className="flex flex-col gap-2 mdx:basis-1/2">
+              <span className="text-lg">Full Name</span>
+              <input
+                type="text"
+                placeholder="John"
+                className="p-3 outline-none rounded-none border-white-100 bg-black-500 border-2 focus:border-white-300"
+              />
+            </label>
+            <label className="flex flex-col gap-2 mdx:basis-1/2">
+              <span>Email</span>
+              <input
+                type="email"
+                placeholder="john@gmail.com"
+                className="p-3 outline-none rounded-none border-white-100 bg-black-500 border-2 focus:border-white-300"
+              />
+            </label>
+          </div>
+          <div className="mb-6">
+            <label className="flex flex-col gap-4">
+              <span>Message</span>
+              <textarea
+                name="message"
+                cols={30}
+                rows={10}
+                className="p-3 outline-none rounded-none border-white-100 bg-black-500 border-2 focus:border-white-300"
+                placeholder="Enter your message here"
+              ></textarea>
+            </label>
+          </div>
           <button
             type="submit"
-            className="py-3 px-5 outline-none rounded-none bg-black-300 border-2"
+            className="
+            text-black-400
+            bg-white-400
+            hover:bg-white-500
+            border-2
+            border-white-500
+            focus:border-black-100
+            focus:outline-none
+            text-lg
+            font-medium
+            px-4
+            py-2
+            text-center
+            w-fit
+            duration-200
+            font-openSans
+          "
           >
             Submit
           </button>
         </form>
+        <div className="basis-auto px-6 py-8 bg-secondary-600">
+          <h4 className="text-3xl mdx:text-4xl mb-9 font-medium uppercase">
+            Contact Information
+          </h4>
+          <div className="flex gap-2 mb-4">
+            <img src={location} alt="location icon" className="w-8" />
+            <div className="flex flex-col">
+              <h5 className="uppercase font-medium text-xl">IRAQ</h5>
+              <p>
+                Office NO. (A15/2-3) Al-Madeena al Maiya , Center jabal Aamil
+                Uposit Haye al- Adalaa ,Najaf Al Ashraf-IRAQ.
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-2 mb-4">
+            <img src={location} alt="location icon" className="w-8" />
+            <div className="flex flex-col">
+              <h5 className="uppercase font-medium text-xl">IRAQ</h5>
+              <p>
+                Office NO. (A15/2-3) Al-Madeena al Maiya , Center jabal Aamil
+                Uposit Haye al- Adalaa ,Najaf Al Ashraf-IRAQ.
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-2 mb-8">
+            <img src={location} alt="location icon" className="w-8" />
+            <div className="flex flex-col">
+              <h5 className="uppercase font-medium text-xl">IRAQ</h5>
+              <p>
+                Office NO. (A15/2-3) Al-Madeena al Maiya , Center jabal Aamil
+                Uposit Haye al- Adalaa ,Najaf Al Ashraf-IRAQ.
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-2 mb-4">
+            <img src={phone} alt="phone icon" className="w-8" />
+            <h5 className="uppercase font-medium text-xl">Phone Numbers</h5>
+          </div>
+          <ul className="text-lg font-medium ml-4">
+            <li>+1 313 415 5319</li>
+            <li>+92 334 9921302</li>
+            <li>+964 780 9970416</li>
+            <li>+964 773 794 0863</li>
+          </ul>
+        </div>
       </section>
     </>
   );
@@ -220,7 +329,7 @@ function DestinationCard(_props: {
 
 function BenefitCard(_props: { heading: string; details: string }) {
   return (
-    <div className="border-2 border-white-400 flex flex-col gap-3 px-6 py-10 md:max-w-[350px]">
+    <div className="border-2 border-white-100 flex flex-col gap-3 px-6 py-10 md:max-w-[350px]">
       <h3 className="text-2xl font-medium">{_props.heading}</h3>
       <p className="mb-3 text-white-200">{_props.details}</p>
       <Link
