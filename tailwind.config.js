@@ -17,6 +17,7 @@ export default {
           300: "#121212",
           400: "#0A0A0A",
           500: "#1F1F1F",
+          600: "#303030",
         },
         white: {
           100: "#ADADAD",
@@ -29,7 +30,11 @@ export default {
       backgroundImage: {
         headerBg:
           "linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url('/src/assets/home/header-bg.webp')",
+        contactBg:
+          "linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url('/src/assets/contact/contact-bg.webp')",
+
       },
+
       screens: {
         mdx: "870px",
       },
