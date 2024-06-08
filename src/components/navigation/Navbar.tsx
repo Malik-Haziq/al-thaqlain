@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../Button";
-import logo from "../../assets/logo.webp";
+import logo from "../../assets/logo.png";
 
 export function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(true);

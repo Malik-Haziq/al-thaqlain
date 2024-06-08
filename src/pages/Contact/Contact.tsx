@@ -1,7 +1,14 @@
+import { Header } from "../../components/header";
+import { Form } from "../../components/form";
+import { Join } from "../../components/join";
+
 export function Contact() {
-  return (
-    <>
-      <h1 className="text-blue-500 text-3xl">Contact</h1>
-    </>
-  );
+  return <>
+    <Header heading="Get In Touch" img="contactBg" />
+    <Form />
+    <Join />
+  </>
 }
+
+
+
