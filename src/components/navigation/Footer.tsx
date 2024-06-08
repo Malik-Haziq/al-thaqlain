@@ -43,14 +43,14 @@ export function Footer() {
           </div>
         
         </main>
-        <div className="flex justify-center">
+        <div className="flex justify-around items-center">
         <div>
         © 2024. All right reserved. Al-Thaqlain Travel & Tours. Powered by <a className="text-secondary-500" href="https://codewithnaqvi.com">CodeWithNaqvi</a>
         </div>
-        <div className="flex gap-4">
-          <a href="#"><img src={facebook} alt="facebook icon" className="w-8" /></a>
-          <a href="#"><img src={linkdin} alt="linkdin icon" className="w-8" /></a>
-          <a href="#"><img src={twitter} alt="twitter icon" className="w-8" /></a>
+        <div className="flex gap-6">
+          <a href="#"><img src={facebook} alt="facebook icon" className="w-8 fill-current text-white-500" /></a>
+          <a href="#"><img src={linkdin} alt="linkdin icon"   className="w-8 fill-current text-white-500" /></a>
+          <a href="#"><img src={twitter} alt="twitter icon"   className="w-8 fill-current text-white-500" /></a>
         </div>
         </div>
       </footer>
