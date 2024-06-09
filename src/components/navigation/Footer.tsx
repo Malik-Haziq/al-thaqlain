@@ -30,10 +30,10 @@ export function Footer() {
           <div className="pt-6 cursor-pointer">
             <h3 className="text-xl mb-6">COMPANY</h3>
             <ul className="flex flex-col gap-3 text-white-300">
-              <li className="hover:text-white-500"><Link to="/">Home</Link></li>
               <li className="hover:text-white-500"><Link to="/about">About</Link></li>
               <li className="hover:text-white-500"><Link to="/contact">Contact</Link></li>
               <li className="hover:text-white-500"><Link to="/service">Services</Link></li>
+              <li className="hover:text-white-500"><Link to="/privacy-policy">Privacy Policy</Link></li>
             </ul>
           </div>
           <div>
