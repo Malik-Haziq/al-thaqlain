@@ -238,12 +238,11 @@ function ServiceCard(_props: {
             <p className="destination-discover text-sm text-white-400 opacity-0 duration-300">
               {_props.details}
             </p>
-            <Link
-              to="/"
+            <span
               className="on-hover w-fit text-white-300 border-b-[2px] border-white-100 hover:border-white-500 hover:text-white-500 duration-200 relative"
             >
               View more
-            </Link>
+            </span>
           </div>
         </div>
       </Link>
