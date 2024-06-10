@@ -7,6 +7,7 @@ import {
   PrivacyPolicy,
   Contact,
   HotelBooking,
+  Visa,
 } from "../src/pages";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path={"/services"} element={<Services />} />
             <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
             <Route path={"/hotel-booking"} element={<HotelBooking />} />
+            <Route path={"/visa"} element={<Visa />} />
             <Route path="*" element={<Navigate to={"./"} replace />} />
           </Route>
         </Routes>
