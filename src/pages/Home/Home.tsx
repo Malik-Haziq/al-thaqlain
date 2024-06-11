@@ -153,7 +153,7 @@ export function Home() {
         </div>
       </section>
       <div className="bg-black-100">
-        <section className="flex flex-col items-center justify-center py-14 mb-0">
+        <section className="flex flex-col items-center justify-center py-14">
           <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
             Benefits
           </span>
@@ -170,7 +170,7 @@ export function Home() {
         </section>
       </div>
       <Join />
-      <Form/>
+      <Form />
     </>
   );
 }
@@ -238,9 +238,7 @@ function ServiceCard(_props: {
             <p className="destination-discover text-sm text-white-400 opacity-0 duration-300">
               {_props.details}
             </p>
-            <span
-              className="on-hover w-fit text-white-300 border-b-[2px] border-white-100 hover:border-white-500 hover:text-white-500 duration-200 relative"
-            >
+            <span className="on-hover w-fit text-white-300 border-b-[2px] border-white-100 hover:border-white-500 hover:text-white-500 duration-200 relative">
               View more
             </span>
           </div>
