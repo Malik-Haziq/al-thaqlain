@@ -23,7 +23,7 @@
   }
 
   section, footer {
-    @apply max-w-screen-xl mx-auto p-4 mb-20;
+    @apply max-w-screen-xl mx-auto p-4 mb-36;
   }
 
   .destination-overlay:hover .destination-img {
