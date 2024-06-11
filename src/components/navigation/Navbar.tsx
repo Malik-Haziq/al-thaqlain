@@ -5,9 +5,22 @@ import logo from "../../assets/logo.png";
 
 export function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(true);
+  const [serviceDropdown, setServiceDropdown] = useState(false);
 
   const handleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setDropdownOpen(false);
+  };
+
+  const handleServiceDropdown = () => {
+    setServiceDropdown(!serviceDropdown);
+  };
+
+  const closeServiceDropdown = () => {
+    setServiceDropdown(false);
   };
 
   return (
@@ -25,6 +38,7 @@ export function Navbar() {
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-cta"
               aria-expanded="false"
+              onClick={handleDropdown}
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -45,7 +59,9 @@ export function Navbar() {
             </button>
           </div>
           <div
-            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
+              dropdownOpen ? "" : "hidden"
+            }`}
             id="navbar-cta"
           >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black-400 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
@@ -54,6 +70,7 @@ export function Navbar() {
                   to="/"
                   className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent md:text-secondary-500"
                   aria-current="page"
+                  onClick={closeDropdown}
                 >
                   Home
                 </Link>
@@ -62,6 +79,7 @@ export function Navbar() {
                 <Link
                   to="/about"
                   className="block py-2 px-3 md:p-0 text-white-300 duration-300 rounded md:hover:bg-transparent md:hover:text-white-400"
+                  onClick={closeDropdown}
                 >
                   About
                 </Link>
@@ -69,9 +87,8 @@ export function Navbar() {
               <li className="relative">
                 <button
                   id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
                   className="flex items-center justify-between w-full py-2 px-3 text-white-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-white-400 md:p-0 md:w-auto"
-                  onClick={() => handleDropdown()}
+                  onClick={handleServiceDropdown}
                 >
                   Services
                   <svg
@@ -91,12 +108,9 @@ export function Navbar() {
                   </svg>
                 </button>
                 <div
-                  id="dropdownNavbar"
-                  className={
-                    dropdownOpen
-                      ? `z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 `
-                      : `z-10 font-normal bg-white divide-y divide-gray-100 bg-black-400 rounded-lg shadow w-44 absolute top-8 left-0`
-                  }
+                  className={`${
+                    serviceDropdown ? "z-10" : "hidden"
+                  } font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute top-8 left-0`}
                 >
                   <ul
                     className="py-2 text-sm text-black-300 font-medium"
@@ -105,8 +119,11 @@ export function Navbar() {
                     <li>
                       <Link
                         to="hotel-booking"
-                        className="block px-4 py-2"
-                        onClick={() => handleDropdown()}
+                        className="block px-4 py-2 hover:bg-white-300"
+                        onClick={() => {
+                          closeDropdown();
+                          closeServiceDropdown();
+                        }}
                       >
                         Hotel Booking
                       </Link>
@@ -114,8 +131,11 @@ export function Navbar() {
                     <li>
                       <Link
                         to="visa"
-                        className="block px-4 py-2"
-                        onClick={() => handleDropdown()}
+                        className="block px-4 py-2 hover:bg-white-300"
+                        onClick={() => {
+                          closeDropdown();
+                          closeServiceDropdown();
+                        }}
                       >
                         Visa
                       </Link>
@@ -123,11 +143,11 @@ export function Navbar() {
                   </ul>
                 </div>
               </li>
-
               <li>
                 <Link
                   to="/contact"
                   className="block py-2 px-3 md:p-0 text-white-300 rounded md:hover:bg-transparent md:hover:text-white-400"
+                  onClick={closeDropdown}
                 >
                   Contact
                 </Link>
