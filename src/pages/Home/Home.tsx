@@ -109,9 +109,8 @@ export function Home() {
             </span>
           </h1>
           <p className="text-white-400 text-lg sm:text-xl md:text-2xl sm:w-2/3 mb-6 font-openSans">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nulla
-            eos! Eum natus odio vitae libero repellat, reprehenderit quas
-            numquam.
+            Ziyarat packages to Iraq, Iran & Syria that are specially designed
+            to make our customer’s spiritual trip convenient and memorable.
           </p>
           <Button text="Get in touch" to="/contact" />
         </div>
