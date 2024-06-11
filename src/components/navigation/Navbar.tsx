@@ -4,7 +4,7 @@ import { Button } from "../Button";
 import logo from "../../assets/logo.png";
 
 export function Navbar() {
-  const [dropdownOpen, setDropdownOpen] = useState(true);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [serviceDropdown, setServiceDropdown] = useState(false);
 
   const handleDropdown = () => {
