@@ -35,16 +35,16 @@ function App() {
             <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
             <Route path={"/hotel-booking"} element={<HotelBooking />} />
             <Route path={"/visa"} element={<Visa />} />
-            <Route path={"/Najaf"} element={<Najaf />} />
-            <Route path={"/Kufa"} element={<Kufa />} />
-            <Route path={"/Basra"} element={<Basra />} />
-            <Route path={"/Karbala"} element={<Karbala />} />
-            <Route path={"/Hillah"} element={<Hillah />} />
-            <Route path={"/Samara"} element={<Samara />} />
-            <Route path={"/Kazmia"} element={<Kazmia />} />
-            <Route path={"/Baghdad"} element={<Baghdad />} />
-            <Route path={"/Transpotation"} element={<Transpotation />} />
-            <Route path={"/Menu"} element={<Menu />} />
+            <Route path={"/najaf"} element={<Najaf />} />
+            <Route path={"/kufa"} element={<Kufa />} />
+            <Route path={"/basra"} element={<Basra />} />
+            <Route path={"/karbala"} element={<Karbala />} />
+            <Route path={"/hillah"} element={<Hillah />} />
+            <Route path={"/samara"} element={<Samara />} />
+            <Route path={"/kazmia"} element={<Kazmia />} />
+            <Route path={"/baghdad"} element={<Baghdad />} />
+            <Route path={"/transpotation"} element={<Transpotation />} />
+            <Route path={"/food"} element={<Menu />} />
             <Route path="*" element={<Navigate to={"./"} replace />} />
           </Route>
         </Routes>
