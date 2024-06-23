@@ -8,6 +8,16 @@ import {
   Contact,
   HotelBooking,
   Visa,
+  Najaf,
+  Kufa,
+  Basra,
+  Karbala,
+  Hillah,
+  Samara,
+  Kazmia,
+  Baghdad,
+  Transpotation,
+  Menu,
 } from "../src/pages";
 
 function App() {
@@ -23,6 +33,16 @@ function App() {
             <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
             <Route path={"/hotel-booking"} element={<HotelBooking />} />
             <Route path={"/visa"} element={<Visa />} />
+            <Route path={"/Najaf"} element={<Najaf />} />
+            <Route path={"/Kufa"} element={<Kufa />} />
+            <Route path={"/Basra"} element={<Basra />} />
+            <Route path={"/Karbala"} element={<Karbala />} />
+            <Route path={"/Hillah"} element={<Hillah />} />
+            <Route path={"/Samara"} element={<Samara />} />
+            <Route path={"/Kazmia"} element={<Kazmia />} />
+            <Route path={"/Baghdad"} element={<Baghdad />} />
+            <Route path={"/Transpotation"} element={<Transpotation />} />
+            <Route path={"/Menu"} element={<Menu />} />
             <Route path="*" element={<Navigate to={"./"} replace />} />
           </Route>
         </Routes>

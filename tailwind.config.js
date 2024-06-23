@@ -30,12 +30,8 @@ export default {
       backgroundImage: {
         headerBg:
           "linear-gradient(rgba(1,1,1,.3), rgba(1,1,1,.3)), url('src/assets/contact/contact.webp')",
-        contactBg:
-          "linear-gradient(rgba(1,1,1,.3), rgba(1,1,1,.3)), url('/src/assets/contact/contact.webp')",
-        KarbalaBg:
-          "linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url('/src/pages/About/Karbala.webp')",
       },
-
+      
       screens: {
         xs: "520px",
         mdx: "870px",
