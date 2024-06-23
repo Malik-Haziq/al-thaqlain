@@ -7,7 +7,7 @@ export function Kazmia() {
   return (
     <>
       <Header heading="Kazmia" img="headerBg" />
-      <Najaf_Outlet />
+      <Kazmia_Outlet />
       <section>
         <h2 className="text-5xl text-center text-secondary-400 mb-32">
           Top Destination
@@ -52,7 +52,7 @@ export function Kazmia() {
   );
 }
 
-function Najaf_Outlet() {
+function Kazmia_Outlet() {
   return (
     <>
       <section className="md:px-20">

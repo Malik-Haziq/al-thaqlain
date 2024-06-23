@@ -7,7 +7,7 @@ export function Samara() {
   return (
     <>
       <Header heading="Samara" img="headerBg" />
-      <Najaf_Outlet />
+      <Samara_Outlet />
       <section>
         <h2 className="text-5xl text-center text-secondary-400 mb-32">
           Top Destination
@@ -52,7 +52,7 @@ export function Samara() {
   );
 }
 
-function Najaf_Outlet() {
+function Samara_Outlet() {
   return (
     <>
       <section className="md:px-20">

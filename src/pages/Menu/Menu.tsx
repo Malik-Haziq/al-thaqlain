@@ -19,67 +19,17 @@ export function Menu() {
   return (
     <>
       <Header heading="Menu" img="headerBg" />
-      {/* <Price_Card /> */}
       <Menu_Outlet />
     </>
   );
 }
-
-// function Price_Card() {
-//   return (
-//     <>
-//       <section>
-//         <h2 className="text-6xl text-center text-secondary-400 mb-32">
-//           Deals Price
-//         </h2>
-//         <div className="flex justify-center gap-7 flex-wrap">
-//           <div className="border w-96 h-96 p-8">
-//             <h3 className="text-secondary-400 text-center text-4xl mb-8 ">
-//               Deal no 1
-//             </h3>
-//             <p className="text-center text-2xl mb-8">MINIMUM 20 PERSON</p>
-//             <ul className="flex gap-2 justify-center flex-wrap mb-12">
-//               <li className="text-xl text-white-300 bg-black-500 p-2 w-36 text-center cursor-pointer hover:bg-black-600">
-//                 BREAKFAST
-//               </li>
-//               <li className="text-xl text-white-300 bg-black-500 p-2 w-36 text-center cursor-pointer hover:bg-black-600">
-//                 LUNCH
-//               </li>
-//               <li className="text-xl text-white-300 bg-black-500 p-2 w-36 text-center cursor-pointer hover:bg-black-600">
-//                 DINER
-//               </li>
-//             </ul>
-//             <div className="flex gap-2">
-//               <a
-//                 href="#"
-//                 className="text-xl text-white-300 bg-black-500 p-2 w-36 text-center cursor-pointer hover:bg-black-600"
-//               >
-//                 5$
-//               </a>
-//               <a
-//                 href="#"
-//                 className="text-xl text-white-300 bg-black-500 p-2 w-36 text-center cursor-pointer hover:bg-black-600"
-//               >
-//                 Order
-//               </a>
-//             </div>
-//           </div>
-//           <div className="border w-96 h-96 p-8"></div>
-//           <div className="border w-96 h-96 p-8"></div>
-//           <div className="border w-96 h-96 p-8"></div>
-//           <div className="border w-96 h-96 p-8"></div>
-//         </div>
-//       </section>
-//     </>
-//   );
-// }
 
 function Menu_Outlet() {
   return (
     <>
       <section>
         <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
-          Deal-1{" "}
+          Deal-1
           <span className="font-medium text-white-100 text-5xl">($5)</span>
         </h2>
 

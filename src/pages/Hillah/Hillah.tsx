@@ -7,7 +7,7 @@ export function Hillah() {
   return (
     <>
       <Header heading="Hillah" img="headerBg" />
-      <Najaf_Outlet />
+      <Hillah_Outlet />
       <section>
         <h2 className="text-5xl text-center text-secondary-400 mb-32">
           Top Destination
@@ -52,7 +52,7 @@ export function Hillah() {
   );
 }
 
-function Najaf_Outlet() {
+function Hillah_Outlet() {
   return (
     <>
       <section className="md:px-20">

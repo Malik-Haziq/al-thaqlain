@@ -7,7 +7,7 @@ export function Basra() {
   return (
     <>
       <Header heading="Basra" img="headerBg" />
-      <Najaf_Outlet />
+      <Basra_Outlet />
       <section>
         <h2 className="text-5xl text-center text-secondary-400 mb-32">
           Top Destination
@@ -52,7 +52,7 @@ export function Basra() {
   );
 }
 
-function Najaf_Outlet() {
+function Basra_Outlet() {
   return (
     <>
       <section className="md:px-20">

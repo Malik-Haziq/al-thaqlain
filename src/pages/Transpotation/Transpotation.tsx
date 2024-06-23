@@ -76,7 +76,7 @@ export function Transpotation() {
         </section>
         <section className="flex flex-row-reverse gap-24 items-center flex-wrap">
           <div className="basis-1/2">
-            <h2 className="text-4xl text-secondary-400 mb-12">Air Plane</h2>
+            <h2 className="text-4xl text-secondary-400 mb-12">AirPlane</h2>
             <p className="text-white-200 mb-12 text-lg leading-normal">
               Al Thaqlain Company offers top-notch air transportation services,
               ensuring fast and efficient travel for both short and long

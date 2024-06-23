@@ -7,7 +7,7 @@ export function Kufa() {
   return (
     <>
       <Header heading="Kufa" img="headerBg" />
-      <Najaf_Outlet />
+      <Kufa_Outlet />
       <section>
         <h2 className="text-5xl text-center text-secondary-400 mb-32">
           Top Destination
@@ -52,7 +52,7 @@ export function Kufa() {
   );
 }
 
-function Najaf_Outlet() {
+function Kufa_Outlet() {
   return (
     <>
       <section className="md:px-20">

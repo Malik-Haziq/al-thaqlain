@@ -7,7 +7,7 @@ export function Baghdad() {
   return (
     <>
       <Header heading="Baghdad" img="headerBg" />
-      <Najaf_Outlet />
+      <Baghdad_Outlet />
       <section>
         <h2 className="text-5xl text-center text-secondary-400 mb-32">
           Top Destination
@@ -52,7 +52,7 @@ export function Baghdad() {
   );
 }
 
-function Najaf_Outlet() {
+function Baghdad_Outlet() {
   return (
     <>
       <section className="md:px-20">
