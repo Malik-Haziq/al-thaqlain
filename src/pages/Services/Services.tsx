@@ -17,7 +17,7 @@ function Outlet_Service() {
       <div className="pt-12 mb-24">
         <p className="text-center text-white-200">
           As a full-service travel agency, we provide a wide range of services
-          to help our clients plan and book their dream Ziarat tour. <br></br>{" "}
+          to help our clients plan and book their dream Ziarat tour. <br></br>
           Here are some of the services we offer.
         </p>
       </div>

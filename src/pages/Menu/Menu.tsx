@@ -56,7 +56,7 @@ function Menu_Outlet() {
             <div className="p-6">
               <h3 className="text-4xl text-secondary-400 mb-4">LUNCH</h3>
               <p className="text-lg text-white-400 mb-8">
-                Qorma - Roti - Cold Drink{" "}
+                Qorma - Roti - Cold Drink
               </p>
             </div>
           </div>
@@ -69,7 +69,7 @@ function Menu_Outlet() {
             <div className="p-6">
               <h3 className="text-4xl text-secondary-400 mb-4">DINER</h3>
               <p className="text-lg text-white-400 mb-8">
-                Sabzi-Polao-Dal-Cold Drink{" "}
+                Sabzi-Polao-Dal-Cold Drink
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ function Menu_Outlet() {
       </section>
       <section>
         <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
-          Deal-2{" "}
+          Deal-2
           <span className="font-medium text-white-100 text-5xl">($7)</span>
         </h2>
         <div className="flex gap-4 flex-wrap justify-center">
@@ -90,7 +90,7 @@ function Menu_Outlet() {
             <div className="p-6">
               <h3 className="text-4xl text-secondary-400 mb-4">BREAKFAST</h3>
               <p className="text-lg text-white-400 mb-8">
-                Omelette - Malai - Tea - Roti{" "}
+                Omelette - Malai - Tea - Roti
               </p>
             </div>
           </div>
@@ -124,7 +124,7 @@ function Menu_Outlet() {
       </section>
       <section>
         <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
-          Deal-3{" "}
+          Deal-3
           <span className="font-medium text-white-100 text-5xl">($9)</span>
         </h2>
         <div className="flex gap-4 flex-wrap justify-center">
@@ -173,7 +173,7 @@ function Menu_Outlet() {
       </section>
       <section>
         <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
-          Deal-4{" "}
+          Deal-4
           <span className="font-medium text-white-100 text-5xl">($10)</span>
         </h2>
         <div className="flex gap-4 flex-wrap justify-center">
