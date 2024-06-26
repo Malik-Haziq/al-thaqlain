@@ -1,1 +1,0 @@
-export {Transpotation} from "./Transpotation"

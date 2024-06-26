@@ -13,7 +13,7 @@ export {Hillah} from "./Hillah"
 export {Samara} from "./Samara"
 export {Kazmia} from "./Kazmia"
 export {Baghdad} from "./Baghdad"
-export {Transpotation} from "./Transpotation"
+export {Transportation} from "./Transportation"
 export {Menu} from "./Menu"
 
 

@@ -142,14 +142,14 @@ export function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="transpotation"
+                        to="transportation"
                         className="block px-4 py-2 hover:bg-white-300"
                         onClick={() => {
                           closeDropdown();
                           closeServiceDropdown();
                         }}
                       >
-                        Transportaion
+                        transportation
                       </Link>
                     </li>
                     <li>

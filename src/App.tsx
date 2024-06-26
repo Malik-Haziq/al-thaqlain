@@ -17,7 +17,7 @@ import {
   Samara,
   Kazmia,
   Baghdad,
-  Transpotation,
+  Transportation,
   Menu,
 } from "../src/pages";
 
@@ -43,7 +43,7 @@ function App() {
             <Route path={"/samara"} element={<Samara />} />
             <Route path={"/kazmia"} element={<Kazmia />} />
             <Route path={"/baghdad"} element={<Baghdad />} />
-            <Route path={"/transpotation"} element={<Transpotation />} />
+            <Route path={"/transportation"} element={<Transportation />} />
             <Route path={"/food"} element={<Menu />} />
             <Route path="*" element={<Navigate to={"./"} replace />} />
           </Route>
