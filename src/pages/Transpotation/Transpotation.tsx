@@ -1,120 +1,108 @@
 import { Header } from "../../components/header";
 import { CTA } from "../../components/CTA";
-import bus from "../../assets/Transpotation/bus.webp";
-import car from "../../assets/Transpotation/car.webp";
-import train from "../../assets/Transpotation/train.webp";
-import airplane from "../../assets/Transpotation/airplane.webp";
+import { Button } from "../../components/Button";
+import bus from "../../assets/Transportation/bus.webp";
+import car from "../../assets/Transportation/car.webp";
+import train from "../../assets/Transportation/train.webp";
+import airplane from "../../assets/Transportation/airplane.webp";
 
-export function Transpotation() {
+export function Transportation() {
   return (
     <>
-      <Header heading="Transpotation" img="headerBg" />
-      <Transpotation_Outlet />
-      <section>
-        <h2 className="text-5xl text-center text-secondary-400 mb-32">
-          Types of vehicles available
-        </h2>
-        <section className="flex gap-24 items-center flex-wrap">
+      <Header heading="Transportation" img="headerBg" />
+      <Transportation_Outlet />
+      <div>
+        <div className="flex flex-col items-center justify-center">
+          <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
+            Vehicles
+          </span>
+          <h2 className="text-5xl text-center text-white-500 mb-32">
+            Types of vehicles
+          </h2>
+        </div>
+        <section className="flex gap-14 items-center justify-between flex-wrap flex-col sm:flex-row">
           <div className="basis-1/2">
-            <h2 className="text-4xl text-secondary-400 mb-12">Buses</h2>
-            <p className="text-white-200 mb-12 text-lg leading-normal">
-              ChatGPT Al Thaqlain Company proudly offers top-tier bus
-              transportation services, ensuring comfort and reliability for
-              group travel. Our modern, well-maintained buses are equipped with
-              advanced amenities to provide a smooth and enjoyable journey. With
-              experienced drivers and flexible scheduling, we cater to all your
-              transportation needs, making every trip convenient and
-              stress-free.
+            <h3 className="text-4xl font-medium mb-6">Buses</h3>
+            <p className="text-white-300 mb-12 text-lg leading-normal">
+              We at Al Thaqlain Company take great pride in presenting our
+              premium class of bus transportation that is comfortable and
+              reliable for group traveling. Our modern and well-maintained buses
+              with state-of-the-art equipment guarantee a smooth and joyful
+              ride. With an experienced driver and flexible schedules, we cater
+              to every transportation need conveniently and stress-free on every
+              trip.
             </p>
-            <a
-              href="#"
-              className="p-3 border-2 font-semibold hover:text-black-400 hover:bg-white-500 duration-75 "
-            >
-              Get Started
-            </a>
+            <Button text="Get Started" to="/contact" />
           </div>
-          <img src={bus} alt="Bus" className="max-w-lg cursor-pointer " />
+          <div className="basis-2/5">
+            <img src={bus} alt="Bus" className="w-full" />
+          </div>
         </section>
-        <section className="flex flex-row-reverse gap-24 items-center flex-wrap">
+        <section className="flex gap-14 items-center flex-wrap justify-between flex-col sm:flex-row-reverse">
           <div className="basis-1/2">
-            <h2 className="text-4xl text-secondary-400 mb-12">Cars</h2>
-            <p className="text-white-200 mb-12 text-lg leading-normal">
-              Al Thaqlain Company offers premium car transportation services,
-              ensuring comfort and convenience for all your travel needs. Our
-              fleet of luxury sedans and SUVs is equipped with modern amenities
-              to provide a smooth and enjoyable ride. With professional drivers
-              and flexible scheduling, we cater to both individual and small
-              group travel, making every journey a pleasant experience.
+            <h3 className="text-4xl font-medium mb-6">Cars</h3>
+            <p className="text-white-300 mb-12 text-lg leading-normal">
+              Al Thaqlain Company provides high-end automobile transportation
+              services for all your comfortable and convenient travel needs. Our
+              fleet of luxury sedans and SUVs is loaded with modern amenities to
+              provide a smooth and enjoyable ride. It offers professional
+              drivers, flexible scheduling, and consideration for individual and
+              small groups of travelers, thus giving each their best shot at the
+              perfect journey.
             </p>
-            <a
-              href="#"
-              className="p-3 border-2 font-semibold hover:text-black-400 hover:bg-white-500 duration-75 "
-            >
-              Get Started
-            </a>
+            <Button text="Get Started" to="/contact" />
           </div>
-          <img src={car} alt="Bus" className="max-w-lg" />
+          <div className="basis-2/5">
+            <img src={car} alt="Car" className="w-full" />
+          </div>
         </section>
-        <section className="flex gap-24 items-center flex-wrap">
+        <section className="flex gap-14 items-center justify-between flex-wrap flex-col sm:flex-row">
           <div className="basis-1/2">
-            <h2 className="text-4xl text-secondary-400 mb-12">Trains</h2>
-            <p className="text-white-200 mb-12 text-lg leading-normal">
-              Al Thaqlain Company offers reliable train transportation services,
-              providing efficient and scenic travel options. We partner with
-              leading rail providers to ensure seamless connections and a
-              hassle-free travel experience. Whether for business or leisure,
-              our train services guarantee timely and comfortable journeys.
+            <h3 className="text-4xl font-medium mb-6">Trains</h3>
+            <p className="text-white-300 mb-12 text-lg leading-normal">
+              Al Thaqlain Company provides reliable train transportation
+              services for efficient and scenic travel. We partner with leading
+              rail providers to ensure seamless connections and a hassle-free
+              travel experience. Whether for business or pleasure, our services
+              promise you timely and comfortable journeys by train.
             </p>
-            <a
-              href="#"
-              className="p-3 border-2 font-semibold hover:text-black-400 hover:bg-white-500 duration-75 "
-            >
-              Get Started
-            </a>
+            <Button text="Get Started" to="/contact" />
           </div>
-          <img src={train} alt="Bus" className="max-w-lg" />
+          <div className="basis-2/5">
+            <img src={train} alt="train" className="w-full" />
+          </div>
         </section>
-        <section className="flex flex-row-reverse gap-24 items-center flex-wrap">
+        <section className="flex gap-14 items-center justify-between flex-wrap flex-col sm:flex-row-reverse">
           <div className="basis-1/2">
-            <h2 className="text-4xl text-secondary-400 mb-12">AirPlane</h2>
-            <p className="text-white-200 mb-12 text-lg leading-normal">
-              Al Thaqlain Company offers top-notch air transportation services,
-              ensuring fast and efficient travel for both short and long
-              distances. Partnering with leading airlines, we provide a range of
-              flight options to suit your schedule and preferences. Experience
-              timely, comfortable, and stress-free air travel with Al Thaqlain.
+            <h2 className="text-4xl font-medium mb-6">AirPlane</h2>
+            <p className="text-white-300 mb-12 text-lg leading-normal">
+              Al Thaqlain Company provides first-rate air transportation
+              services and ensures a suitable, quick mode of travel for short or
+              long distances. We offer all flexible flights in association with
+              renowned airlines, thus providing the service at your convenience.
+              Travel timely, comfortably, and hassle-free in the air with Al
+              Thaqlain.
             </p>
-            <a
-              href="#"
-              className="p-3 border-2 font-semibold hover:text-black-400 hover:bg-white-500 duration-75 "
-            >
-              Get Started
-            </a>
+            <Button text="Get Started" to="/contact" />
           </div>
-          <img src={airplane} alt="Bus" className="max-w-lg" />
+          <div className="basis-2/5">
+            <img src={airplane} alt="airplane" className="w-full" />
+          </div>
         </section>
-      </section>
+      </div>
       <CTA />
     </>
   );
 }
 
-function Transpotation_Outlet() {
+function Transportation_Outlet() {
   return (
     <>
       <section className="md:px-20">
-        <p className="text-center text-white-300 text-xl mx-auto">
-          Al Althaqlain Company, we prioritize exceptional transportation
-          services to ensure our clients enjoy seamless and comfortable travel
-          experiences. Our fleet, consisting of modern and well-maintained
-          vehicles, caters to diverse needs, from luxurious sedans for executive
-          travel to spacious buses for group tours. We emphasize safety,
-          punctuality, and customer satisfaction, employing experienced drivers
-          who are well-versed in the best routes and local attractions.
-          Additionally, we offer flexible scheduling and customized travel
-          itineraries to accommodate the unique preferences of our clients. At
-          Althaqlain Company, our commitment to superior transportation services
-          ensures that every journey is smooth, enjoyable, and memorable.
+        <p className="text-center text-white-300 text-2xl mx-auto">
+          At Al Althaqlain Company, we assure our clients of extraordinary
+          transportation services that provide a seamless and comfortable
+          experience.
         </p>
       </section>
     </>
