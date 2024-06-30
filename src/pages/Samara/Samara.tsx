@@ -13,32 +13,32 @@ export function Samara() {
           Top Destination
         </h2>
         <Destination
-          heading="Kyoto, Japan"
-          Paragraph="Samara's love for history and culture draws her to Kyoto, where she explores ancient temples, serene gardens, and traditional tea houses, immersing herself in the city's rich heritage."
+          heading="Al-Askari Shrine"
+          Paragraph="The Al-Askari Shrine is one of the holiest sites for Shia Muslims, housing the tombs of the tenth and eleventh Shia Imams, Ali al-Hadi and Hasan al-Askari. Pilgrims visit to honor these revered figures and seek spiritual blessings."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Machu Picchu, Peru"
-          Paragraph="Fascinated by archaeology and adventure, Samara hikes through the Andes to Machu Picchu, marveling at the breathtaking ruins and panoramic mountain views that transport her to another era."
+          heading="Ghaybat al-Sughra"
+          Paragraph="This site marks where the twelfth Shia Imam, Muhammad al-Mahdi, went into Lesser Occultation. It holds deep significance for Shia believers who come to connect with the legacy and anticipated return of Imam al-Mahdi."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Paris, France"
-          Paragraph="Samara indulges her passion for art and romance in Paris, wandering through the Louvre, strolling along the Seine, and savoring delicious pastries in quaint cafes, soaking in the city's timeless charm."
+          heading="Ziyarat of Sayyida Hakimah"
+          Paragraph="The shrine of Sayyida Hakimah, the sister of Imam Ali al-Hadi, is a place of reverence. Pilgrims visit to honor her piety and to seek blessings and solace in her memory."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Maui, Hawaii"
-          Paragraph="Seeking tranquility and natural beauty, Samara finds solace in Maui's pristine beaches, lush rainforests, and dramatic waterfalls, embracing the island's laid-back atmosphere and rejuvenating vibes."
+          heading="Ziyarat of Sayyida Nargis Khatoon"
+          Paragraph="This shrine is dedicated to Sayyida Nargis Khatoon, the mother of the twelfth Imam, Muhammad al-Mahdi. Pilgrims come to pay their respects and seek her intercession, reflecting on her significant role in Shia history."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Serengeti National Park, Tanzania"
-          Paragraph="With a deep appreciation for wildlife and conservation, Samara embarks on a safari in the Serengeti, witnessing awe-inspiring wildlife migrations and breathtaking landscapes that ignite her sense of wonder and admiration for nature's wonders."
+          heading="Great Mosque of Samarra"
+          Paragraph="Known for its iconic spiral minaret, the Great Mosque of Samarra is an architectural marvel and an important historical site. Pilgrims visit to appreciate its historical significance and to connect with the rich cultural heritage of the region."
           button="Get Started"
           img=""
         />

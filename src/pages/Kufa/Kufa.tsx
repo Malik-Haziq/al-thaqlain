@@ -25,8 +25,8 @@ export function Kufa() {
           img=""
         />
         <Destination
-          heading="Nahrawan Canal"
-          Paragraph="The Nahrawan Canal is an ancient waterway near Kufa, known for its historical and agricultural importance. It is mentioned in Islamic history and literature, reflecting the region's ancient infrastructure and cultural significance."
+          heading="Masjid Hannana "
+          Paragraph="Masjid Hannana, located in Najaf, is a revered mosque known for its historical significance and serene atmosphere. It attracts visitors and pilgrims who seek spiritual solace and a connection to Islamic heritage."
           button="Get Started"
           img=""
         />
@@ -37,8 +37,8 @@ export function Kufa() {
           img=""
         />
         <Destination
-          heading="Qasr al-Imara "
-          Paragraph="Qasr al-Imara is an archaeological site that includes the remains of a palace believed to have been used by the early Muslim governors of Kufa. It offers insights into the administrative and architectural history of the region."
+          heading="Maytham al-Tammar Shrine."
+          Paragraph="The Maytham al-Tammar Shrine, located in Najaf, is a significant religious site dedicated to the revered companion of Imam Ali. It draws numerous pilgrims who come to pay their respects and seek spiritual blessings."
           button="Get Started"
           img=""
         />

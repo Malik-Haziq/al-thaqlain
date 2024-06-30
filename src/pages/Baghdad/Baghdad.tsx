@@ -13,32 +13,32 @@ export function Baghdad() {
           Top Destination
         </h2>
         <Destination
-          heading="Al-Mustansiriya School"
-          Paragraph=" A historic center of learning founded in 1227, it's a masterpiece of Islamic architecture, known for its intricate designs and scholarly atmosphere."
+          heading="Kadhimiya Shrine"
+          Paragraph="One of the most revered Shia destinations in Baghdad, the Kadhimiya Shrine complex houses the shrines of Imam Musa al-Kadhim and Imam Muhammad al-Jawad, the seventh and ninth Shia Imams. It attracts pilgrims seeking spiritual solace and blessings."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Baghdad Tower"
-          Paragraph="The tallest structure in Iraq, offering panoramic views of the city and the Tigris River, with restaurants and entertainment venues."
+          heading="Al-Kazimiyah Mosque"
+          Paragraph="Located in the Kazimiyah district, this mosque is a significant Shia pilgrimage site housing the shrine of Imam Musa al-Kadhim. It is known for its intricate architecture and cultural importance within the Shia community."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Baghdad Zoo"
-          Paragraph="Established in 1971, it houses a diverse collection of animals native to Iraq and beyond, providing educational experiences for visitors of all ages."
+          heading="Al-Askari Shrine"
+          Paragraph="Situated in the northern part of Baghdad, the Al-Askari Shrine is dedicated to Imam Ali al-Hadi and Imam Hasan al-Askari, the tenth and eleventh Shia Imams. It is a symbol of peace and unity, drawing Shia pilgrims from around the world."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Al-Shaheed Monument"
-          Paragraph="Built in 1983 to honor fallen soldiers, it features an iconic dome and eternal flame, symbolizing Iraq's resilience and sacrifice."
+          heading="Al-Rasool al-Atham Mosque"
+          Paragraph=" Known for its historical importance, this mosque is believed to have been founded by the Abbasid caliph Al-Mansur and is associated with Imam Ali ibn Abi Talib. It remains a place of worship and reverence for Shia Muslims."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Mutannabi Street"
-          Paragraph=" A cultural hub known for its bookstores, cafes, and street performers, it's a vibrant gathering place for intellectuals, artists, and book lovers alike."
+          heading="Al-Shouhadaa Mosque"
+          Paragraph="Located near the Tigris River, this mosque is dedicated to the martyrs of the Iraqi Army and popular mobilization forces who fought against ISIS. It serves as a symbol of resilience and sacrifice, attracting visitors interested in recent Shia history and honoring the fallen heroes."
           button="Get Started"
           img=""
         />

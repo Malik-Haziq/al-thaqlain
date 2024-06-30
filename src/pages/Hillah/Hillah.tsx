@@ -13,32 +13,32 @@ export function Hillah() {
           Top Destination
         </h2>
         <Destination
-          heading="Babylon Ruins"
-          Paragraph="Located near Hillah, the ancient city of Babylon features impressive archaeological remains, including the famous Ishtar Gate and the ruins of the Hanging Gardens, offering a glimpse into one of the world's earliest urban centers."
+          heading="Al-Qasim Shrine"
+          Paragraph="The shrine of Al-Qasim ibn Musa al-Kadhim, a revered figure in Shia Islam, is located in Hillah. Pilgrims visit to pay homage to Al-Qasim, the son of the seventh Shia Imam, and seek blessings and solace."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Hillah Grand Mosque"
-          Paragraph="A significant religious site in Hillah, the Grand Mosque showcases stunning Islamic architecture and serves as a hub for local worship and community gatherings."
+          heading="Imam Ali an-Naqi Shrine"
+          Paragraph="This shrine is dedicated to Imam Ali an-Naqi, the tenth Shia Imam. It is a site of great spiritual significance where pilgrims come to honor the Imam and reflect on his teachings and legacy."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Euphrates River"
-          Paragraph="The majestic Euphrates River runs alongside Hillah, providing picturesque views and opportunities for scenic boat rides or leisurely walks along its banks."
+          heading="Tomb of Prophet Ezekiel "
+          Paragraph="Believed to be the resting place of the Prophet Ezekiel, also known as Dhul-Kifl, this site is sacred to both Muslims and Jews. Shia pilgrims visit to pay their respects and appreciate the shared religious heritage."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Al-Mustansiriya School"
-          Paragraph="Founded in the 13th century, this historic institution in Hillah is renowned for its beautiful architecture and its role as a center for Islamic learning and scholarship."
+          heading="Imam Mahdi Mosque"
+          Paragraph="This mosque is dedicated to the twelfth Shia Imam, Imam Mahdi. Pilgrims visit this site to pray and seek guidance, especially invoking the Imam’s expected return and justice."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Hillah Traditional Souks"
-          Paragraph="The bustling markets of Hillah offer a vibrant experience, with colorful stalls selling everything from local produce to handmade crafts, providing visitors with a taste of authentic Iraqi culture and commerce."
+          heading="Ruins of Babylon"
+          Paragraph="While not exclusively a religious site, the ancient ruins of Babylon hold significant historical importance. Shia pilgrims often visit to connect with the region’s rich past and reflect on the rise and fall of civilizations in a context broader than religious history."
           button="Get Started"
           img=""
         />

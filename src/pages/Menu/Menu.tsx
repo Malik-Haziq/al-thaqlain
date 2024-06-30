@@ -1,4 +1,3 @@
-import { Header } from "../../components/header";
 import omlate from "../../assets/food/omlate.webp";
 import qorma from "../../assets/food/qorma.webp";
 import palao from "../../assets/food/palao.avif";
@@ -14,12 +13,56 @@ import fries from "../../assets/food/Fries.webp";
 import jam from "../../assets/food/jam.webp";
 import fish from "../../assets/food/fish.webp";
 import pizza from "../../assets/food/Pizza.webp";
+import Pdf from "../../assets/pdf/food.pdf";
+import menu from "../../assets/pdf/pdf-img.png";
 
 export function Menu() {
   return (
     <>
-      <Header heading="Menu" img="headerBg" />
+      <Menu_Header />
       <Menu_Outlet />
+    </>
+  );
+}
+
+function Menu_Header() {
+  return (
+    <>
+      <section className="flex gap-52 flex-wrap -mt-10 h-screen items-center">
+        <div>
+          <h1 className="text-6xl text-secondary-400 mb-12">Green Meal Food</h1>
+          <p className="text-white-200 text-lg mb-12 ">
+            Green Meal Food provides the best deals on fresh, nutritious meals
+            that are <br></br> perfect for any diet. Our offerings are crafted
+            from the freshest, locally-sourced <br></br> ingredients to ensure
+            maximum flavor and health benefits. With a variety of <br></br>{" "}
+            delicious options at unbeatable prices, Green Meal Food makes it
+            easy to <br></br> enjoy wholesome, eco-friendly meals without
+            breaking the bank. Experience <br></br> the perfect blend of
+            quality, affordability, and sustainability with every bite.
+          </p>
+          <div className="flex gap-2">
+            <a
+              href={Pdf}
+              className="text-white-400 hover:text-black-400 hover:bg-white-500 border-2 border-white-500 focus:outline-none text-lg px-4 py-2 text-center w-fit duration-200 font-openSans"
+              target="_blank"
+            >
+              Pre View
+            </a>
+            <a
+              href={Pdf}
+              className="text-white-400 hover:text-black-400 hover:bg-white-500 border-2 border-white-500 focus:outline-none text-lg px-4 py-2 text-center w-fit duration-200 font-openSans"
+              download={Pdf}
+              target="_blank"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+        <div className="">
+          <img src={menu} className="w-56 object-cover" alt="pdf img" />
+        </div>
+      </section>
     </>
   );
 }
@@ -27,6 +70,12 @@ export function Menu() {
 function Menu_Outlet() {
   return (
     <>
+      <h2 className="text-secondary-400 text-center text-6xl mb-12 font-openSans font-bold">
+        Food Deals
+      </h2>
+      <p className=" text-white-100 text-2xl text-center mb-20">
+        Providing the best food deals of Green Meal
+      </p>
       <section>
         <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
           Deal-1
