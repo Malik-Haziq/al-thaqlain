@@ -13,32 +13,32 @@ export function Basra() {
           Top Destination
         </h2>
         <Destination
-          heading="Shatt al-Arab River"
-          Paragraph="The Shatt al-Arab is a historic river formed by the confluence of the Tigris and Euphrates rivers, flowing through Basra into the Persian Gulf. It is a vital waterway for trade and transport, lined with parks and promenades where locals and visitors gather."
+          heading="Shrine of Imam Ali ibn Abi Talib"
+          Paragraph="While primarily associated with Najaf, the connection to Basra is strong due to Imam Ali's influence and historical battles."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Basra Corniche"
-          Paragraph="The Corniche is a popular waterfront promenade along the Shatt al-Arab, offering scenic views of the river and city skyline. It's a hub of activity with restaurants, cafes, and parks, making it a favorite spot for leisure and social gatherings"
+          heading="Shrine of Talha ibn Ubayd-Allah"
+          Paragraph="This shrine is dedicated to one of the companions of the Prophet Muhammad and holds significant historical and religious importance."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Basra Museum"
-          Paragraph="The Basra Museum showcases artifacts from Iraq's rich history, including ancient Mesopotamian relics, Islamic art, and cultural exhibits. It offers insights into Basra's historical significance and cultural heritage"
+          heading="Shrine of Zubair ibn al-Awwam"
+          Paragraph="Another key site, this shrine honors a close companion of the Prophet Muhammad and a prominent figure in early Islamic history."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Martyrs' Monument"
-          Paragraph="This monument honors the martyrs who sacrificed their lives during the Iran-Iraq War. It stands as a symbol of resilience and remembrance, offering panoramic views of Basra and the surrounding landscape."
+          heading="Al-Ashar Mosque:"
+          Paragraph="Known for its historical significance, this mosque is an important place of worship and reflection for Shia Muslims."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Umm al-Qasr Port"
-          Paragraph="Umm al-Qasr is Iraq's main deep-water port, vital for international trade and maritime activities. It plays a crucial role in the economy of Basra and Iraq, handling imports and exports essential for the region's development."
+          heading="Basra Grand Mosque"
+          Paragraph="As one of the largest and most architecturally impressive mosques in the region, it serves as a central place for prayer and religious gatherings."
           button="Get Started"
           img=""
         />

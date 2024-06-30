@@ -13,32 +13,32 @@ export function Kazmia() {
           Top Destination
         </h2>
         <Destination
-          heading="Silvershade Forest"
-          Paragraph="Nestled in the heart of Kazmia, Silvershade Forest is renowned for its towering ancient trees and ethereal silver-hued foliage, said to shimmer under moonlight, creating an otherworldly atmosphere cherished by nature lovers and adventurers alike."
+          heading="Imam Ali Al-Hadi Shrine"
+          Paragraph="The shrine of Imam Ali al-Hadi, the tenth Shia Imam, is located in Kazimain. Pilgrims visit this sacred site to pay their respects, seek spiritual guidance, and reflect on the teachings of the Imam."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Celestial Peak"
-          Paragraph="The highest point in Kazmia, Celestial Peak offers breathtaking vistas of jagged mountain ranges, winding rivers, and cascading waterfalls, attracting hikers and climbers seeking both challenge and serenity amidst its pristine alpine landscapes."
+          heading="Imam Hasan al-Askari Shrine"
+          Paragraph="Dedicated to Imam Hasan al-Askari (a.s.), the eleventh Shia Imam, this shrine is revered for its beauty and tranquility. It attracts pilgrims seeking spiritual blessings and historical insight."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Aurelia's Labyrinth"
-          Paragraph="An enigmatic maze of ancient stone corridors and chambers, Aurelia's Labyrinth is steeped in myth and mystery, rumored to hold cryptic inscriptions and hidden treasures that lure scholars, historians, and treasure seekers alike into its labyrinthine depths."
+          heading="Al-Kadhimiya Mosque"
+          Paragraph="Known for its golden domes and stunning architecture, Al-Kadhimiya Mosque is a major Shia pilgrimage site in Kazimayn. It houses the shrines of Musa al-Kadhim and Muhammad al-Jawad, the seventh and ninth Shia Imams respectively."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Azure Shores"
-          Paragraph=""
+          heading="Wadi al-Salaam Cemetery"
+          Paragraph="The largest cemetery in the world, Wadi al-Salaam is located in Najaf, near Kazimayn. It is believed to be the burial place of numerous prophets, companions of the Prophet Muhammad, and prominent Shia figures."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Eternal Citadel"
-          Paragraph=" A monumental fortress-city perched atop a sheer cliff, the Eternal Citadel stands as a testament to Kazmia's rich history and architectural prowess, with its intricate stonework, grand halls, and panoramic views that captivate history enthusiasts and travelers seeking a glimpse into the past."
+          heading="Bab al-Qiblah Gate"
+          Paragraph="A historic gate in Kazimayn, Bab al-Qiblah is associated with significant events in Shia history. It serves as a symbolic entrance to the holy sites and is revered by Shia pilgrims for its historical significance."
           button="Get Started"
           img=""
         />

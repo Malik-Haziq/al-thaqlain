@@ -13,32 +13,32 @@ export function Karbala() {
           Top Destination
         </h2>
         <Destination
-          heading="Imam Hussein Shrine"
-          Paragraph="Karbala is home to the shrine of Imam Hussein ibn Ali, a revered figure in Shia Islam, attracting pilgrims for its spiritual significance."
+          heading="Imam Hussain Shrine"
+          Paragraph="The shrine of Imam Hussain ibn Ali, the grandson of Prophet Muhammad, is the focal point of Karbala. Pilgrims come to pay their respects and commemorate the Battle of Karbala, a pivotal event in Shia history."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Arba'een Pilgrimage"
-          Paragraph="The largest annual pilgrimage in the world, with millions walking to Karbala to commemorate the 40th day after Imam Hussein's martyrdom"
+          heading="Al-Abbas Shrine"
+          Paragraph="This shrine is dedicated to Abbas ibn Ali, the half-brother of Imam Hussain, renowned for his loyalty and bravery during the Battle of Karbala. Pilgrims honor his sacrifice and visit his tomb to seek blessings."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Al Abbas Mosque"
-          Paragraph="Another prominent site in Karbala, dedicated to Abbas ibn Ali, attracts pilgrims for its historical and cultural value."
+          heading="Zainabiyya Hill"
+          Paragraph="Located near the Imam Hussain Shrine, Zainabiyya Hill is believed to be the spot where Zainab bint Ali, sister of Imam Hussain, stood and witnessed the battle. It holds immense historical and emotional significance for visitors."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Religious and Cultural Heritage"
-          Paragraph="Karbala's rich history, intertwined with Islamic theology and heritage, draws scholars and historians."
+          heading="Karbala Historical Museum"
+          Paragraph="This museum offers a detailed account of the Battle of Karbala and the events leading up to it. Visitors can see artifacts, manuscripts, and exhibits that provide deeper insights into Shia history and culture."
           button="Get Started"
           img=""
         />
         <Destination
-          heading="Community and Worship"
-          Paragraph=" The vibrant community of pilgrims, along with rituals and prayers, create a unique atmosphere of devotion and unity."
+          heading="Bani Asad Cemetery"
+          Paragraph="This cemetery is where many martyrs of the Battle of Karbala are buried. Pilgrims visit to pay their respects to those who fought alongside Imam Hussain and to reflect on the sacrifices made during the battle."
           button="Get Started"
           img=""
         />

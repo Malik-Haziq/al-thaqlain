@@ -16,7 +16,7 @@ export function Najaf() {
           heading="Imam Ali Shrine "
           Paragraph="The Imam Ali Shrine is the holiest site in Najaf, housing the tomb of Imam Ali ibn Abi Talib, a central figure in Shia Islam. It attracts millions of pilgrims annually for prayers and contemplation."
           button="Get Started"
-          img="../assets/Destination_page/Najaf.webp"
+          img=""
         />
         <Destination
           heading="Wadi-us-Salaam Cemetery"
@@ -37,8 +37,8 @@ export function Najaf() {
           img=""
         />
         <Destination
-          heading="Great Mosque of Kufa"
-          Paragraph="Located in nearby Kufa, this mosque holds historical significance as the place where Imam Ali delivered sermons and where Muslim ibn Aqil, a companion of Imam Hussein, stayed. It is a symbol of early Islamic architecture and spirituality."
+          heading="Al Sheraa Complex"
+          Paragraph="The Al Sheraa Complex for Entertainment in Najaf is a top-notch venue featuring an array of exciting amusement rides, engaging games, and diverse dining options. Perfect for families and friends, it offers a memorable experience for visitors of all ages."
           button="Get Started"
           img=""
         />

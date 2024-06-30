@@ -18,7 +18,7 @@ export function Destination(_props: {
           {_props.button}
         </a>
       </div>
-      <img src={_props.img} alt="Destination img" />
+      <img src={_props.img} alt="Destination img" className="h-56" />
     </section>
   );
 }
