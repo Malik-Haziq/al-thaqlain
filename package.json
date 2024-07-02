@@ -10,13 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flatpickr": "^4.6.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-flatpickr": "^3.10.13",
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
+    "@types/react-flatpickr": "^3.8.11",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
