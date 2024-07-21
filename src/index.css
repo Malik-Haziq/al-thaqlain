@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  @apply bg-black-500
+}
 @layer utilities {
   h1,
   h2 {
