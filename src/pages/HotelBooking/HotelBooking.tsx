@@ -1,5 +1,5 @@
 import { useState, useEffect, SetStateAction, Dispatch } from "react";
-import { Hotel } from "../../types";
+import type { Hotel } from "../../types";
 import axios from "axios";
 
 import { Header } from "../../components/header";
