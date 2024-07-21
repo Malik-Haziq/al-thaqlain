@@ -18,6 +18,7 @@ export default {
           400: "#0A0A0A",
           500: "#1F1F1F",
           600: "#303030",
+          700: "#171717",
         },
         white: {
           100: "#ADADAD",
@@ -25,6 +26,7 @@ export default {
           300: "#DADADA",
           400: "#E9E9E9",
           500: "#fdfdfd",
+          600: "#d3d3d3",
         },
       },
       backgroundImage: {

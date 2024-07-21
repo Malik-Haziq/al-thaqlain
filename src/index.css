@@ -22,7 +22,8 @@
     @apply font-openSans;
   }
 
-  section, footer {
+  section,
+  footer {
     @apply max-w-screen-xl mx-auto p-4 mb-36;
   }
 
