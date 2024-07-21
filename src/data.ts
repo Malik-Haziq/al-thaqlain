@@ -1,11 +1,4 @@
-interface Place {
-    name: string;
-    value: string;
-}
-interface Quantity {
-    quantity: string;
-    value: string;
-}
+import { Place, Quantity } from './types'
 
 export const places: Place[] = [
     { name: "Karachi", value: "karachi" },
