@@ -140,6 +140,30 @@ export function Navbar() {
                         Visa
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        to="transportation"
+                        className="block px-4 py-2 hover:bg-white-300"
+                        onClick={() => {
+                          closeDropdown();
+                          closeServiceDropdown();
+                        }}
+                      >
+                        transportation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="food"
+                        className="block px-4 py-2 hover:bg-white-300"
+                        onClick={() => {
+                          closeDropdown();
+                          closeServiceDropdown();
+                        }}
+                      >
+                        Food
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </li>

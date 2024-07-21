@@ -136,7 +136,7 @@ function Outlet_Privacy() {
           <p className="mb-12">
             If you have any questions, concerns, or requests regarding this
             Privacy Policy or the handling of your personal information, please
-            contact us at{" "}
+            contact us at
             <a href="info@althaqlain.com" className="text-secondary-400">
               info@althaqlain.com
             </a>

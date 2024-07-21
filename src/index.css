@@ -27,17 +27,26 @@
     @apply max-w-screen-xl mx-auto p-4 mb-36;
   }
 
-  .destination-overlay:hover .destination-img {
-    @apply scale-0;
-  }
+  .destination-overlay {
+    will-change: transform, opacity;
+}
 
-  .destination-overlay:hover .destination-discover {
-    @apply scale-100 opacity-100 -translate-y-2;
-  }
 
-  .destination-overlay:hover .destination-name {
-    @apply -translate-y-4;
-  }
+.destination-overlay:hover .destination-img {
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.destination-overlay:hover .destination-discover {
+    transform: scale(1) translateY(-0.5rem);
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.destination-overlay:hover .destination-name {
+    transform: translateY(-1rem);
+    transition: transform 0.3s ease;
+}
 
   .on-hover::before {
     @apply before:content-['fsakdfh'] before:w-full before:h-[2px] before:bg-white-400 before:absolute before:top-0;
