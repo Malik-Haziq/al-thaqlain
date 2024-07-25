@@ -16,6 +16,7 @@ import axios from "axios";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import { Hotel } from "../../types";
+import { ImageGallery } from "overlay-image-gallery";
 
 export function HotelDetails() {
   const { id } = useParams<{ id: string }>();
@@ -80,11 +81,11 @@ export function HotelDetails() {
         <Details
           name={hotel?.name}
           address={hotel.address}
-          mapLink=" "
           tag={tag}
           rating={hotel.rating}
           long={hotel.loc_long}
           lat={hotel.loc_lat}
+          gallery={hotel.images_urls}
         />
 
         <div>
@@ -108,11 +109,11 @@ export function HotelDetails() {
 function Details(_props: {
   name: string;
   address: string;
-  mapLink: string;
   tag: string;
   rating: string;
   long: number;
   lat: number;
+  gallery: string[];
 }) {
   return (
     <>
@@ -140,54 +141,12 @@ function Details(_props: {
         </div>
         <div className="flex gap-3 cursor-point mb-8">
           <div className="basis-3/4">
-            <div className="flex gap-2">
-              <div className="flex gap-2 flex-col mb-4">
-                <img
-                  src="src/assets/hotels/hotel-1.jpg"
-                  alt="hotel-1"
-                  className="max-h-40"
-                />
-                <img
-                  src="src/assets/hotels/hotel-2.jpg"
-                  alt="hotel-2"
-                  className="max-h-40"
-                />
-              </div>
-              <div>
-                <img
-                  src="src/assets/hotels/base.jpg"
-                  alt="base"
-                  className="max-w-xl"
-                />
-              </div>
-            </div>
-            <div className="flex gap-3">
-              <img
-                src="src/assets/hotels/hotel-3.jpg"
-                alt="hotels"
-                className="max-h-24"
-              />
-              <img
-                src="src/assets/hotels/hotel-6.jpg"
-                alt="hotels"
-                className="max-h-24"
-              />
-              <img
-                src="src/assets/hotels/hotel-4.jpg"
-                alt="hotels"
-                className="max-h-24"
-              />
-              <img
-                src="src/assets/hotels/hotel-5.jpg"
-                alt="hotels"
-                className="max-h-24"
-              />
-              <img
-                src="src/assets/hotels/hotel-6.jpg"
-                alt="hotels"
-                className="max-h-24"
-              />
-            </div>
+            <ImageGallery
+              images={_props.gallery}
+              width={800}
+              height={600}
+              grid="v2"
+            />
           </div>
           <div className="basis-1/4">
             <div className="border rounded mb-4">

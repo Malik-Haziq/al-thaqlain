@@ -13,6 +13,7 @@
     "axios": "^1.7.2",
     "flatpickr": "^4.6.13",
     "leaflet": "^1.9.4",
+    "overlay-image-gallery": "^1.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-flatpickr": "^3.10.13",
