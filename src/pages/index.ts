@@ -4,6 +4,7 @@ export { Contact } from "./Contact";
 export { Services } from "./Services";
 export { PrivacyPolicy } from "./PrivacyPolicy";
 export { HotelBooking } from "./HotelBooking";
+export { HotelDetails } from "./HotelBooking";
 export { Visa } from "./Visa";
 export {Najaf} from "./Najaf"
 export {Kufa} from "./Kufa"
