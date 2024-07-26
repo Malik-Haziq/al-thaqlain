@@ -17,8 +17,8 @@ export interface Hotel {
     country: string;
     base_image_url: string;
     images_urls: string[];
-    loc_lat: string;
-    loc_long: string;
+    loc_lat: number;
+    loc_long: number;
     price: number;
     rating: string;
   }

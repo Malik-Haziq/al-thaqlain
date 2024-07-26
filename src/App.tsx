@@ -1,6 +1,7 @@
 import { Layout } from "./components/Layout";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import "leaflet/dist/leaflet.css";
 import {
   Home,
   About,
@@ -19,6 +20,7 @@ import {
   Baghdad,
   Transportation,
   Menu,
+  HotelDetails,
 } from "../src/pages";
 
 function App() {
@@ -34,6 +36,7 @@ function App() {
             <Route path={"/services"} element={<Services />} />
             <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
             <Route path={"/hotel-booking"} element={<HotelBooking />} />
+            <Route path={"/hotel/:id"} element={<HotelDetails />} />
             <Route path={"/visa"} element={<Visa />} />
             <Route path={"/najaf"} element={<Najaf />} />
             <Route path={"/kufa"} element={<Kufa />} />
