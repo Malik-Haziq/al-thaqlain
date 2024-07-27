@@ -29,7 +29,6 @@ export function HotelDetails() {
           `https://althaqlain-backend-90833a98168c.herokuapp.com/api/hotels/${id}`
         );
         setHotel(response.data);
-        console.log(response.data);
       } catch (error) {
         console.error("Error fetching hotel details:", error);
       }

@@ -20,5 +20,11 @@ export interface Hotel {
     loc_lat: number;
     loc_long: number;
     price: number;
+    discounted_price: number;
     rating: string;
+    bed: number;
+    living_room: number;
+    bathroom: number;
+    kitchen: number;
+    reservedRoom: number;
   }
