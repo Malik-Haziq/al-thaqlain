@@ -27,8 +27,14 @@ const initialState: Hotel[] = [
     loc_lat: 0,
     loc_long: 0,
     price: 0,
+    discounted_price: 0,
     rating: "",
     state: "",
+    bed: 0,
+    living_room: 0,
+    bathroom: 0,
+    kitchen: 0,
+    reservedRoom: 0,
   },
 ];
 
@@ -218,8 +224,8 @@ export function HotelBooking() {
         <div className="basis-3/4">
           {data.map(
             (hotel) =>
-              hotel.price >= priceRange[0] &&
-              hotel.price <= priceRange[1] && (
+              hotel.discounted_price >= priceRange[0] &&
+              hotel.discounted_price <= priceRange[1] && (
                 <HotelCard
                   id={hotel.id}
                   img={`https://althaqlain-backend-90833a98168c.herokuapp.com/${hotel.base_image_url}`}
@@ -234,10 +240,16 @@ export function HotelBooking() {
                   span="Breakfast included"
                   days="30 nights, 2 adults"
                   price={hotel?.price?.toString()}
-                  disprice="€ 1,105"
+                  discountedPrice={hotel?.discounted_price}
                   tax="+€ 103 taxes and charges"
-                  avalibltyButton="See Avaliblty "
+                  avalibltyButton="See Avaliblty"
+                  bed={hotel.bed}
+                  livingRoom={hotel.living_room}
+                  kitchen={hotel.kitchen}
+                  bathroom={hotel.bathroom}
                   key={hotel.id}
+                  disprice={""}
+                  reservedRoom={0}
                 />
               )
           )}
@@ -313,8 +325,14 @@ function HotelCard(_props: {
   days: string;
   disprice: string;
   price: string;
+  discountedPrice: number;
   tax: string;
   avalibltyButton: string;
+  bed: number;
+  livingRoom: number;
+  bathroom: number;
+  kitchen: number;
+  reservedRoom: number;
 }) {
   const ratingText =
     _props.rating >= "5"
@@ -331,11 +349,13 @@ function HotelCard(_props: {
     <>
       <div className="flex gap-4 p-4 border border-gray-200 bg-black-200 mb-5">
         <div className="basis-1/3">
-          <img
-            src={_props.img}
-            alt="hotel"
-            className="rounded min-h-full min-w-full"
-          />
+          <Link to={`/hotel/${_props.id}`}>
+            <img
+              src={_props.img}
+              alt="hotel"
+              className="rounded min-h-full min-w-full"
+            />
+          </Link>
         </div>
         <div className="basis-2/3">
           <div className="flex justify-between mb-6 gap-2 ">
@@ -343,9 +363,7 @@ function HotelCard(_props: {
               <h2 className="text-2xl font-openSans font-semibold mb-2">
                 {_props.heading}
               </h2>
-              <p className="mb-3">
-                <a href="#">{_props.location}</a>
-              </p>
+              <p className="mb-3">{_props.location}</p>
               <p className="bg-secondary-600 py-1 px-2 font-semibold text-sm w-fit">
                 {_props.button}
               </p>
@@ -362,31 +380,36 @@ function HotelCard(_props: {
           </div>
           <div className="flex justify-between mb-4">
             <div>
-              <h3 className="text-lg font-semibold text-white-400 mb-1">
-                {_props.subheading}
-              </h3>
-              <p className="text-md text-white-400 mb-5">
-                {_props.description}
-              </p>
               <ul className="grid grid-cols-2 gap-3">
-                <li className="text-sm text-secondary-100">{_props.span}</li>
-                <li className="text-sm text-secondary-100">{_props.span}</li>
-                <li className="text-sm text-secondary-100">{_props.span}</li>
+                <li className="text-sm text-secondary-100">
+                  {_props?.bed}&nbsp;{_props.bed > 0 ? "bedrooms" : "bedroom"}
+                </li>
+                <li className="text-sm text-secondary-100">
+                  {_props?.kitchen}&nbsp;
+                  {_props.kitchen > 0 ? "kitchens" : "kitchen"}
+                </li>
+                <li className="text-sm text-secondary-100">
+                  {_props?.livingRoom}&nbsp;
+                  {_props.livingRoom > 0 ? "living rooms" : "living room"}
+                </li>
+                <li className="text-sm text-secondary-100">
+                  {_props?.bathroom}&nbsp;
+                  {_props.bathroom > 0 ? "bathrooms" : "bathroom"}
+                </li>
               </ul>
             </div>
             <div className="flex flex-col items-end">
-              <p className="text-sm mb-2">{_props.days}</p>
-              <div className="flex gap-2  items-center">
+              <p className="text-sm mb-2">{_props?.days}</p>
+              <div className="flex gap-2  items-center mb-6">
                 <s className="text-red-700">
                   <span className="text-sm text-red-700">
-                    {_props.disprice}
+                    {_props.price}&nbsp;PKR
                   </span>
                 </s>
-                <button className=" text-white-500 text-2xl">
-                  {_props.price}
-                </button>
+                <p className=" text-white-500 text-2xl">
+                  {_props.discountedPrice}&nbsp;PKR
+                </p>
               </div>
-              <p className="text-sm text-center mb-6">{_props.tax}</p>
               <Link
                 to={`/hotel/${_props.id}`}
                 className="bg-secondary-400 p-2 px-4 font-semibold"
