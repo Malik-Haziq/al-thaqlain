@@ -35,7 +35,7 @@ export function Footer() {
                   <Link to="/visa">Visa</Link>
                 </li>
                 <li className="hover:text-white-500">
-                  <Link to="/transportaion">Transportation</Link>
+                  <Link to="/transportation">Transportation</Link>
                 </li>
                 <li className="hover:text-white-500">
                   <Link to="/">Packages</Link>
@@ -52,7 +52,7 @@ export function Footer() {
                   <Link to="/contact">Contact</Link>
                 </li>
                 <li className="hover:text-white-500">
-                  <Link to="/service">Services</Link>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li className="hover:text-white-500">
                   <Link to="/privacy-policy">Privacy Policy</Link>
