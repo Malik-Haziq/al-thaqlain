@@ -21,6 +21,7 @@ import { ImageGallery } from "overlay-image-gallery";
 export function HotelDetails() {
   const { id } = useParams<{ id: string }>();
   const [hotel, setHotel] = useState<Hotel | null>(null);
+  const [images, setImages] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchHotelDetails = async () => {
@@ -29,12 +30,18 @@ export function HotelDetails() {
           `https://althaqlain-backend-90833a98168c.herokuapp.com/api/hotels/${id}`
         );
         setHotel(response.data);
+        setImages(
+          response.data.images_urls.map(
+            (img: string) =>
+              `https://althaqlain-backend-90833a98168c.herokuapp.com/${img}`
+          )
+        );
       } catch (error) {
         console.error("Error fetching hotel details:", error);
       }
     };
     fetchHotelDetails();
-  }, []);
+  }, [id]);
 
   if (!hotel) {
     return <div className="container mx-auto p-4">Loading...</div>;
@@ -84,7 +91,8 @@ export function HotelDetails() {
           rating={hotel.rating}
           long={hotel.loc_long}
           lat={hotel.loc_lat}
-          gallery={hotel.images_urls}
+          gallery={images}
+          description={hotel.description}
         />
 
         <div>
@@ -113,6 +121,7 @@ function Details(_props: {
   long: number;
   lat: number;
   gallery: string[];
+  description: string;
 }) {
   return (
     <>
@@ -154,47 +163,10 @@ function Details(_props: {
                   Exceptional
                 </h3>
                 <div className="flex gap-2 items-center">
-                  <p className="text-sm text-white-300">7 reviews</p>
                   <p className="p-1 px-2 rounded bg-secondary-400 text-white-500">
                     {_props.rating}
                   </p>
                 </div>
-              </div>
-              <div className="p-4 border-b-[1px]">
-                <p className="text-sm text-white-300 mb-6">
-                  “I recently stayed at this Apartment and had a fantastic
-                  experience! The place was really nice and the staff was
-                  incredibly friendly. They went...”
-                </p>
-                <div className="flex items-center gap-6">
-                  <div className="flex gap-3 items-center">
-                    <img
-                      src="src/assets/hotels/trust.jpg"
-                      alt="trust"
-                      className="w-6 rounded-2xl"
-                    />
-                    <p>Mesh</p>
-                  </div>
-                  <div className="flex gap-3 items-center">
-                    <img
-                      src="src/assets/hotels/Pk.png"
-                      alt="trust"
-                      className="w-4"
-                    />
-                    <p>Pakistan</p>
-                  </div>
-                </div>
-              </div>
-              <div className=" p-2 flex items-center justify-between">
-                <h3 className=" text-white-400 text-lg font-semibold font-openSans">
-                  Staff
-                </h3>
-                <a
-                  href="#"
-                  className="p-1 px-2 rounded bg-secondary-400 text-white-500"
-                >
-                  10
-                </a>
               </div>
             </div>
             <div>
@@ -219,101 +191,8 @@ function Details(_props: {
           <Cards heading="Room service" img={service} />
         </div>
       </div>
-      <div className="flex gap-10">
-        <div className="basis-3/4">
-          <p className="mb-4 text-white-200 text-base">
-            You're eligible for a Genius discount at Gold Crest Presidential
-            Apartments DHA Lahore Phase 4! To save at this property, all you
-            have to do is sign in.
-          </p>
-          <p className="mb-4 text-white-200 text-base">
-            Featuring garden views, Gold Crest Presidential Apartments DHA
-            Lahore Phase 4 features accommodation with terrace, around 29 km
-            from Wagah Border. Among the facilities of this property are a
-            restaurant, a 24-hour front desk and a lift, along with free WiFi
-            throughout the property. There is free private parking and the
-            property offers paid airport shuttle service.
-          </p>
-          <p className="mb-4 text-white-200 text-base">
-            The units at the apartment complex come with air conditioning, a
-            seating area, a flat-screen TV with streaming services, a kitchen, a
-            dining area, a safety deposit box and a private bathroom with a hot
-            tub, bathrobes and slippers. A dishwasher, an oven and microwave are
-            also featured, as well as a coffee machine and a kettle. At the
-            apartment complex, the units are fitted with bed linen and towels.
-          </p>
-          <p className="mb-4 text-white-200 text-base">
-            À la carte and continental breakfast options with warm dishes, local
-            specialities and fresh pastries are available every morning at the
-            apartment. There is a coffee shop, and packed lunches are also
-            available.
-          </p>
-          <p className="mb-4 text-white-200 text-base">
-            A baby safety gate is also available for guests at Gold Crest
-            Presidential Apartments DHA Lahore Phase 4.
-          </p>
-          <p className="mb-4 text-white-200 text-base">
-            Packages Mall is 5 km from the accommodation, while Gaddafi Stadium
-            is 11 km away. The nearest airport is Allama Iqbal International
-            Airport, 7 km from Gold Crest Presidential Apartments DHA Lahore
-            Phase 4.
-          </p>
-        </div>
-        <div className="basis-1/4 bg-black-700 px-6 py-4 rounded bg-black-600">
-          <h2 className="text-2xl text-white-400 mb-6 font-openSans">
-            Property highlights
-          </h2>
-          <h3 className="text-base font-semibold text-white-400 mb-2 font-openSans">
-            Perfect for a 12-night stay!
-          </h3>
-          <p className="text-white-200 text-sm mb-5">
-            Top location: Highly rated by recent guests (10.0)
-          </p>
-
-          <h3 className="text-base font-semibold text-white-400 mb-2 font-openSans">
-            Breakfast info
-          </h3>
-
-          <p className="text-white-200 text-sm mb-5">
-            Continental, Italian, Halal
-          </p>
-
-          <h3 className="text-base font-semibold text-white-400 mb-2 font-openSans">
-            Apartments with:
-          </h3>
-
-          <div className="mb-6">
-            <div className="flex items-center gap-4 mb-2">
-              <img src={service} alt="Room Service" className="w-4" />
-              <p className="text-white-200">Room Service</p>
-            </div>
-            <div className="flex items-center gap-4 mb-2">
-              <img src={mug} alt="Breakfast" className="w-4" />
-              <p className="text-white-200">Breakfast</p>
-            </div>
-            <div className="flex items-center gap-4 mb-2">
-              <img src={wifi} alt="Wifi" className="w-4" />
-              <p className="text-white-200">Wifi</p>
-            </div>
-            <div className="flex items-center gap-4 mb-2">
-              <img src={resturant} alt="Restaurant" className="w-4" />
-              <p className="text-white-200">Restaurant</p>
-            </div>
-            <div className="flex items-center gap-4 mb-2">
-              <img src={bath} alt="Private bathroom" className="w-4" />
-              <p className="text-white-200">Private bathroom</p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <a
-              href="#"
-              className="bg-secondary-500 block py-2 rounded text-lg font-semibold duration-200 hover:bg-secondary-600"
-            >
-              Reserve
-            </a>
-          </div>
-        </div>
+      <div className="flex gap-10 mb-16">
+        <pre className="text-white-400">{_props.description}</pre>
       </div>
     </>
   );

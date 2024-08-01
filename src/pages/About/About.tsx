@@ -82,12 +82,12 @@ function Outlet_About() {
           <div className="border flex justify-center flex-col items-center py-10 px-5 text-center">
             <img src={khuram} alt="khuram" className="w-36 rounded-full mb-8" />
             <h3 className="text-2xl">Syed Khuram Abbas</h3>
-            <p className="text-secondary-400">CEO</p>
+            <p className="text-secondary-400">CEO Pakistan Office</p>
           </div>
           <div className="border flex justify-center flex-col items-center py-10 px-5 text-center">
             <img src={safdar} alt="safdar" className="w-36 rounded-full mb-8" />
             <h3 className="text-2xl text-center">Safdar Abbas Al-Sabqi</h3>
-            <p className="text-secondary-400">CEO</p>
+            <p className="text-secondary-400">CEO Head Office</p>
           </div>
           <div className="border flex justify-center flex-col items-center py-10 px-5 text-center">
             <img src={muslim} alt="muslim" className="w-36 rounded-full mb-8" />

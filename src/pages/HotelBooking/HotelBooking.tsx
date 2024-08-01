@@ -35,6 +35,7 @@ const initialState: Hotel[] = [
     bathroom: 0,
     kitchen: 0,
     reservedRoom: 0,
+    description: "",
   },
 ];
 

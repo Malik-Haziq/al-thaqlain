@@ -27,4 +27,5 @@ export interface Hotel {
     bathroom: number;
     kitchen: number;
     reservedRoom: number;
+    description: string
   }
