@@ -14,12 +14,7 @@ export function Navbar() {
     closeDropdown();
     const text = e.currentTarget.textContent || "";
     handleCurrenctPage(text);
-    console.log(text);
   };
-
-  useEffect(() => {
-    console.log(currentPage);
-  }, [currentPage]);
 
   const handleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
