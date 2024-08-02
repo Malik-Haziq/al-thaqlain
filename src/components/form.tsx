@@ -95,10 +95,18 @@ export function Form() {
             <div className="flex flex-col gap-2 items-start justify-start">
               <h5 className="uppercase font-medium text-xl">Phone Numbers</h5>
               <ul className="text-lg font-medium">
-                <li>+1 313 415 5319</li>
-                <li>+92 334 9921302</li>
-                <li>+964 780 9970416</li>
-                <li>+964 773 794 0863</li>
+                <li>
+                  <a href="callto:+13134155319">+1 313 415 5319</a>
+                </li>
+                <li>
+                  <a href="callto:+923349921302">+92 334 9921302</a>
+                </li>
+                <li>
+                  <a href="callto:+9647809970416">+964 780 9970416</a>
+                </li>
+                <li>
+                  <a href="callto:+9647737940863">+964 773 794 0863</a>
+                </li>
               </ul>
             </div>
           </div>

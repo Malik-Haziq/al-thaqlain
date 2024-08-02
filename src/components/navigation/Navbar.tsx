@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect, SetStateAction } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../Button";
 import logo from "../../assets/logo.png";
@@ -6,6 +6,15 @@ import logo from "../../assets/logo.png";
 export function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [serviceDropdown, setServiceDropdown] = useState(false);
+  const [currentPage, setCurrentPage] = useState<string>("Home");
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const serviceDropdownRef = useRef<HTMLLIElement>(null);
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    closeDropdown();
+    const text = e.currentTarget.textContent || "";
+    handleCurrenctPage(text);
+  };
 
   const handleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -22,6 +31,29 @@ export function Navbar() {
   const closeServiceDropdown = () => {
     setServiceDropdown(false);
   };
+
+  const handleCurrenctPage = (page: SetStateAction<string>) => {
+    setCurrentPage(page);
+  };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node) &&
+      serviceDropdownRef.current &&
+      !serviceDropdownRef.current.contains(event.target as Node)
+    ) {
+      closeDropdown();
+      closeServiceDropdown();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -63,14 +95,17 @@ export function Navbar() {
               dropdownOpen ? "" : "hidden"
             }`}
             id="navbar-cta"
+            ref={dropdownRef}
           >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black-400 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 text-white-300 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <Link
                   to="/"
-                  className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent md:text-secondary-500"
+                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:bg-transparent md:hover:text-secondary-400 ${
+                    currentPage === "Home" && "text-secondary-500"
+                  }`}
                   aria-current="page"
-                  onClick={closeDropdown}
+                  onClick={handleClick}
                 >
                   Home
                 </Link>
@@ -78,16 +113,18 @@ export function Navbar() {
               <li>
                 <Link
                   to="/about"
-                  className="block py-2 px-3 md:p-0 text-white-300 duration-300 rounded md:hover:bg-transparent md:hover:text-white-400"
-                  onClick={closeDropdown}
+                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:hover:bg-transparent md:hover:text-secondary-400 ${
+                    currentPage === "About" && "text-secondary-500"
+                  }`}
+                  onClick={handleClick}
                 >
                   About
                 </Link>
               </li>
-              <li className="relative">
+              <li className="relative" ref={serviceDropdownRef}>
                 <button
                   id="dropdownNavbarLink"
-                  className="flex items-center justify-between w-full py-2 px-3 text-white-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-white-400 md:p-0 md:w-auto"
+                  className="flex items-center justify-between w-full duration-300 py-2 px-3 text-white-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-secondary-500 md:p-0 md:w-auto"
                   onClick={handleServiceDropdown}
                 >
                   Services
@@ -110,18 +147,21 @@ export function Navbar() {
                 <div
                   className={`${
                     serviceDropdown ? "z-10" : "hidden"
-                  } font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute top-8 left-0`}
+                  } font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 absolute top-8 left-0`}
                 >
                   <ul
-                    className="py-2 text-sm text-black-300 font-medium"
+                    className="py-2 text-sm text-white-300 font-medium"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <Link
                         to="hotel-booking"
-                        className="block px-4 py-2 hover:bg-white-300"
-                        onClick={() => {
-                          closeDropdown();
+                        className={`block px-4 py-2 hover:bg-gray-200 ${
+                          currentPage === "Hotel Booking" &&
+                          "text-secondary-500"
+                        }`}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                          handleClick(e);
                           closeServiceDropdown();
                         }}
                       >
@@ -131,9 +171,11 @@ export function Navbar() {
                     <li>
                       <Link
                         to="visa"
-                        className="block px-4 py-2 hover:bg-white-300"
-                        onClick={() => {
-                          closeDropdown();
+                        className={`block px-4 py-2 hover:bg-gray-200 ${
+                          currentPage === "Visa" && "text-secondary-500"
+                        }`}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                          handleClick(e);
                           closeServiceDropdown();
                         }}
                       >
@@ -143,21 +185,26 @@ export function Navbar() {
                     <li>
                       <Link
                         to="transportation"
-                        className="block px-4 py-2 hover:bg-white-300"
-                        onClick={() => {
-                          closeDropdown();
+                        className={`block px-4 py-2 hover:bg-gray-200 ${
+                          currentPage === "Transportation" &&
+                          "text-secondary-500"
+                        }`}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                          handleClick(e);
                           closeServiceDropdown();
                         }}
                       >
-                        transportation
+                        Transportation
                       </Link>
                     </li>
                     <li>
                       <Link
                         to="food"
-                        className="block px-4 py-2 hover:bg-white-300"
-                        onClick={() => {
-                          closeDropdown();
+                        className={`block px-4 py-2 hover:bg-gray-200 ${
+                          currentPage === "Food" && "text-secondary-500"
+                        }`}
+                        onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                          handleClick(e);
                           closeServiceDropdown();
                         }}
                       >
@@ -170,8 +217,10 @@ export function Navbar() {
               <li>
                 <Link
                   to="/contact"
-                  className="block py-2 px-3 md:p-0 text-white-300 rounded md:hover:bg-transparent md:hover:text-white-400"
-                  onClick={closeDropdown}
+                  className={`block py-2 px-3 md:p-0 rounded md:hover:bg-transparent md:hover:text-secondary-500 ${
+                    currentPage === "Contact" && "text-secondary-500"
+                  }`}
+                  onClick={handleClick}
                 >
                   Contact
                 </Link>
