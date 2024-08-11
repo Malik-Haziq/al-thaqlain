@@ -1,7 +1,7 @@
 import location from "../assets/contact/location.svg";
 import phone from "../assets/contact/phone.svg";
 
-export function Form() {
+export function Form(_props: { onModalOpen: () => void }) {
   return (
     <>
       <section className="bg-black-100 flex gap-4 flex-col sm:flex-row mb-16 p-0">
@@ -58,6 +58,10 @@ export function Form() {
               duration-200
               font-openSans
             "
+            onClick={(e) => {
+              e.preventDefault();
+              _props.onModalOpen();
+            }}
           >
             Submit
           </button>
