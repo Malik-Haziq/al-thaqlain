@@ -102,7 +102,6 @@ export function Form(_props: { onModalOpen: () => void }) {
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
-                required
                 placeholder="John"
                 className={`p-3 outline-none rounded-none border-2 ${
                   errors.fullName ? "border-red-500" : "border-white-100"
@@ -119,7 +118,6 @@ export function Form(_props: { onModalOpen: () => void }) {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                required
                 placeholder="john@gmail.com"
                 className={`p-3 outline-none rounded-none border-2 ${
                   errors.email ? "border-red-500" : "border-white-100"
