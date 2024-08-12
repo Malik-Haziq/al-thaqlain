@@ -1,11 +1,96 @@
+import { useState, ChangeEvent, FormEvent } from "react";
 import location from "../assets/contact/location.svg";
 import phone from "../assets/contact/phone.svg";
 
+interface FormData {
+  fullName: string;
+  email: string;
+  message: string;
+}
+
+interface FormErrors {
+  fullName: string;
+  email: string;
+  message: string;
+}
+
 export function Form(_props: { onModalOpen: () => void }) {
+  const [formData, setFormData] = useState<FormData>({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState<FormErrors>({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validateForm = (): boolean => {
+    let valid = true;
+    const newErrors: FormErrors = {
+      fullName: "",
+      email: "",
+      message: "",
+    };
+
+    if (!formData.fullName.trim()) {
+      newErrors.fullName = "Please enter your full name";
+      valid = false;
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Please enter your email";
+      valid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+      valid = false;
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Please enter your message";
+      valid = false;
+    }
+
+    setErrors(newErrors);
+    return valid;
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      _props.onModalOpen();
+
+      setFormData({
+        fullName: "",
+        email: "",
+        message: "",
+      });
+      setErrors({
+        fullName: "",
+        email: "",
+        message: "",
+      });
+    }
+  };
+
   return (
     <>
       <section className="bg-black-100 flex gap-4 flex-col sm:flex-row mb-16 p-0">
-        <form action="#" className="basis-11/12 px-6 py-8">
+        <form
+          action="#"
+          className="basis-11/12 px-6 py-8"
+          onSubmit={handleSubmit}
+        >
           <h3 className="text-3xl mdx:text-4xl mb-9 font-medium uppercase">
             Send Us Message
           </h3>
@@ -14,17 +99,33 @@ export function Form(_props: { onModalOpen: () => void }) {
               <span className="text-lg">Full Name</span>
               <input
                 type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
                 placeholder="John"
-                className="p-3 outline-none rounded-none border-white-100 bg-black-500 border-2 focus:border-white-300"
+                className={`p-3 outline-none rounded-none border-2 ${
+                  errors.fullName ? "border-red-500" : "border-white-100"
+                } bg-black-500 focus:border-white-300`}
               />
+              {errors.fullName && (
+                <span className="text-red-500 text-sm">{errors.fullName}</span>
+              )}
             </label>
             <label className="flex flex-col gap-2 mdx:basis-1/2">
               <span>Email</span>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="john@gmail.com"
-                className="p-3 outline-none rounded-none border-white-100 bg-black-500 border-2 focus:border-white-300"
+                className={`p-3 outline-none rounded-none border-2 ${
+                  errors.email ? "border-red-500" : "border-white-100"
+                } bg-black-500 focus:border-white-300`}
               />
+              {errors.email && (
+                <span className="text-red-500 text-sm">{errors.email}</span>
+              )}
             </label>
           </div>
           <div className="mb-6">
@@ -34,9 +135,16 @@ export function Form(_props: { onModalOpen: () => void }) {
                 name="message"
                 cols={30}
                 rows={10}
-                className="p-3 outline-none rounded-none border-white-100 bg-black-500 border-2 focus:border-white-300"
+                value={formData.message}
+                onChange={handleChange}
+                className={`p-3 outline-none rounded-none border-2 ${
+                  errors.message ? "border-red-500" : "border-white-100"
+                } bg-black-500 focus:border-white-300`}
                 placeholder="Enter your message here"
               ></textarea>
+              {errors.message && (
+                <span className="text-red-500 text-sm">{errors.message}</span>
+              )}
             </label>
           </div>
           <button
@@ -58,10 +166,6 @@ export function Form(_props: { onModalOpen: () => void }) {
               duration-200
               font-openSans
             "
-            onClick={(e) => {
-              e.preventDefault();
-              _props.onModalOpen();
-            }}
           >
             Submit
           </button>
