@@ -168,10 +168,6 @@ export function Form(_props: { onModalOpen(): () => void }) {
               duration-200
               font-openSans
             "
-            onClick={(e) => {
-              e.preventDefault();
-              _props.onModalOpen();
-            }}
           >
             Submit
           </button>
