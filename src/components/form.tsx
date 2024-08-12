@@ -14,11 +14,7 @@ interface FormErrors {
   message: string;
 }
 
-interface FormProps {
-  onModalOpen: () => void;
-}
-
-export function Form({ onModalOpen }: FormProps) {
+export function Form(_props: { onModalOpen(): () => void }) {
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -72,8 +68,7 @@ export function Form({ onModalOpen }: FormProps) {
     e.preventDefault();
 
     if (validateForm()) {
-      
-      onModalOpen();
+      _props.onModalOpen();
 
       setFormData({
         fullName: "",
@@ -171,7 +166,12 @@ export function Form({ onModalOpen }: FormProps) {
               text-center
               w-fit
               duration-200
-              font-openSans"
+              font-openSans
+            "
+            onClick={(e) => {
+              e.preventDefault();
+              _props.onModalOpen();
+            }}
           >
             Submit
           </button>
