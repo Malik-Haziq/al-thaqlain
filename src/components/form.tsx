@@ -14,7 +14,7 @@ interface FormErrors {
   message: string;
 }
 
-export function Form(_props: { onModalOpen(): () => void }) {
+export function Form(_props: { onModalOpen: () => void }) {
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
