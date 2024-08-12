@@ -21,6 +21,7 @@ import {
   Transportation,
   Menu,
   HotelDetails,
+  Syria,
 } from "../src/pages";
 
 function App() {
@@ -46,7 +47,8 @@ function App() {
             <Route path={"/samara"} element={<Samara />} />
             <Route path={"/kazmia"} element={<Kazmia />} />
             <Route path={"/baghdad"} element={<Baghdad />} />
-            <Route path={"/transportation"} element={<Transportation />} />
+            <Route path="/transportation" element={<Transportation />} />
+            <Route path="/transportation/syria" element={<Syria />} />
             <Route path={"/food"} element={<Menu />} />
             <Route path="*" element={<Navigate to={"./"} replace />} />
           </Route>
