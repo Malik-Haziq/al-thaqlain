@@ -1,16 +1,55 @@
 import { Header } from "../../components/header";
 import { CTA } from "../../components/CTA";
 import { Button } from "../../components/Button";
+import { Card } from "../../components/Card";
+
 import bus from "../../assets/Transportation/bus.webp";
 import car from "../../assets/Transportation/car.webp";
 import train from "../../assets/Transportation/train.webp";
 import airplane from "../../assets/Transportation/airplane.webp";
+
+import place from "../../assets/Transportation/place/b1.webp";
+import place1 from "../../assets/Transportation/place/b2.webp";
+import place2 from "../../assets/Transportation/place/b3.webp";
+import place3 from "../../assets/Transportation/place/b4.webp";
 
 export function Transportation() {
   return (
     <>
       <Header heading="Transportation" img="headerBg" />
       <Transportation_Outlet />
+      <section className="">
+        <h2 className="text-5xl text-secondary-400 text-center mb-28">
+          Register
+        </h2>
+        <div className="flex gap-4">
+          <Card
+            heading="Syria trip"
+            img={place}
+            para="The duration of this trip is usually 5 days, which is done by air from Tehran"
+            button="Register"
+          />
+          <Card
+            heading="Pilgrimage of the fourteen innocents"
+            img={place1}
+            para="A special and memorable experience of visiting the house of God and the holy graves of the Imams of Athar in Iraq and Arabia, the length of this special trip is 21 days, with accommodation in premium hotels with breakfast, lunch and dinner."
+            button="Register"
+          />
+          <Card
+            heading="Hajj and Umrah journey"
+            img={place2}
+            para="Hajj pilgrimage for foreign pilgrims and Afghan pilgrims and separate Umrah journey with VIP services and first-class services for Afghan pilgrims and foreign pilgrims"
+            button="Register"
+          />
+          <Card
+            heading="Pilgrimage to the sacred shrines"
+            img={place3}
+            para="The duration of this pilgrimage tour is nine days, which takes place both by air and land. During this trip, there is a manager and a cleric or a madah with the respected pilgrims."
+            button="Register"
+          />
+        </div>
+      </section>
+
       <div>
         <div className="flex flex-col items-center justify-center">
           <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
