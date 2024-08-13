@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import najaf from "../../assets/destinations/najaf.webp";
 import kufa from "../../assets/destinations/kufa.webp";
 import basra from "../../assets/destinations/basra.webp";
-import krbla from "../../assets/destinations/krbla.webp";
+import krbla from "../../assets/destinations/karbala.webp";
 import hillah from "../../assets/destinations/hillah.webp";
 import samara from "../../assets/destinations/samara.webp";
 import kazmia from "../../assets/destinations/kazmia.webp";
