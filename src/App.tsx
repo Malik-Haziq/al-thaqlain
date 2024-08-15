@@ -21,6 +21,10 @@ import {
   Transportation,
   Menu,
   HotelDetails,
+  Syria,
+  FourteenInnocents,
+  Hajj,
+  SacredShrines,
 } from "../src/pages";
 
 function App() {
@@ -46,7 +50,20 @@ function App() {
             <Route path={"/samara"} element={<Samara />} />
             <Route path={"/kazmia"} element={<Kazmia />} />
             <Route path={"/baghdad"} element={<Baghdad />} />
-            <Route path={"/transportation"} element={<Transportation />} />
+            <Route path="/transportation" element={<Transportation />} />
+            <Route path="/transportation/register/syria" element={<Syria />} />
+            <Route
+              path="/transportation/register/pilgrimage-of-the-fourteen-innocents"
+              element={<FourteenInnocents />}
+            />
+            <Route
+              path="/transportation/register/hajj-and-umrah"
+              element={<Hajj />}
+            />
+            <Route
+              path="/transportation/register/pilgrimage-to-the-sacred-shrines"
+              element={<SacredShrines />}
+            />
             <Route path={"/food"} element={<Menu />} />
             <Route path="*" element={<Navigate to={"./"} replace />} />
           </Route>

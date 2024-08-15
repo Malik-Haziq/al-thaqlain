@@ -1,1 +1,5 @@
-export {Transportation} from "./Transportation"
+export { Transportation } from "./Transportation"
+export { Syria } from "./Register/Syria"
+export { FourteenInnocents } from "./Register/FourteenInnocents"
+export { Hajj } from "./Register/Hajj"
+export { SacredShrines } from "./Register/SacredShrines"
