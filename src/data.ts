@@ -1,10 +1,10 @@
 import { Place, Quantity } from './types'
 
 export const places: Place[] = [
-    { name: "Karachi", value: "karachi" },
-    { name: "Lahore", value: "lahore" },
-    { name: "Railway", value: "railway" },
-    { name: "Karachi", value: "karachi" },
+    { name: "Karbala", value: "Karbala" },
+    { name: "Najaf", value: "Najaf" },
+    { name: "baghdad", value: "baghdad" },
+    { name: "Kufa", value: "Kufa" },
 ]
 
 export const quantities: Quantity[] = [
