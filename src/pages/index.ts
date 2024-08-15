@@ -14,8 +14,7 @@ export { Hillah } from "./Hillah"
 export { Samara } from "./Samara"
 export { Kazmia } from "./Kazmia"
 export { Baghdad } from "./Baghdad"
-export { Transportation } from "./Transportation"
-export { Syria } from "./Transportation"
+export { Transportation, Syria, FourteenInnocents, Hajj, SacredShrines } from "./Transportation"
 export { Menu } from "./Menu"
 
 
