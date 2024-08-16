@@ -101,8 +101,8 @@ export function Navbar() {
               <li>
                 <Link
                   to="/"
-                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:bg-transparent md:hover:text-secondary-400 ${
-                    currentPage === "Home" && "text-secondary-500"
+                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:bg-transparent md:hover:text-white-500 ${
+                    currentPage === "Home" && "text-white-500"
                   }`}
                   aria-current="page"
                   onClick={handleClick}
@@ -113,8 +113,8 @@ export function Navbar() {
               <li>
                 <Link
                   to="/about"
-                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:hover:bg-transparent md:hover:text-secondary-400 ${
-                    currentPage === "About" && "text-secondary-500"
+                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:hover:bg-transparent md:hover:text-white-500 ${
+                    currentPage === "About" && "text-white-500"
                   }`}
                   onClick={handleClick}
                 >
@@ -124,7 +124,7 @@ export function Navbar() {
               <li className="relative" ref={serviceDropdownRef}>
                 <button
                   id="dropdownNavbarLink"
-                  className="flex items-center justify-between w-full duration-300 py-2 px-3 text-white-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-secondary-500 md:p-0 md:w-auto"
+                  className="flex items-center justify-between w-full duration-300 py-2 px-3 text-white-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-white-500 md:p-0 md:w-auto"
                   onClick={handleServiceDropdown}
                 >
                   Services
@@ -157,8 +157,7 @@ export function Navbar() {
                       <Link
                         to="hotel-booking"
                         className={`block px-4 py-2 hover:bg-gray-200 ${
-                          currentPage === "Hotel Booking" &&
-                          "text-secondary-500"
+                          currentPage === "Hotel Booking" && "text-white-500"
                         }`}
                         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                           handleClick(e);
@@ -172,7 +171,7 @@ export function Navbar() {
                       <Link
                         to="visa"
                         className={`block px-4 py-2 hover:bg-gray-200 ${
-                          currentPage === "Visa" && "text-secondary-500"
+                          currentPage === "Visa" && "text-white-500"
                         }`}
                         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                           handleClick(e);
@@ -186,8 +185,7 @@ export function Navbar() {
                       <Link
                         to="transportation"
                         className={`block px-4 py-2 hover:bg-gray-200 ${
-                          currentPage === "Transportation" &&
-                          "text-secondary-500"
+                          currentPage === "Transportation" && "text-white-500"
                         }`}
                         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                           handleClick(e);
@@ -201,7 +199,7 @@ export function Navbar() {
                       <Link
                         to="food"
                         className={`block px-4 py-2 hover:bg-gray-200 ${
-                          currentPage === "Food" && "text-secondary-500"
+                          currentPage === "Food" && "text-white-500"
                         }`}
                         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                           handleClick(e);
@@ -217,8 +215,8 @@ export function Navbar() {
               <li>
                 <Link
                   to="/contact"
-                  className={`block py-2 px-3 md:p-0 rounded md:hover:bg-transparent md:hover:text-secondary-500 ${
-                    currentPage === "Contact" && "text-secondary-500"
+                  className={`block py-2 px-3 md:p-0 rounded md:hover:bg-transparent md:hover:text-white-500 ${
+                    currentPage === "Contact" && "text-white-500"
                   }`}
                   onClick={handleClick}
                 >
