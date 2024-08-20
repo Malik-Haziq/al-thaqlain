@@ -65,10 +65,10 @@ export function HotelBooking() {
   return (
     <>
       <Header heading="Hotels" img={"headerBg"} />
-      <section className="bg-black-100">
+      <section className="mb-10 -mt-56">
         <form
           action="#"
-          className="flex justify-between items-center gap-3 flex-wrap"
+          className="flex justify-center items-end gap-3 flex-wrap px-10 py-8 w-fit mx-auto bg-black-100"
         >
           <div className="flex flex-col gap-2 ">
             <span className="font-medium text-lg">Where you're going?</span>
@@ -97,7 +97,7 @@ export function HotelBooking() {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2 ">
+          {/* <div className="flex flex-col gap-2 ">
             <span className="font-medium text-lg">Adults</span>
             <div className="relative">
               <select
@@ -150,7 +150,7 @@ export function HotelBooking() {
                 className="absolute top-1/2 w-6 left-4 -translate-y-1/2"
               />
             </div>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-2 ">
             <span className="font-medium text-lg">Rooms</span>
             <div className="relative">
@@ -178,7 +178,7 @@ export function HotelBooking() {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2">
+          {/* <div className="flex flex-col gap-2">
             <span className="font-medium text-lg">Enter your stay time</span>
             <div className="flex justify-between items-center gap-5">
               <Flatpickr
@@ -194,14 +194,14 @@ export function HotelBooking() {
                 className="p-3 border border-gray-300 w-full text-black-100"
                 placeholder="Check in - Check out"
               />
-              <button
-                type="submit"
-                className="text-black-400 bg-white-400 hover:bg-white-500 focus:border-black-100 focus:outline-none font-medium px-4 py-3 text-center w-fit duration-200 font-openSans"
-              >
-                Submit
-              </button>
             </div>
-          </div>
+          </div> */}
+          <button
+            type="submit"
+            className="text-black-400 bg-white-400 hover:bg-white-500 focus:border-black-100 focus:outline-none font-medium px-4 py-3 text-center w-fit duration-200 font-openSans"
+          >
+            Search
+          </button>
         </form>
       </section>
       <section className="flex gap-3 min-w-[1150px]">
