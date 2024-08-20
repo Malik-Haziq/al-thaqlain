@@ -1,7 +1,8 @@
 import { Header } from "../../components/header";
 import { CTA } from "../../components/CTA";
 import { Button } from "../../components/Button";
-import { Card } from "../../components/Card";
+import { Link } from "react-router-dom";
+
 
 import bus from "../../assets/Transportation/bus.webp";
 import car from "../../assets/Transportation/car.webp";
@@ -27,25 +28,25 @@ export function Transportation() {
             heading="Syria trip"
             img={place}
             para="The duration of this trip is usually 5 days, which is done by air from Tehran"
-            button="Register"
-          />
+            button="Register" to={"/transportation/register/syria"}/>
           <Card
             heading="Pilgrimage of the fourteen innocents"
             img={place1}
             para="A special and memorable experience of visiting the house of God and the holy graves of the Imams of Athar in Iraq and Arabia, the length of this special trip is 21 days, with accommodation in premium hotels with breakfast, lunch and dinner."
-            button="Register"
-          />
+            button="Register" to={"/transportation/register/pilgrimage-of-the-fourteen-innocents"}          />
           <Card
             heading="Hajj and Umrah journey"
             img={place2}
             para="Hajj pilgrimage for foreign pilgrims and Afghan pilgrims and separate Umrah journey with VIP services and first-class services for Afghan pilgrims and foreign pilgrims"
             button="Register"
+            to="/transportation/register/hajj-and-umrah"
           />
           <Card
             heading="Pilgrimage to the sacred shrines"
             img={place3}
             para="The duration of this pilgrimage tour is nine days, which takes place both by air and land. During this trip, there is a manager and a cleric or a madah with the respected pilgrims."
             button="Register"
+            to="/transportation/register/pilgrimage-to-the-sacred-shrines"
           />
         </div>
       </section>
@@ -144,6 +145,42 @@ function Transportation_Outlet() {
           experience.
         </p>
       </section>
+    </>
+  );
+}
+
+
+
+export function Card(_props: {
+  img: string;
+  heading: string;
+  para: string;
+  button: string;
+  to: string
+}) {
+  return (
+    <>
+      <div className="card w-80 border rounded-lg flex flex-col gap-6">
+        <img
+          src={_props.img}
+          className="w-80 rounded-tl-lg rounded-tr-lg"
+          alt="image"
+        />
+        <div className="px-4 relative pb-28">
+          <div>
+            <h1 className="text-2xl font-openSans mb-4">{_props.heading}</h1>
+            <p className="text-sm">{_props.para}</p>
+          </div>
+        <div className="mt-12 mb-8 absolute top-56">
+            <Link
+          to={_props.to}
+              className="border p-3 pr-6 pl-6 rounded  hover:bg-black-100"
+            >
+              {_props.button}
+            </Link>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
