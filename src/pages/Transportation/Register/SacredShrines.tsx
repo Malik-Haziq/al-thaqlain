@@ -76,7 +76,7 @@ export function SacredShrines() {
     <>
       <Header heading="Groups of nobles" img="headerBg" />
       <section>
-        <div className="grid gap-9 md:grid-cols-2 xl:grid-cols-3 ">
+        <div className="grid gap-9 xs:grid-cols-2 md:grid-cols-3 ">
           {ScaredShrinesData.map((data, i) => {
             return (
               <RegisterCard

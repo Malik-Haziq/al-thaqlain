@@ -32,7 +32,7 @@ export function FourteenInnocents() {
     <>
       <Header heading="fourteen innocents" img="headerBg" />
       <section>
-        <div className="grid gap-9 md:grid-cols-2 xl:grid-cols-3 ">
+        <div className="grid gap-9 xs:grid-cols-2 md:grid-cols-3 ">
           {FourteenInnocentsData.map((data, i) => {
             return (
               <RegisterCard

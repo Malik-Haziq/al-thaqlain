@@ -20,7 +20,7 @@ export function Syria() {
     <>
       <Header heading="Syrian groups" img="headerBg" />
       <section>
-        <div className="grid gap-9 md:grid-cols-2 xl:grid-cols-3 ">
+        <div className="grid gap-9 xs:grid-cols-2 md:grid-cols-3 ">
           {SyriaData.map((data, i) => {
             return (
               <RegisterCard
