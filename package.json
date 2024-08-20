@@ -16,7 +16,6 @@
     "overlay-image-gallery": "^1.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-flatpickr": "^3.10.13",
     "react-leaflet": "^4.2.1",
     "react-range": "^1.8.14",
     "react-router-dom": "^6.23.1"
