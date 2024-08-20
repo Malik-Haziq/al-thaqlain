@@ -141,7 +141,7 @@ function Details(_props: {
           <div>
             <a
               href="#"
-              className="bg-secondary-500 rounded font-semibold py-4 px-8 duration-200 hover:bg-secondary-600"
+              className="bg-secondary-200 rounded font-semibold py-4 px-8 duration-200 hover:bg-secondary-100"
             >
               Reserve your apartement stay
             </a>
@@ -163,7 +163,7 @@ function Details(_props: {
                   Exceptional
                 </h3>
                 <div className="flex gap-2 items-center">
-                  <p className="p-1 px-2 rounded bg-secondary-400 text-white-500">
+                  <p className="p-1 px-2 rounded bg-secondary-200 text-white-500">
                     {_props.rating}
                   </p>
                 </div>

@@ -170,7 +170,7 @@ export function Form(_props: { onModalOpen: () => void }) {
             Submit
           </button>
         </form>
-        <div className="basis-auto px-6 py-8 bg-secondary-600">
+        <div className="basis-auto px-6 py-8 bg-secondary-200">
           <h4 className="text-3xl mdx:text-4xl mb-9 font-medium uppercase">
             Contact Information
           </h4>

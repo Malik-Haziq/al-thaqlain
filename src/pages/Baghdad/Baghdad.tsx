@@ -9,7 +9,7 @@ export function Baghdad() {
       <Header heading="Baghdad" img="headerBg" />
       <Baghdad_Outlet />
       <section>
-        <h2 className="text-5xl text-center text-secondary-400 mb-32">
+        <h2 className="text-5xl text-center text-white-400 mb-32">
           Top Destination
         </h2>
         <Destination

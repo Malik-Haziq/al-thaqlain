@@ -16,13 +16,13 @@ function Outlet_Privacy() {
     <>
       <section className="px-16">
         <div className="mb-12">
-          <h2 className="text-secondary-400 text-2xl mb-12">
+          <h2 className="text-white-400 text-2xl mb-12">
             Privacy Policy for Al Thaqlain Travel & Tours
           </h2>
           <p className="text-white-200">Effective Date: 8-06-2024</p>
         </div>
         <div className="mb-8">
-          <h3 className="text-secondary-400 mb-8">1. Introduction:</h3>
+          <h3 className="text-white-400 mb-8">1. Introduction:</h3>
           <p>
             Al Thaqlain Travel & Tours is committed to protecting the privacy
             and confidentiality of individuals who visit our website and utilize
@@ -32,9 +32,7 @@ function Outlet_Privacy() {
           </p>
         </div>
         <div className="mb-8">
-          <h3 className="text-secondary-400 mb-8">
-            2. Information We Collect:
-          </h3>
+          <h3 className="text-white-400 mb-8">2. Information We Collect:</h3>
 
           <p className="mb-4">
             Personal Information: We may collect personal information such as
@@ -52,7 +50,7 @@ function Outlet_Privacy() {
           </p>
         </div>
         <div className="mb-8">
-          <h3 className="text-secondary-400 mb-8">3. Use of Information:</h3>
+          <h3 className="text-white-400 mb-8">3. Use of Information:</h3>
           <p className="text-white-200 mb-8">
             We may use the collected information for the following purposes:
           </p>
@@ -76,9 +74,7 @@ function Outlet_Privacy() {
           <li>To comply with legal obligations and regulations.</li>
         </div>
         <div className="mb-8">
-          <h3 className="text-secondary-400 mb-8">
-            4. Disclosure of Information:
-          </h3>
+          <h3 className="text-white-400 mb-8">4. Disclosure of Information:</h3>
           <p className="text-white-200 mb-8">
             We may disclose personal information under the following
             circumstances:
@@ -95,7 +91,7 @@ function Outlet_Privacy() {
           </p>
         </div>
         <div className="mb-8">
-          <h3 className="text-secondary-400 mb-8">5. Data Security:</h3>
+          <h3 className="text-white-400 mb-8">5. Data Security:</h3>
           <p className="mb-8">
             We implement appropriate technical and organizational measures to
             safeguard personal information against unauthorized access,
@@ -105,7 +101,7 @@ function Outlet_Privacy() {
           </p>
         </div>
         <div className="mb-8">
-          <h3 className="text-secondary-400 mb-8">6. Data Retention:</h3>
+          <h3 className="text-white-400 mb-8">6. Data Retention:</h3>
           <p className="mb-8">
             We will retain personal information for as long as necessary to
             fulfill the purposes outlined in this Privacy Policy, unless a
@@ -113,7 +109,7 @@ function Outlet_Privacy() {
           </p>
         </div>
         <div className="mb-8">
-          <h3 className="text-secondary-400 mb-8">7. Consent:</h3>
+          <h3 className="text-white-400 mb-8">7. Consent:</h3>
           <p className="mb-8">
             By using our website and submitting personal information to us,
             individuals consent to the collection, use, and disclosure of their
@@ -121,7 +117,7 @@ function Outlet_Privacy() {
           </p>
         </div>
         <div className="mb-8">
-          <h3 className="text-secondary-400 mb-8">
+          <h3 className="text-white-400 mb-8">
             8. Changes to the Privacy Policy:
           </h3>
           <p className="mb-8">
@@ -132,12 +128,12 @@ function Outlet_Privacy() {
           </p>
         </div>
         <div className="mb-8">
-          <h3 className="text-secondary-400 mb-8">9. Contact Us:</h3>
+          <h3 className="text-white-400 mb-8">9. Contact Us:</h3>
           <p className="mb-12">
             If you have any questions, concerns, or requests regarding this
             Privacy Policy or the handling of your personal information, please
             contact us at
-            <a href="info@althaqlain.com" className="text-secondary-400">
+            <a href="info@althaqlain.com" className="text-white-400">
               info@althaqlain.com
             </a>
           </p>
