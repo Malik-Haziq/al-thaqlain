@@ -6,17 +6,15 @@ export default {
     extend: {
       colors: {
         secondary: {
-          100: "#EE4540",
-          400: "#f40006",
-          500: "#f40006",
-          600: "#c10005",
+          100: "#ff5f5f",
+          200: "#ff4545",
         },
         black: {
           100: "#292929",
           200: "#161618",
           300: "#121212",
           400: "#0A0A0A",
-          500: "#141414",
+          500: "#1e1c1c",
           600: "#292929",
         },
         white: {
@@ -29,14 +27,14 @@ export default {
         },
         gray: {
           100: "#232323",
-          200: "#3D3D3D"
-        }
+          200: "#3D3D3D",
+        },
       },
       backgroundImage: {
         headerBg:
           "linear-gradient(rgba(1,1,1,.3), rgba(1,1,1,.3)), url('src/assets/contact/contact.webp')",
       },
-      
+
       screens: {
         xs: "520px",
         mdx: "870px",

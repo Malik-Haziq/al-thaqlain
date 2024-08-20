@@ -77,7 +77,7 @@ function Menu_Outlet() {
         Providing the best food deals of Green Meal
       </p>
       <section>
-        <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
+        <h2 className="text-secondary-100 text-center text-6xl mb-20 font-openSans font-bold">
           Deal-1
           <span className="font-medium text-white-100 text-5xl">($5)</span>
         </h2>
@@ -125,7 +125,7 @@ function Menu_Outlet() {
         </div>
       </section>
       <section>
-        <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
+        <h2 className="text-secondary-100 text-center text-6xl mb-20 font-openSans font-bold">
           Deal-2
           <span className="font-medium text-white-100 text-5xl">($7)</span>
         </h2>
@@ -172,7 +172,7 @@ function Menu_Outlet() {
         </div>
       </section>
       <section>
-        <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
+        <h2 className="text-secondary-100 text-center text-6xl mb-20 font-openSans font-bold">
           Deal-3
           <span className="font-medium text-white-100 text-5xl">($9)</span>
         </h2>
@@ -221,7 +221,7 @@ function Menu_Outlet() {
         </div>
       </section>
       <section>
-        <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
+        <h2 className="text-secondary-100 text-center text-6xl mb-20 font-openSans font-bold">
           Deal-4
           <span className="font-medium text-white-100 text-5xl">($10)</span>
         </h2>
@@ -270,7 +270,7 @@ function Menu_Outlet() {
         </div>
       </section>
       <section>
-        <h2 className="text-secondary-400 text-center text-6xl mb-20 font-openSans font-bold">
+        <h2 className="text-secondary-100 text-center text-6xl mb-20 font-openSans font-bold">
           OPEN BUFFET
           <span className="font-medium text-white-100 text-5xl">($18)</span>
         </h2>

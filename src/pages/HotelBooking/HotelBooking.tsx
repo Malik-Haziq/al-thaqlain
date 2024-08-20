@@ -294,7 +294,7 @@ const PriceRangePicker = (_props: {
           <div
             {...props}
             key={index}
-            className="w-6 h-6 bg-secondary-400 rounded-full flex justify-center items-center"
+            className="w-6 h-6 bg-secondary-200 rounded-full flex justify-center items-center"
           />
         )}
       />
@@ -403,8 +403,8 @@ function HotelCard(_props: {
             <div className="flex flex-col items-end">
               <p className="text-sm mb-2">{_props?.days}</p>
               <div className="flex gap-2  items-center mb-6">
-                <s className="text-secondary-400">
-                  <span className="text-sm text-secondary-400">
+                <s className="text-white-300">
+                  <span className="text-sm text-white-300">
                     {_props.price}&nbsp;PKR
                   </span>
                 </s>
