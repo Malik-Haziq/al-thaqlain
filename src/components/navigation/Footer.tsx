@@ -90,7 +90,7 @@ export function Footer() {
               © 2024. All right reserved. Al-Thaqlain Travel & Tours. Powered
               by&nbsp;
               <a
-                className="text-secondary-500 hover:border-b-[1px] border-secondary-500 duration-150"
+                className="text-white-500 hover:border-b-[1px] border-white-500 duration-150 font-medium"
                 href="https://codewithnaqvi.com"
               >
                 CodeWithNaqvi

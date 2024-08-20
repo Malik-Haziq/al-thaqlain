@@ -13,7 +13,6 @@ import sa from "../../assets/about/sa.webp";
 import about from "../../assets/about/about.webp";
 
 export function About() {
-
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModalOpen = () => {
@@ -24,7 +23,7 @@ export function About() {
     <>
       <Header heading="About Us" img="headerBg" />
       <Outlet_About />
-      <Form onModalOpen={handleModalOpen}/>
+      <Form onModalOpen={handleModalOpen} />
       {isModalOpen && (
         <Module
           heading="Thanks for Submitted form."
@@ -95,34 +94,32 @@ function Outlet_About() {
           <div className="border flex justify-center flex-col items-center py-10 px-5 text-center">
             <img src={hamad} alt="hamad" className="w-36 rounded-full mb-8" />
             <h3 className="text-2xl">Hamid Al-Abadi</h3>
-            <p className="text-secondary-400 tracking-wide">FOUNDER</p>
+            <p className="text-white-200 tracking-wide">FOUNDER</p>
           </div>
           <div className="border flex justify-center flex-col items-center py-10 px-5 text-center">
             <img src={khuram} alt="khuram" className="w-36 rounded-full mb-8" />
             <h3 className="text-2xl">Syed Khuram Abbas</h3>
-            <p className="text-secondary-400">CEO Pakistan Office</p>
+            <p className="text-white-200">CEO Pakistan Office</p>
           </div>
           <div className="border flex justify-center flex-col items-center py-10 px-5 text-center">
             <img src={safdar} alt="safdar" className="w-36 rounded-full mb-8" />
             <h3 className="text-2xl text-center">Safdar Abbas Al-Sabqi</h3>
-            <p className="text-secondary-400">CEO Head Office</p>
+            <p className="text-white-200">CEO Head Office</p>
           </div>
           <div className="border flex justify-center flex-col items-center py-10 px-5 text-center">
             <img src={muslim} alt="muslim" className="w-36 rounded-full mb-8" />
             <h3 className="text-2xl">MUSLIM AL-SHAMARI</h3>
-            <p className="text-secondary-400">
-              Representative of Najaf Airport
-            </p>
+            <p className="text-white-200">Representative of Najaf Airport</p>
           </div>
           <div className="border flex justify-center flex-col items-center py-10 px-5 text-center">
             <img src={sa} alt="sa" className="w-36 rounded-full mb-8" />
             <h3 className="text-2xl">SALEH MAHDI MUHAMMAD</h3>
-            <p className="text-secondary-400">G MANAGER</p>
+            <p className="text-white-200">G MANAGER</p>
           </div>
           <div className="border flex justify-center flex-col items-center py-10 px-5 text-center">
             <img src={numan} alt="numan" className="w-36 rounded-full mb-8 " />
             <h3 className="text-2xl">SYED NUMAN AL-FAHAM</h3>
-            <p className="text-secondary-400">Syria Operations</p>
+            <p className="text-white-200">Syria Operations</p>
           </div>
         </div>
       </section>

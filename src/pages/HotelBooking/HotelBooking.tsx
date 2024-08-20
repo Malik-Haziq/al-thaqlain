@@ -10,6 +10,7 @@ import { Range, getTrackBackground } from "react-range";
 import location from "../../assets/hotels/icons/location.png";
 import bed from "../../assets/hotels/icons/bed.svg";
 import person from "../../assets/hotels/icons/person.svg";
+import chevron from "../../assets/hotels/icons/chevron.svg";
 import { Link } from "react-router-dom";
 
 const MIN = 0;
@@ -64,7 +65,7 @@ export function HotelBooking() {
   return (
     <>
       <Header heading="Hotels" img={"headerBg"} />
-      <section className="bg-secondary-600">
+      <section className="bg-black-100">
         <form
           action="#"
           className="flex justify-between items-center gap-3 flex-wrap"
@@ -280,7 +281,7 @@ const PriceRangePicker = (_props: {
             style={{
               background: getTrackBackground({
                 values,
-                colors: ["#ccc", "#CCA700", "#ccc"],
+                colors: ["#ccc", "#c10005", "#ccc"],
                 min: MIN,
                 max: MAX,
               }),
@@ -365,7 +366,7 @@ function HotelCard(_props: {
                 {_props.heading}
               </h2>
               <p className="mb-3">{_props.location}</p>
-              <p className="bg-secondary-600 py-1 px-2 font-semibold text-sm w-fit">
+              <p className="bg-secondary-100 py-1 px-2 font-semibold text-sm w-fit">
                 {_props.button}
               </p>
             </div>
@@ -374,7 +375,7 @@ function HotelCard(_props: {
                 <p className="text-white-400">{ratingText}</p>
                 <p className="text-sm text-white-200">{_props.review}</p>
               </div>
-              <div className="p-2 text-xl rounded bg-secondary-500 text-white-500">
+              <div className="p-2 text-xl rounded bg-secondary-100 text-white-500">
                 {_props.rating}
               </div>
             </div>
@@ -382,18 +383,18 @@ function HotelCard(_props: {
           <div className="flex justify-between mb-4">
             <div>
               <ul className="grid grid-cols-2 gap-3">
-                <li className="text-sm text-secondary-100">
+                <li className="text-sm text-white-200">
                   {_props?.bed}&nbsp;{_props.bed > 0 ? "bedrooms" : "bedroom"}
                 </li>
-                <li className="text-sm text-secondary-100">
+                <li className="text-sm text-white-200">
                   {_props?.kitchen}&nbsp;
                   {_props.kitchen > 0 ? "kitchens" : "kitchen"}
                 </li>
-                <li className="text-sm text-secondary-100">
+                <li className="text-sm text-white-200">
                   {_props?.livingRoom}&nbsp;
                   {_props.livingRoom > 0 ? "living rooms" : "living room"}
                 </li>
-                <li className="text-sm text-secondary-100">
+                <li className="text-sm text-white-200">
                   {_props?.bathroom}&nbsp;
                   {_props.bathroom > 0 ? "bathrooms" : "bathroom"}
                 </li>
@@ -402,20 +403,21 @@ function HotelCard(_props: {
             <div className="flex flex-col items-end">
               <p className="text-sm mb-2">{_props?.days}</p>
               <div className="flex gap-2  items-center mb-6">
-                <s className="text-red-700">
-                  <span className="text-sm text-red-700">
+                <s className="text-secondary-400">
+                  <span className="text-sm text-secondary-400">
                     {_props.price}&nbsp;PKR
                   </span>
                 </s>
-                <p className=" text-white-500 text-2xl">
+                <p className=" text-white-500 text-2xl font-medium">
                   {_props.discountedPrice}&nbsp;PKR
                 </p>
               </div>
               <Link
                 to={`/hotel/${_props.id}`}
-                className="bg-secondary-400 p-2 px-4 font-semibold"
+                className="text-white-400 hover:text-black-400 hover:bg-white-500 border-2 border-white-500 focus:outline-none duration-200 text-lg p-2 px-4 font-semibold flex items-center justify-center gap-1"
               >
-                {_props.avalibltyButton}
+                <span>{_props.avalibltyButton}</span>
+                <img src={chevron} alt="chevron right" className="w-5" />
               </Link>
             </div>
           </div>

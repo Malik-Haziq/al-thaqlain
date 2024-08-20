@@ -19,9 +19,7 @@ export function Transportation() {
       <Header heading="Transportation" img="headerBg" />
       <Transportation_Outlet />
       <section>
-        <h2 className="text-5xl text-secondary-400 text-center mb-28">
-          Register
-        </h2>
+        <h2 className="text-5xl text-white-400 text-center mb-28">Register</h2>
         <div className="flex gap-4">
           <Card
             heading="Syria trip"

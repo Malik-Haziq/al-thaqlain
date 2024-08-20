@@ -94,7 +94,7 @@ function Visa_Card(_props: { heading: string; para: string }) {
   return (
     <>
       <div className="border py-8 px-6 text-center">
-        <h3 className="text-4xl mb-8 text-secondary-400">{_props.heading}</h3>
+        <h3 className="text-4xl mb-8 text-white-500">{_props.heading}</h3>
         <p className="text-base text-white-400">{_props.para}</p>
       </div>
     </>
@@ -104,9 +104,9 @@ function Visa_Card(_props: { heading: string; para: string }) {
 function Visa_Info() {
   return (
     <>
-      <section className="flex flex-col md:flex-row items-stretch justify-between gap-8">
+      <section className="text-white-300 flex flex-col md:flex-row items-stretch justify-between gap-8">
         <div className="bg-black-100 flex flex-col items-center justify-center text-center py-8 px-6 basis-1/2">
-          <h2 className="text-secondary-400 text-4xl mb-8">Multi Visa</h2>
+          <h2 className="text-white-500 text-4xl mb-8">Multi Visa</h2>
           <p className="leading-normal text-lg">
             This Visa is granted for a period of three months, six months, or
             one year after obtaining the legal conditions. <br />
@@ -116,7 +116,7 @@ function Visa_Info() {
           </p>
         </div>
         <div className="bg-black-100 flex flex-col text-center py-8 px-6 basis-1/2">
-          <h2 className="text-secondary-400 text-4xl mb-8">
+          <h2 className="text-white-500 text-4xl mb-8">
             Visa fee for Zairean Groups
           </h2>
           <p className="leading-normal text-lg">
@@ -127,10 +127,10 @@ function Visa_Info() {
       </section>
       <section className="flex gap-16 lg:items-center justify-between flex-col lg:flex-row">
         <div className="basis-3/5 text-lg text-white-300">
-          <h2 className="text-4xl mb-12 text-secondary-400">
+          <h2 className="text-4xl mb-12 text-white-500">
             Requirements of the Visa request
           </h2>
-          <p className="mb-4 text-white-100">
+          <p className="mb-4 text-white-200">
             The following conditions must be available in the Visa request:
           </p>
           <p className="mb-2">
@@ -172,7 +172,7 @@ function Visa_Info() {
         </div>
       </section>
       <section className="text-lg text-white-400">
-        <h2 className="text-4xl mb-12 text-secondary-400">INSTRUCTIONS</h2>
+        <h2 className="text-4xl mb-12 text-white-500">INSTRUCTIONS</h2>
         <p className="mb-4">
           1. When the presence of banned to enter the territory of the Republic
           of Iraq for the cause of public health, national security, morals, or
