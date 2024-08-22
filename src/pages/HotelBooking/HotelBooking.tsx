@@ -3,13 +3,10 @@ import type { Hotel } from "../../types";
 import axios from "axios";
 import { Header } from "../../components/header";
 import { places, quantities } from "../../data";
-import Flatpickr from "react-flatpickr";
-import "flatpickr/dist/themes/material_green.css";
 import { Range, getTrackBackground } from "react-range";
 
 import location from "../../assets/hotels/icons/location.png";
 import bed from "../../assets/hotels/icons/bed.svg";
-import person from "../../assets/hotels/icons/person.svg";
 import chevron from "../../assets/hotels/icons/chevron.svg";
 import { Link } from "react-router-dom";
 
@@ -41,11 +38,8 @@ const initialState: Hotel[] = [
 ];
 
 export function HotelBooking() {
-  const [place, setPlace] = useState("");
-  const [adults, setAdults] = useState("");
-  const [children, setChildren] = useState("");
-  const [rooms, setRooms] = useState("");
-  const [dates, setDates] = useState<Date[]>([]);
+  const [place, setPlace] = useState<string>("karbala");
+  const [rooms, setRooms] = useState<string>("1");
   const [data, setData] = useState<Hotel[]>(initialState);
   const [priceRange, setPriceRange] = useState<number[]>([50, 10000]);
 
@@ -62,13 +56,37 @@ export function HotelBooking() {
       });
   }, []);
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const params = new URLSearchParams();
+    params.append("q[city_cont]", place);
+    // params.append("q[living_room_eq]", rooms);
+
+    try {
+      axios
+        .get(
+          `https://althaqlain-backend-90833a98168c.herokuapp.com/api/hotels?${params.toString()}`
+        )
+        .then((response) => {
+          setData(response.data);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
   return (
     <>
       <Header heading="Hotels" img={"headerBg"} />
-      <section className="bg-black-100">
+      <section className="mb-10 -mt-24">
         <form
-          action="#"
-          className="flex justify-between items-center gap-3 flex-wrap"
+          onSubmit={handleSubmit}
+          action="submit"
+          className="flex justify-center items-end gap-3 flex-wrap px-10 py-8 w-fit mb-14 bg-black-100"
         >
           <div className="flex flex-col gap-2 ">
             <span className="font-medium text-lg">Where you're going?</span>
@@ -92,60 +110,6 @@ export function HotelBooking() {
               </select>
               <img
                 src={location}
-                alt="bed icon"
-                className="absolute top-1/2 w-6 left-4 -translate-y-1/2"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col gap-2 ">
-            <span className="font-medium text-lg">Adults</span>
-            <div className="relative">
-              <select
-                name="adults"
-                id="adults"
-                value={adults}
-                onChange={(e) => setAdults(e.target.value)}
-                className="text-black-100 w-32 p-3 pl-14 basis-auto border-none outline-none cursor-pointer"
-              >
-                {quantities.map((person, i) => (
-                  <option
-                    value={person.value}
-                    className="p-2 text-black-100 hover:bg-white-300"
-                    key={i}
-                  >
-                    {person.quantity}
-                  </option>
-                ))}
-              </select>
-              <img
-                src={person}
-                alt="bed icon"
-                className="absolute top-1/2 w-6 left-4 -translate-y-1/2"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col gap-2 ">
-            <span className="font-medium text-lg">Children</span>
-            <div className="relative">
-              <select
-                name="children"
-                id="children"
-                value={children}
-                onChange={(e) => setChildren(e.target.value)}
-                className="text-black-100 w-32 p-3 pl-14 basis-auto border-none outline-none cursor-pointer"
-              >
-                {quantities.map((person, i) => (
-                  <option
-                    value={person.value}
-                    className="p-2 text-black-100 hover:bg-white-300"
-                    key={i}
-                  >
-                    {person.quantity}
-                  </option>
-                ))}
-              </select>
-              <img
-                src={person}
                 alt="bed icon"
                 className="absolute top-1/2 w-6 left-4 -translate-y-1/2"
               />
@@ -178,83 +142,66 @@ export function HotelBooking() {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <span className="font-medium text-lg">Enter your stay time</span>
-            <div className="flex justify-between items-center gap-5">
-              <Flatpickr
-                value={dates}
-                onChange={(selectedDates: Date[]) => setDates(selectedDates)}
-                options={{
-                  mode: "range",
-                  altInput: true,
-                  altFormat: "F j, Y",
-                  dateFormat: "Y-m-d",
-                  minDate: "today",
-                }}
-                className="p-3 border border-gray-300 w-full text-black-100"
-                placeholder="Check in - Check out"
-              />
-              <button
-                type="submit"
-                className="text-black-400 bg-white-400 hover:bg-white-500 focus:border-black-100 focus:outline-none font-medium px-4 py-3 text-center w-fit duration-200 font-openSans"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
+          <button
+            type="submit"
+            className="text-black-400 bg-white-400 hover:bg-white-500 focus:border-black-100 focus:outline-none font-medium px-4 py-3 text-center w-fit duration-200 font-openSans"
+          >
+            Search
+          </button>
         </form>
-      </section>
-      <section className="flex gap-3 min-w-[1150px]">
-        <div className="basis-1/4 bg-black-600 h-fit">
-          <div className="">
-            <div className="border-b-[1px] border-white-100 p-4">
-              <h2 className=" text-white-500 text-2xl font-openSans">
-                Filter by :
-              </h2>
-            </div>
-            <div className="p-4">
-              <h2 className="text-lg font-openSans mb-4">
-                Your budget (per night)
-              </h2>
-              <PriceRangePicker
-                priceRange={priceRange}
-                setPriceRange={setPriceRange}
-              />
+        <div className="flex gap-3 min-w-[1150px]">
+          <div className="basis-1/4 bg-black-600 h-fit">
+            <div className="">
+              <div className="border-b-[1px] border-white-100 p-4">
+                <h2 className=" text-white-500 text-2xl font-openSans">
+                  Filter by :
+                </h2>
+              </div>
+              <div className="p-4">
+                <h2 className="text-lg font-openSans mb-4">
+                  Your budget (per night)
+                </h2>
+                <PriceRangePicker
+                  priceRange={priceRange}
+                  setPriceRange={setPriceRange}
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="basis-3/4">
-          {data.map(
-            (hotel) =>
-              hotel.discounted_price >= priceRange[0] &&
-              hotel.discounted_price <= priceRange[1] && (
-                <HotelCard
-                  id={hotel.id}
-                  img={`https://althaqlain-backend-90833a98168c.herokuapp.com/${hotel.base_image_url}`}
-                  heading={hotel.name}
-                  location={`${hotel.city} ${hotel.state}, ${hotel.country}`}
-                  ratingtext={"lajksfd"}
-                  rating={hotel.rating}
-                  review="151 reviews"
-                  button="Limited-time Deal"
-                  subheading="Deluxe Double Room"
-                  description={`fjaslk`}
-                  span="Breakfast included"
-                  days="30 nights, 2 adults"
-                  price={hotel?.price?.toString()}
-                  discountedPrice={hotel?.discounted_price}
-                  tax="+€ 103 taxes and charges"
-                  avalibltyButton="See Avaliblty"
-                  bed={hotel.bed}
-                  livingRoom={hotel.living_room}
-                  kitchen={hotel.kitchen}
-                  bathroom={hotel.bathroom}
-                  key={hotel.id}
-                  disprice={""}
-                  reservedRoom={0}
-                />
-              )
-          )}
+          <div className="basis-3/4">
+            {data.map(
+              (hotel) =>
+                hotel.discounted_price >= priceRange[0] &&
+                hotel.discounted_price <= priceRange[1] &&
+                hotel.living_room >= Number(rooms) && (
+                  <HotelCard
+                    id={hotel.id}
+                    img={`https://althaqlain-backend-90833a98168c.herokuapp.com/${hotel.base_image_url}`}
+                    heading={hotel.name}
+                    location={`${hotel.city} ${hotel.state}, ${hotel.country}`}
+                    ratingtext={"lajksfd"}
+                    rating={hotel.rating}
+                    review="151 reviews"
+                    button="Limited-time Deal"
+                    subheading="Deluxe Double Room"
+                    description={`fjaslk`}
+                    span="Breakfast included"
+                    days="30 nights, 2 adults"
+                    price={hotel?.price?.toString()}
+                    discountedPrice={hotel?.discounted_price}
+                    tax="+€ 103 taxes and charges"
+                    avalibltyButton="See Avaliblty"
+                    bed={hotel.bed}
+                    livingRoom={hotel.living_room}
+                    kitchen={hotel.kitchen}
+                    bathroom={hotel.bathroom}
+                    key={hotel.id}
+                    disprice={""}
+                    reservedRoom={0}
+                  />
+                )
+            )}
+          </div>
         </div>
       </section>
     </>
