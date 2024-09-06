@@ -17,6 +17,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import { Hotel } from "../../types";
 import { ImageGallery } from "overlay-image-gallery";
+import { Loader } from "../../components/Loader";
 
 export function HotelDetails() {
   const { id } = useParams<{ id: string }>();
@@ -44,7 +45,7 @@ export function HotelDetails() {
   }, [id]);
 
   if (!hotel) {
-    return <div className="container mx-auto p-4">Loading...</div>;
+    return <Loader />;
   }
 
   return (

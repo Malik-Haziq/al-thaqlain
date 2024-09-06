@@ -9,6 +9,7 @@ import location from "../../assets/hotels/icons/location.png";
 import bed from "../../assets/hotels/icons/bed.svg";
 import chevron from "../../assets/hotels/icons/chevron.svg";
 import { Link } from "react-router-dom";
+import { Loader } from "../../components/Loader";
 
 const MIN = 0;
 const MAX = 50000;
@@ -201,6 +202,7 @@ export function HotelBooking() {
                   />
                 )
             )}
+            {data.length === 1 && <Loader />}
           </div>
         </div>
       </section>
