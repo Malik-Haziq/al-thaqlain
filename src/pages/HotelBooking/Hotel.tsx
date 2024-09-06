@@ -49,40 +49,7 @@ export function HotelDetails() {
 
   return (
     <>
-      <section>
-        {/* Nav bar */}
-        <div className="mb-12 border-b-[1px] py-3">
-          <a
-            href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
-          >
-            Overview
-          </a>
-          <a
-            href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
-          >
-            Apartment info & price
-          </a>
-          <a
-            href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
-          >
-            Facilities
-          </a>
-          <a
-            href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
-          >
-            The fine print
-          </a>
-          <a
-            href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
-          >
-            Guest reviews
-          </a>
-        </div>
+      <section className="pt-12">
         {/* Hotel details*/}
         <Details
           name={hotel?.name}
@@ -147,7 +114,7 @@ function Details(_props: {
             </a>
           </div>
         </div>
-        <div className="flex gap-3 cursor-point mb-8">
+        <div className="flex justify-between gap-3 cursor-point mb-8">
           <div className="basis-3/4">
             <ImageGallery
               images={_props.gallery}
@@ -229,7 +196,7 @@ function Map(_props: { hotelName: string; lat: number; long: number }) {
     <MapContainer
       center={position}
       zoom={13}
-      style={{ height: "288px", width: "100%" }}
+      style={{ height: "288px", width: "100%", zIndex: 1 }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

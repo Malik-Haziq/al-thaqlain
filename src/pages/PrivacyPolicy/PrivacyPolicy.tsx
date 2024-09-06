@@ -1,5 +1,5 @@
-import { Header } from "../../components/header";
-import { Join } from "../../components/join";
+import { Header } from "../../components/Header";
+import { Join } from "../../components/Join";
 
 export function PrivacyPolicy() {
   return (

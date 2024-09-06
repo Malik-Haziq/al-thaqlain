@@ -1,4 +1,4 @@
-import { Header } from "../../../components/header";
+import { Header } from "../../../components/Header";
 import syra from "../../../assets/Transportation/register/syra.webp";
 import { RegisterCard } from "../../../components/Rigester_card";
 

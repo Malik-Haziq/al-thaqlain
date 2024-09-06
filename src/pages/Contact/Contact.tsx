@@ -1,12 +1,10 @@
-import { Header } from "../../components/header";
-import { Form } from "../../components/form";
-import { Join } from "../../components/join";
+import { Header } from "../../components/Header";
+import { Form } from "../../components/Form";
+import { Join } from "../../components/Join";
 import { Module } from "../../components/Module";
 import { useState } from "react";
 
-
 export function Contact() {
-
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModalOpen = () => {
@@ -16,7 +14,7 @@ export function Contact() {
   return (
     <>
       <Header heading="Get In Touch" img="contactBg" />
-      <Form onModalOpen={handleModalOpen}/>
+      <Form onModalOpen={handleModalOpen} />
       {isModalOpen && (
         <Module
           heading="Thanks for Submitting form."

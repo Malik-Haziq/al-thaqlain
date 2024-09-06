@@ -1,4 +1,4 @@
-import { Header } from "../../components/header";
+import { Header } from "../../components/Header";
 import { CTA } from "../../components/CTA";
 import visa from "../../assets/visa/visa.webp";
 import visaapl from "../../assets/visa/visa-apl.webp";

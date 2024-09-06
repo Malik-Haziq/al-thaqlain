@@ -1,7 +1,7 @@
 import { useState, useEffect, SetStateAction, Dispatch } from "react";
 import type { Hotel } from "../../types";
 import axios from "axios";
-import { Header } from "../../components/header";
+import { Header } from "../../components/Header";
 import { places, quantities } from "../../data";
 import { Range, getTrackBackground } from "react-range";
 

@@ -1,4 +1,4 @@
-import { Header } from "../../../components/header";
+import { Header } from "../../../components/Header";
 import noble1 from "../../../assets/Transportation/register/noble_1.webp";
 import noble2 from "../../../assets/Transportation/register/noble_2.webp";
 import noble3 from "../../../assets/Transportation/register/noble_3.webp";
