@@ -1,5 +1,5 @@
-import { Header } from "../../components/header";
-import { Destination } from "../../components/destination";
+import { Header } from "../../components/Header";
+import { Destination } from "../../components/Destination";
 import { CTA } from "../../components/CTA";
 import { History } from "../../components/History";
 

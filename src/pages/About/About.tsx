@@ -1,6 +1,6 @@
-import { Header } from "../../components/header";
+import { Header } from "../../components/Header";
 import { CTA } from "../../components/CTA";
-import { Form } from "../../components/form";
+import { Form } from "../../components/Form";
 import { Module } from "../../components/Module";
 import { useState } from "react";
 
@@ -21,7 +21,7 @@ export function About() {
 
   return (
     <>
-      <Header heading="About Us" img="headerBg" />
+      <Header heading="About Us" img="../../assets/about/about.webp" />
       <Outlet_About />
       <Form onModalOpen={handleModalOpen} />
       {isModalOpen && (

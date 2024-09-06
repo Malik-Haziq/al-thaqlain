@@ -1,4 +1,4 @@
-import { Header } from "../../components/header";
+import { Header } from "../../components/Header";
 import { CTA } from "../../components/CTA";
 import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";

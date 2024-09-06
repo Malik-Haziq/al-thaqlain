@@ -1,4 +1,4 @@
-import { Header } from "../../../components/header";
+import { Header } from "../../../components/Header";
 import hajj1 from "../../../assets/Transportation/register/umrah-min.webp";
 import hajj2 from "../../../assets/Transportation/register/umrah_2.webp";
 import hajj3 from "../../../assets/Transportation/register/umrah_3.webp";

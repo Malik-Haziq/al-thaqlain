@@ -1,7 +1,7 @@
 import { Button } from "../../components/Button";
 import { CTA } from "../../components/CTA";
-import { Form } from "../../components/form";
-import { Join } from "../../components/join";
+import { Form } from "../../components/Form";
+import { Join } from "../../components/Join";
 import { Module } from "../../components/Module";
 
 import { Link } from "react-router-dom";
@@ -36,7 +36,7 @@ export function Home() {
     { href: "/najaf", placeName: "najaf", img: najaf },
     { href: "/kufa", placeName: "kufa", img: kufa },
     { href: "/basra", placeName: "basra", img: basra },
-    { href: "/krbla", placeName: "karbla", img: krbla },
+    { href: "/karbala", placeName: "karbla", img: krbla },
     { href: "/hillah", placeName: "hillah", img: hillah },
     { href: "/samara", placeName: "samara", img: samara },
     { href: "/kazmia", placeName: "kazmia", img: kazmia },

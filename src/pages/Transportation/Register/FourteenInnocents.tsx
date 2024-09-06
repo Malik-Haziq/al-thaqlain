@@ -1,4 +1,4 @@
-import { Header } from "../../../components/header";
+import { Header } from "../../../components/Header";
 import fourteen1 from "../../../assets/Transportation/register/fourteen_1-min.png";
 import fourteen2 from "../../../assets/Transportation/register/fourteen_2.webp";
 import { RegisterCard } from "../../../components/Rigester_card";
