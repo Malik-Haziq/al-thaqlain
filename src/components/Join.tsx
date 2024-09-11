@@ -1,32 +1,21 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Module } from "./Module";
 
 export function Join() {
   const [email, setEmail] = useState<string>("");
   const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    console.log(isLoading);
-  }, [isLoading]);
-
-  useEffect(() => {
-    if (error || success) {
-      const timer = setTimeout(() => {
-        setError(null);
-        setSuccess(null);
-      }, 3000);
-
-      return () => clearTimeout(timer);
-    }
-  }, [error, success]);
+  const handleModalOpen = () => {
+    setIsModalOpen(!isModalOpen);
+  };
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
     setError(null);
-    setSuccess(null);
     setEmail("");
     setIsLoading(true);
 
@@ -35,8 +24,6 @@ export function Join() {
         "https://althaqlain-backend-90833a98168c.herokuapp.com/api/subscribe",
         { name: "test", email: email }
       );
-
-      setSuccess("Successfully subscribed!");
     } catch (error: any) {
       if (error.response) {
         setError(error.response.data.message || "Failed to subscribe.");
@@ -45,6 +32,7 @@ export function Join() {
       }
     } finally {
       setIsLoading(false);
+      setIsModalOpen(true);
     }
   }
 
@@ -78,8 +66,21 @@ export function Join() {
             Submit
           </button>
         </form>
-        {error && <p className="text-white-500 mt-4">{error}</p>}
-        {success && <p className="text-white-500 mt-4">{success}</p>}
+
+        {isModalOpen && (
+          <Module
+            heading={
+              error ? "Please Try again" : "Thanks for joining our newsletter."
+            }
+            para={
+              error ||
+              "You'll receive updates on the latest blog posts, news, and exclusive content."
+            }
+            button="Close"
+            onModalOpen={handleModalOpen}
+            isModalOpen={isModalOpen}
+          />
+        )}
       </section>
     </div>
   );
