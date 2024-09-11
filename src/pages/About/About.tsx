@@ -1,8 +1,6 @@
 import { Header } from "../../components/Header";
 import { CTA } from "../../components/CTA";
 import { Form } from "../../components/Form";
-import { Module } from "../../components/Module";
-import { useState } from "react";
 
 import khuram from "../../assets/about/Khuram.webp";
 import muslim from "../../assets/about/muslim.webp";

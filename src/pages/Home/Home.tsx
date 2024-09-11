@@ -2,7 +2,6 @@ import { Button } from "../../components/Button";
 import { CTA } from "../../components/CTA";
 import { Form } from "../../components/Form";
 import { Join } from "../../components/Join";
-import { Module } from "../../components/Module";
 
 import { Link } from "react-router-dom";
 
@@ -23,7 +22,6 @@ import ziyarat from "../../assets/services/ziyarat.webp";
 import insurance from "../../assets/services/insurance.webp";
 import airline from "../../assets/services/airline.webp";
 import customerSupport from "../../assets/services/customer-support.webp";
-import { useState } from "react";
 
 export function Home() {
   const destinations = [
