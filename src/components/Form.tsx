@@ -1,31 +1,26 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import location from "../assets/contact/location.svg";
 import phone from "../assets/contact/phone.svg";
+import { FormData } from "../types";
+import { Module } from "./Module";
+import axios from "axios";
 
-interface FormData {
-  fullName: string;
-  email: string;
-  message: string;
-}
+const initialState: FormData = {
+  full_name: "",
+  email: "",
+  message: "",
+};
 
-interface FormErrors {
-  fullName: string;
-  email: string;
-  message: string;
-}
+export function Form() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState(initialState);
+  const [errors, setErrors] = useState(initialState);
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
-export function Form(_props: { onModalOpen: () => void }) {
-  const [formData, setFormData] = useState<FormData>({
-    fullName: "",
-    email: "",
-    message: "",
-  });
-
-  const [errors, setErrors] = useState<FormErrors>({
-    fullName: "",
-    email: "",
-    message: "",
-  });
+  const handleModalOpen = () => {
+    setIsModalOpen(!isModalOpen);
+  };
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -36,14 +31,14 @@ export function Form(_props: { onModalOpen: () => void }) {
 
   const validateForm = (): boolean => {
     let valid = true;
-    const newErrors: FormErrors = {
-      fullName: "",
+    const newErrors: FormData = {
+      full_name: "",
       email: "",
       message: "",
     };
 
-    if (!formData.fullName.trim()) {
-      newErrors.fullName = "Please enter your full name";
+    if (!formData.full_name.trim()) {
+      newErrors.full_name = "Please enter your full name";
       valid = false;
     }
 
@@ -64,22 +59,37 @@ export function Form(_props: { onModalOpen: () => void }) {
     return valid;
   };
 
+  async function submitData() {
+    setIsLoading(true);
+
+    try {
+      await axios.post(
+        "https://althaqlain-backend-90833a98168c.herokuapp.com/api/contact",
+        {
+          contact: {
+            formData,
+          },
+        }
+      );
+    } catch (error: any) {
+      if (error.response) {
+        setSubmitError(error.response.data.message || "Failed to subscribe.");
+      } else {
+        setSubmitError("An error occurred. Please try again later.");
+      }
+    } finally {
+      setIsLoading(false);
+      handleModalOpen();
+    }
+  }
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (validateForm()) {
-      _props.onModalOpen();
-
-      setFormData({
-        fullName: "",
-        email: "",
-        message: "",
-      });
-      setErrors({
-        fullName: "",
-        email: "",
-        message: "",
-      });
+      submitData();
+      setFormData(initialState);
+      setErrors(initialState);
     }
   };
 
@@ -99,22 +109,21 @@ export function Form(_props: { onModalOpen: () => void }) {
               <span className="text-lg">Full Name</span>
               <input
                 type="text"
-                name="fullName"
-                value={formData.fullName}
+                name="full_name"
+                value={formData.full_name}
                 onChange={handleChange}
                 placeholder="John"
                 className={`p-3 outline-none rounded-none border-2 ${
-                  errors.fullName ? "border-red-500" : "border-white-100"
+                  errors.full_name ? "border-red-500" : "border-white-100"
                 } bg-black-500 focus:border-white-300`}
               />
-              {errors.fullName && (
-                <span className="text-red-500 text-sm">{errors.fullName}</span>
+              {errors.full_name && (
+                <span className="text-red-500 text-sm">{errors.full_name}</span>
               )}
             </label>
             <label className="flex flex-col gap-2 mdx:basis-1/2">
               <span>Email</span>
               <input
-                type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
@@ -149,6 +158,7 @@ export function Form(_props: { onModalOpen: () => void }) {
           </div>
           <button
             type="submit"
+            disabled={isLoading}
             className="
               text-black-400
               bg-white-400
@@ -220,6 +230,21 @@ export function Form(_props: { onModalOpen: () => void }) {
           </div>
         </div>
       </section>
+
+      {isModalOpen && (
+        <Module
+          heading={
+            submitError ? "Please try again" : "Thanks for Submitting form."
+          }
+          para={
+            submitError ||
+            "Your form has been submitted. We will get back to you as soon as possible."
+          }
+          button="Close"
+          onModalOpen={handleModalOpen}
+          isModalOpen={isModalOpen}
+        />
+      )}
     </>
   );
 }
