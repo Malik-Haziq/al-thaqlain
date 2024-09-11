@@ -26,12 +26,6 @@ import customerSupport from "../../assets/services/customer-support.webp";
 import { useState } from "react";
 
 export function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleModalOpen = () => {
-    setIsModalOpen(!isModalOpen);
-  };
-
   const destinations = [
     { href: "/najaf", placeName: "najaf", img: najaf },
     { href: "/kufa", placeName: "kufa", img: kufa },
@@ -174,16 +168,7 @@ export function Home() {
         </section>
       </div>
       <Join />
-      <Form onModalOpen={handleModalOpen} />
-      {isModalOpen && (
-        <Module
-          heading="Thanks for Submitting form."
-          para="Your form has been submitted. We will get back to you as soon as posible."
-          button="Close"
-          onModalOpen={handleModalOpen}
-          isModalOpen={isModalOpen}
-        />
-      )}
+      <Form />
     </>
   );
 }

@@ -13,26 +13,11 @@ import sa from "../../assets/about/sa.webp";
 import about from "../../assets/about/about.webp";
 
 export function About() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleModalOpen = () => {
-    setIsModalOpen(!isModalOpen);
-  };
-
   return (
     <>
       <Header heading="About Us" img="../../assets/about/about.webp" />
       <Outlet_About />
-      <Form onModalOpen={handleModalOpen} />
-      {isModalOpen && (
-        <Module
-          heading="Thanks for Submitted form."
-          para="Your form has been submitted. We will get back to you as soon as possible."
-          button="Close"
-          onModalOpen={handleModalOpen}
-          isModalOpen={isModalOpen}
-        />
-      )}
+      <Form />
     </>
   );
 }
