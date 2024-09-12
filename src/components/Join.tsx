@@ -32,7 +32,7 @@ export function Join() {
       }
     } finally {
       setIsLoading(false);
-      setIsModalOpen(true);
+      handleModalOpen();
     }
   }
 
