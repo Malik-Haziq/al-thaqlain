@@ -29,3 +29,13 @@ export interface Hotel {
     reservedRoom: number;
     description: string
   }
+
+  export interface RegisterFormData {
+    name: string,
+    lastName: string,
+    passportNumber: string,
+    phoneNumber: number,
+    passportImage: string,
+    personalImage: string,
+    termAndConditions: boolean
+  }
