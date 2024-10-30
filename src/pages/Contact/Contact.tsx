@@ -2,6 +2,7 @@ import { Header } from "../../components/header";
 import { Form } from "../../components/form";
 import { Join } from "../../components/join";
 import { Module } from "../../components/Module";
+import { Whatsapp } from "../../components/Whatsapp";
 import { useState } from "react";
 
 
@@ -15,6 +16,7 @@ export function Contact() {
 
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Get In Touch" img="contactBg" />
       <Form onModalOpen={handleModalOpen}/>
       {isModalOpen && (

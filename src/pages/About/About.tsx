@@ -2,6 +2,7 @@ import { Header } from "../../components/header";
 import { CTA } from "../../components/CTA";
 import { Form } from "../../components/form";
 import { Module } from "../../components/Module";
+import { Whatsapp } from "../../components/Whatsapp";
 import { useState } from "react";
 
 import khuram from "../../assets/about/Khuram.webp";
@@ -22,6 +23,7 @@ export function About() {
 
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="About Us" img="headerBg" />
       <Outlet_About />
       <Form onModalOpen={handleModalOpen}/>

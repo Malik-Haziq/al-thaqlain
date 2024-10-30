@@ -9,6 +9,7 @@ import eye from "../../assets/hotels/icons/eye.svg";
 import service from "../../assets/hotels/icons/service.svg";
 import location from "../../assets/hotels/icons/addres.svg";
 import tag from "../../assets/hotels/icons/tag.svg";
+import { Whatsapp } from "../../components/Whatsapp";
 
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -49,6 +50,7 @@ export function HotelDetails() {
 
   return (
     <>
+    <Whatsapp></Whatsapp>
       <section>
         {/* Nav bar */}
         <div className="mb-12 border-b-[1px] py-3">

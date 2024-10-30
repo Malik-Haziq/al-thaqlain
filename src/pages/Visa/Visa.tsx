@@ -2,10 +2,12 @@ import { Header } from "../../components/header";
 import { CTA } from "../../components/CTA";
 import visa from "../../assets/visa/visa.webp";
 import visaapl from "../../assets/visa/visa-apl.webp";
+import { Whatsapp } from "../../components/Whatsapp";
 
 export function Visa() {
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Visa Services" img="headerBg" />
       <Visa_Outlet />
       <Visa_Info />

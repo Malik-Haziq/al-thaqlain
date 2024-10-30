@@ -5,6 +5,7 @@ import noble3 from "../../../assets/Transportation/register/noble_3.webp";
 import noble4 from "../../../assets/Transportation/register/noble_4.webp";
 import noble5 from "../../../assets/Transportation/register/noble_5.webp";
 import noble6 from "../../../assets/Transportation/register/noble_6.webp";
+import { Whatsapp } from "../../../components/Whatsapp";
 
 import { RegisterCard } from "../../../components/Rigester_card";
 
@@ -74,6 +75,7 @@ export function SacredShrines() {
 
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Groups of nobles" img="headerBg" />
       <section>
         <div className="grid gap-9 xs:grid-cols-2 md:grid-cols-3 ">

@@ -3,6 +3,8 @@ import { CTA } from "../../components/CTA";
 import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";
 import { RegistrationForm } from "../../components/Registration_form";
+import { Whatsapp } from "../../components/Whatsapp";
+
 
 import bus from "../../assets/Transportation/bus.webp";
 import car from "../../assets/Transportation/car.webp";
@@ -17,6 +19,7 @@ import place3 from "../../assets/Transportation/place/b4.webp";
 export function Transportation() {
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Transportation" img="headerBg" />
 
       <Transportation_Outlet />

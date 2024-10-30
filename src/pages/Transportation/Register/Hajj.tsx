@@ -5,6 +5,7 @@ import hajj3 from "../../../assets/Transportation/register/umrah_3.webp";
 import hajj4 from "../../../assets/Transportation/register/umrah_4.webp";
 import hajj5 from "../../../assets/Transportation/register/umrah_5.webp";
 import hajj6 from "../../../assets/Transportation/register/umrah_6.webp";
+import { Whatsapp } from "../../../components/Whatsapp";
 
 import { RegisterCard } from "../../../components/Rigester_card";
 
@@ -74,6 +75,7 @@ export function Hajj() {
 
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Hajj and Umrah groups" img="headerBg" />
       <section>
         <div className="grid gap-9 xs:grid-cols-2 md:grid-cols-3 ">

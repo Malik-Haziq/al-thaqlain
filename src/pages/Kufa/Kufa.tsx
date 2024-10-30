@@ -2,10 +2,12 @@ import { Header } from "../../components/header";
 import { Destination } from "../../components/destination";
 import { CTA } from "../../components/CTA";
 import { History } from "../../components/History";
+import { Whatsapp } from "../../components/Whatsapp";
 
 export function Kufa() {
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Kufa" img="headerBg" />
       <Kufa_Outlet />
       <section>
