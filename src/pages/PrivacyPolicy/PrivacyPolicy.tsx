@@ -1,9 +1,11 @@
 import { Header } from "../../components/Header";
 import { Join } from "../../components/Join";
+import { Whatsapp } from "../../components/Whatsapp";
 
 export function PrivacyPolicy() {
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Privacy Policy" img="headerBg" />
       <Outlet_Privacy />
       <Join />

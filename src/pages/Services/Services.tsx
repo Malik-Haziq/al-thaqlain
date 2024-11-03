@@ -1,9 +1,11 @@
 import { Header } from "../../components/Header";
 import { Join } from "../../components/Join";
+import { Whatsapp } from "../../components/Whatsapp";
 
 export function Services() {
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Our Services" img="headerBg" />
       <Outlet_Service />
       <Join />

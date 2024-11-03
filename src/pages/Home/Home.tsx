@@ -2,6 +2,8 @@ import { Button } from "../../components/Button";
 import { CTA } from "../../components/CTA";
 import { Form } from "../../components/Form";
 import { Join } from "../../components/Join";
+import { Module } from "../../components/Module";
+import { Whatsapp } from "../../components/Whatsapp";
 
 import { Link } from "react-router-dom";
 
@@ -100,6 +102,7 @@ export function Home() {
   ];
   return (
     <>
+    <Whatsapp></Whatsapp>
       <header className="bg-headerBg h-[80vh] bg-no-repeat bg-cover flex justify-center mb-20">
         <div className="max-w-screen-xl p-4 mx-auto flex flex-col gap-4 justify-center">
           <h1 className="text-white-500">

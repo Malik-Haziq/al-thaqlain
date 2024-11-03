@@ -2,6 +2,7 @@ import { Header } from "../../../components/Header";
 import fourteen1 from "../../../assets/Transportation/register/fourteen_1-min.png";
 import fourteen2 from "../../../assets/Transportation/register/fourteen_2.webp";
 import { RegisterCard } from "../../../components/Rigester_card";
+import { Whatsapp } from "../../../components/Whatsapp";
 
 export function FourteenInnocents() {
   const FourteenInnocentsData = [
@@ -30,6 +31,7 @@ export function FourteenInnocents() {
 
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="fourteen innocents" img="headerBg" />
       <section>
         <div className="grid gap-9 xs:grid-cols-2 md:grid-cols-3 ">

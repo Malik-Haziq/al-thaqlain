@@ -1,6 +1,7 @@
 import { Header } from "../../../components/Header";
 import syra from "../../../assets/Transportation/register/syra.webp";
 import { RegisterCard } from "../../../components/Rigester_card";
+import { Whatsapp } from "../../../components/Whatsapp";
 
 export function Syria() {
   const SyriaData = [
@@ -18,6 +19,7 @@ export function Syria() {
 
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Syrian groups" img="headerBg" />
       <section>
         <div className="grid gap-9 xs:grid-cols-2 md:grid-cols-3 ">

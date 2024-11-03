@@ -9,6 +9,7 @@ import eye from "../../assets/hotels/icons/eye.svg";
 import service from "../../assets/hotels/icons/service.svg";
 import location from "../../assets/hotels/icons/addres.svg";
 import tag from "../../assets/hotels/icons/tag.svg";
+import { Whatsapp } from "../../components/Whatsapp";
 
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -50,7 +51,41 @@ export function HotelDetails() {
 
   return (
     <>
-      <section className="pt-12">
+    <Whatsapp></Whatsapp>
+      <section>
+        {/* Nav bar */}
+        <div className="mb-12 border-b-[1px] py-3">
+          <a
+            href="#"
+            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+          >
+            Overview
+          </a>
+          <a
+            href="#"
+            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+          >
+            Apartment info & price
+          </a>
+          <a
+            href="#"
+            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+          >
+            Facilities
+          </a>
+          <a
+            href="#"
+            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+          >
+            The fine print
+          </a>
+          <a
+            href="#"
+            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+          >
+            Guest reviews
+          </a>
+        </div>
         {/* Hotel details*/}
         <Details
           name={hotel?.name}

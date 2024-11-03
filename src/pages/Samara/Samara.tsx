@@ -2,10 +2,13 @@ import { Header } from "../../components/Header";
 import { Destination } from "../../components/Destination";
 import { CTA } from "../../components/CTA";
 import { History } from "../../components/History";
+import { Whatsapp } from "../../components/Whatsapp";
+
 
 export function Samara() {
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Samara" img="headerBg" />
       <Samara_Outlet />
       <section>

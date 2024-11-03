@@ -2,6 +2,9 @@ import { Header } from "../../components/Header";
 import { CTA } from "../../components/CTA";
 import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";
+import { RegistrationForm } from "../../components/Registration_form";
+import { Whatsapp } from "../../components/Whatsapp";
+
 
 import bus from "../../assets/Transportation/bus.webp";
 import car from "../../assets/Transportation/car.webp";
@@ -16,8 +19,21 @@ import place3 from "../../assets/Transportation/place/b4.webp";
 export function Transportation() {
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Header heading="Transportation" img="headerBg" />
+
       <Transportation_Outlet />
+
+      <RegistrationForm
+        baseImg={place}
+        heading={"Pilgrimage group of 14 innocents in Arbaeen"}
+        subheading={"Rules and regulations : "}
+        subdiscription={"I accept the mentioned terms and conditions"}
+        discription={"Pilgrimage of the Fourteen Innocents (peace be upon them) in one trip The approximate time of this trip is around the Arbaeen time of Imam Hussain, peace be upon him, when the pilgrim first goes to Karbala to understand the fervor of Arbaeen and that valuable spiritual gathering and share in the spiritual reward of that gathering. After visiting Najaf, Karbala, Kazimin and Samarra, they go on Umrah journey and while visiting the grave of the Messenger of God during the martyrdom days of the Messenger of God, peace be upon him, and the graves of Imams Baqi, peace be upon them, they visit the house of God during the precious days of the month of Rabi. This trip is done as a VIP and with four-star and five-star hotels near the Kaaba "}
+        date={"06-04-1403"}
+        ADdate={"2024-08-25"}
+      />
+
       <section>
         <h2 className="text-5xl text-white-400 text-center mb-28">Register</h2>
         <div className="flex gap-4">
@@ -131,6 +147,7 @@ export function Transportation() {
           </div>
         </section>
       </div>
+
       <CTA />
     </>
   );

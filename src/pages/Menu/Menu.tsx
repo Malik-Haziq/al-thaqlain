@@ -15,10 +15,12 @@ import fish from "../../assets/food/fish.webp";
 import pizza from "../../assets/food/Pizza.webp";
 import Pdf from "../../assets/pdf/food.pdf";
 import menu from "../../assets/pdf/pdf-img.png";
+import { Whatsapp } from "../../components/Whatsapp";
 
 export function Menu() {
   return (
     <>
+    <Whatsapp></Whatsapp>
       <Menu_Header />
       <Menu_Outlet />
     </>
