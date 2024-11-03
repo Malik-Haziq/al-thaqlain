@@ -1,10 +1,7 @@
 import { Header } from "../../components/Header";
 import { CTA } from "../../components/CTA";
 import { Form } from "../../components/Form";
-import { Module } from "../../components/Module";
 import { Whatsapp } from "../../components/Whatsapp";
-import { useState } from "react";
-
 import khuram from "../../assets/about/Khuram.webp";
 import muslim from "../../assets/about/muslim.webp";
 import numan from "../../assets/about/numan.webp";
