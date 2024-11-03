@@ -113,10 +113,7 @@ export function Home() {
       <header className="bg-headerBg h-[80vh] bg-no-repeat bg-cover flex justify-center mb-20">
         <div className="max-w-screen-xl p-4 mx-auto flex flex-col gap-4 justify-center">
           <h1 className="text-white-500">
-            Welcome to&nbsp;
-            <span className="text-secondary-400">
-              Al&nbsp;Thaqlain Travel & Tours
-            </span>
+            Welcome to Al&nbsp;Thaqlain Travel & Tours
           </h1>
           <p className="text-white-400 text-lg sm:text-xl md:text-2xl sm:w-2/3 mb-6 font-openSans">
             Ziyarat packages to Iraq, Iran & Syria that are specially designed
@@ -179,7 +176,7 @@ export function Home() {
         </section>
       </div>
       <Join />
-      <Form onModalOpen={handleModalOpen}/>
+      <Form onModalOpen={handleModalOpen} />
       {isModalOpen && (
         <Module
           heading="Thanks for Submitting form."
