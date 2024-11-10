@@ -154,7 +154,7 @@ export function HotelBooking() {
           <div className="basis-1/4 bg-black-600 h-fit">
             <div className="">
               <div className="border-b-[1px] border-white-100 p-4">
-                <h2 className=" text-white-500 text-2xl font-openSans">
+                <h2 className=" text-white-100 text-2xl font-openSans">
                   Filter by :
                 </h2>
               </div>
@@ -321,10 +321,10 @@ function HotelCard(_props: {
             </div>
             <div className="flex items-start justify-center gap-2">
               <div className="flex flex-col">
-                <p className="text-white-400">{ratingText}</p>
+                <p className="text-white-100">{ratingText}</p>
                 <p className="text-sm text-white-200">{_props.review}</p>
               </div>
-              <div className="p-2 text-xl rounded bg-secondary-100 text-white-500">
+              <div className="p-2 text-xl rounded bg-secondary-100 text-white-100">
                 {_props.rating}
               </div>
             </div>
@@ -352,18 +352,18 @@ function HotelCard(_props: {
             <div className="flex flex-col items-end">
               <p className="text-sm mb-2">{_props?.days}</p>
               <div className="flex gap-2  items-center mb-6">
-                <s className="text-white-300">
-                  <span className="text-sm text-white-300">
+                <s className="text-white-100">
+                  <span className="text-sm text-white-100">
                     {_props.price}&nbsp;PKR
                   </span>
                 </s>
-                <p className=" text-white-500 text-2xl font-medium">
+                <p className=" text-white-100 text-2xl font-medium">
                   {_props.discountedPrice}&nbsp;PKR
                 </p>
               </div>
               <Link
                 to={`/hotel/${_props.id}`}
-                className="text-white-400 hover:text-black-400 hover:bg-white-500 border-2 border-white-500 focus:outline-none duration-200 text-lg p-2 px-4 font-semibold flex items-center justify-center gap-1"
+                className="text-white-100 hover:text-black-400 hover:bg-white-500 border-2 border-white-500 focus:outline-none duration-200 text-lg p-2 px-4 font-semibold flex items-center justify-center gap-1"
               >
                 <span>{_props.avalibltyButton}</span>
                 <img src={chevron} alt="chevron right" className="w-5" />

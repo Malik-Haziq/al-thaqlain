@@ -37,7 +37,7 @@ export function Join() {
   }
 
   return (
-    <div className="bg-secondary-200 text-white-500">
+    <div className="bg-secondary-200 text-white-100">
       <section className="flex items-center justify-center flex-col py-14">
         <div className="mb-16 flex items-center justify-center flex-col text-center gap-4">
           <h2>Join our newsletter</h2>
@@ -56,12 +56,12 @@ export function Join() {
             }
             required
             placeholder="Enter your email"
-            className="sm:w-96 p-3 outline-none text-black-100 rounded-none bg-white-500 border-2 focus:border-white-100"
+            className="sm:w-96 p-3 outline-none placeholder:text-black-200 text-black-100 rounded-none bg-white-500 border-2 focus:border-white-100"
             disabled={isLoading}
           />
           <button
             type="submit"
-            className="py-3 px-5 outline-none rounded-none bg-white-500 border-2 border-l-0 focus:border-white-100 text-black-300 font-medium"
+            className="py-3 px-5 outline-none rounded-none text-white-200 bg-white-500 hover:bg-black-300 hover:text-white-100 border-2 border-l-0 focus:border-white-100 font-medium"
           >
             Submit
           </button>

@@ -95,25 +95,25 @@ export function Form() {
 
   return (
     <>
-      <section className="bg-black-100 flex gap-4 flex-col sm:flex-row mb-16 p-0">
+      <section className="bg-gray-300 flex gap-4 flex-col sm:flex-row mb-16 p-0">
         <form
           action="#"
           className="basis-11/12 px-6 py-8"
           onSubmit={handleSubmit}
         >
-          <h3 className="text-3xl mdx:text-4xl mb-9 font-medium uppercase">
+          <h3 className="text-3xl text-black-100 mdx:text-4xl mb-9 font-medium uppercase">
             Send Us Message
           </h3>
           <div className="flex justify-start flex-col mdx:flex-row items-stretch mdx:items-center gap-4 mb-7">
             <label className="flex flex-col gap-2 mdx:basis-1/2">
-              <span className="text-lg">Full Name</span>
+              <span className="text-lg text-gray-200">Full Name</span>
               <input
                 type="text"
                 name="full_name"
                 value={formData.full_name}
                 onChange={handleChange}
                 placeholder="John"
-                className={`p-3 outline-none rounded-none border-2 ${
+                className={`p-3 outline-none rounded-none border-2 placeholder:text-gray-200 ${
                   errors.full_name ? "border-red-500" : "border-white-100"
                 } bg-black-500 focus:border-white-300`}
               />
@@ -122,13 +122,13 @@ export function Form() {
               )}
             </label>
             <label className="flex flex-col gap-2 mdx:basis-1/2">
-              <span>Email</span>
+              <span className="text-gray-200">Email</span>
               <input
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="john@gmail.com"
-                className={`p-3 outline-none rounded-none border-2 ${
+                className={`p-3 outline-none rounded-none border-2 placeholder:text-gray-200 ${
                   errors.email ? "border-red-500" : "border-white-100"
                 } bg-black-500 focus:border-white-300`}
               />
@@ -139,14 +139,14 @@ export function Form() {
           </div>
           <div className="mb-6">
             <label className="flex flex-col gap-4">
-              <span>Message</span>
+              <span className="text-gray-200">Message</span>
               <textarea
                 name="message"
                 cols={30}
                 rows={10}
                 value={formData.message}
                 onChange={handleChange}
-                className={`p-3 outline-none rounded-none border-2 ${
+                className={`p-3 outline-none rounded-none border-2 placeholder:text-gray-200 ${
                   errors.message ? "border-red-500" : "border-white-100"
                 } bg-black-500 focus:border-white-300`}
                 placeholder="Enter your message here"
@@ -160,12 +160,15 @@ export function Form() {
             type="submit"
             disabled={isLoading}
             className="
-              text-black-400
-              bg-white-400
+              text-white-100
+              bg-header-100
               hover:bg-white-500
+              rounded
               border-2
-              border-white-500
+              border-header-100
+              hover:border-white-100
               focus:border-black-100
+              hover:text-black-100
               focus:outline-none
               text-lg
               font-medium

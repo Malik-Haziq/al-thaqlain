@@ -11,7 +11,7 @@ export function Baghdad() {
       <Header heading="Baghdad" img="headerBg" />
       <Baghdad_Outlet />
       <section>
-        <h2 className="text-5xl text-center text-white-400 mb-32">
+        <h2 className="text-5xl text-center text-white-100 mb-32">
           Top Destination
         </h2>
         <Destination
@@ -58,7 +58,7 @@ function Baghdad_Outlet() {
   return (
     <>
       <section className="md:px-20">
-        <p className="text-center text-white-300 text-xl mx-auto">
+        <p className="text-center text-white-100 text-xl mx-auto">
           Baghdad, once the heart of the Islamic Golden Age, pulsates with a
           rich tapestry of history and culture. Its bustling markets overflow
           with the fragrance of spices and the vibrant chatter of traders. The

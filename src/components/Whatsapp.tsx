@@ -52,7 +52,7 @@ export function Whatsapp() {
                   <p className="font-semibold text-md text-white mb-1">
                     Al-Thaqlain
                   </p>
-                  <p className="text-xs text-white-500">
+                  <p className="text-xs text-white-100">
                     Typically replies within an hour
                   </p>
                 </div>
@@ -60,7 +60,7 @@ export function Whatsapp() {
               <div>
                 <button
                   onClick={toggleChatbox}
-                  className="text-white-400 text-3xl hover:text-gray-300"
+                  className="text-white-100 text-3xl hover:text-gray-300"
                 >
                   &times;
                 </button>

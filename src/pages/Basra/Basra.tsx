@@ -11,7 +11,7 @@ export function Basra() {
       <Header heading="Basra" img="headerBg" />
       <Basra_Outlet />
       <section>
-        <h2 className="text-5xl text-center text-white-400 mb-32">
+        <h2 className="text-5xl text-center text-white-100 mb-32">
           Top Destination
         </h2>
         <Destination
@@ -58,7 +58,7 @@ function Basra_Outlet() {
   return (
     <>
       <section className="md:px-20">
-        <p className="text-center text-white-300 text-xl mx-auto">
+        <p className="text-center text-white-100 text-xl mx-auto">
           Basra, situated in southern Iraq, is a bustling port city with a rich
           history dating back to ancient times. Known for its strategic location
           on the Shatt al-Arab waterway and vibrant cultural heritage, Basra
