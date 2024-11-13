@@ -161,11 +161,11 @@ export function Form() {
             disabled={isLoading}
             className="
               text-white-100
-              bg-header-100
-              hover:bg-white-500
+              bg-secondary-100
+              hover:bg-white-100
               rounded
               border-2
-              border-header-100
+              border-secondary-100
               hover:border-white-100
               focus:border-black-100
               hover:text-black-100
@@ -183,7 +183,7 @@ export function Form() {
             Submit
           </button>
         </form>
-        <div className="basis-auto px-6 py-8 bg-secondary-200">
+        <div className="basis-auto px-6 py-8 bg-secondary-100">
           <h4 className="text-3xl mdx:text-4xl mb-9 font-medium uppercase">
             Contact Information
           </h4>

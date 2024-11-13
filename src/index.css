@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  @apply bg-black-500
+  @apply bg-white-100
 }
 @layer utilities {
   h1,
@@ -52,6 +52,6 @@ body{
 }
 
   .on-hover::before {
-    @apply before:content-['fsakdfh'] before:w-full before:h-[2px] before:bg-white-400 before:absolute before:top-0;
+    @apply before:content-['fsakdfh'] before:w-full before:h-[2px] before:bg-white-100 before:absolute before:top-0;
   }
 }

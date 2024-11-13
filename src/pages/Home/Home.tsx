@@ -118,7 +118,7 @@ export function Home() {
         <h2 className="text-center mb-5 text-black-100">
           Featured Destinations
         </h2>
-        <div className="w-[3px] h-36 bg-header-100"></div>
+        <div className="w-[3px] h-36 bg-secondary-100"></div>
         <div className="flex flex-wrap items-stretch justify-center gap-8">
           {destinations.map((place) => {
             return (
@@ -190,7 +190,7 @@ function DestinationCard(_props: {
           <h3 className="destination-name uppercase text-3xl font-medium text-white-100 duration-300">
             {_props.placeName}
           </h3>
-          <span className="destination-discover text-sm text-white-100 border-b uppercase -translate-y-6 opacity-0 scale-50 duration-300">
+          <span className="destination-discover text-sm text-white-100 border-b border-white-100 uppercase -translate-y-6 opacity-0 scale-50 duration-300">
             Discover
           </span>
         </div>
@@ -206,7 +206,7 @@ function BenefitCard(_props: { heading: string; details: string }) {
       <p className="mb-3 text-white-200">{_props.details}</p>
       <Link
         to="/"
-        className="on-hover w-fit text-black-100 border-b-[2px] border-white-100 hover:border-header-100 hover:text-header-100 duration-200 relative"
+        className="on-hover w-fit text-black-100 border-b-[2px] border-white-100 hover:border-secondary-100 hover:text-secondary-100 duration-200 relative"
       >
         View more
       </Link>

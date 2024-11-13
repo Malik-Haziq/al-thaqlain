@@ -107,7 +107,7 @@ function Visa_Info() {
   return (
     <>
       <section className="text-white-100 flex flex-col md:flex-row items-stretch justify-between gap-8">
-        <div className="bg-header-100 flex flex-col items-center justify-center text-center py-8 px-6 basis-1/2">
+        <div className="bg-secondary-100 flex flex-col items-center justify-center text-center py-8 px-6 basis-1/2">
           <h2 className="text-white-100 text-4xl mb-8">Multi Visa</h2>
           <p className="leading-normal text-lg">
             This Visa is granted for a period of three months, six months, or

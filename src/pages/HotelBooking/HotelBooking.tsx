@@ -87,7 +87,7 @@ export function HotelBooking() {
         <form
           onSubmit={handleSubmit}
           action="submit"
-          className="flex justify-center items-end gap-3 flex-wrap px-10 py-8 w-fit mb-14 bg-black-100"
+          className="flex justify-center items-end gap-3 flex-wrap px-10 py-8 w-fit mb-14 bg-secondary-100"
         >
           <div className="flex flex-col gap-2 ">
             <span className="font-medium text-lg">Where you're going?</span>
@@ -102,7 +102,7 @@ export function HotelBooking() {
                 {places.map((place, i) => (
                   <option
                     value={place.value}
-                    className="p-2 text-black-100 hover:bg-white-300"
+                    className="p-2 text-black-100 hover:bg-white-100"
                     key={i}
                   >
                     {place.name}
@@ -129,7 +129,7 @@ export function HotelBooking() {
                 {quantities.map((room, i) => (
                   <option
                     value={room.value}
-                    className="p-2 text-black-100 hover:bg-white-300"
+                    className="p-2 text-black-100 hover:bg-white-100"
                     key={i}
                   >
                     {room.quantity}
@@ -145,7 +145,7 @@ export function HotelBooking() {
           </div>
           <button
             type="submit"
-            className="text-black-400 bg-white-400 hover:bg-white-500 focus:border-black-100 focus:outline-none font-medium px-4 py-3 text-center w-fit duration-200 font-openSans"
+            className="text-black-400 bg-white-100 hover:bg-white-100 focus:border-black-100 focus:outline-none font-medium px-4 py-3 text-center w-fit duration-200 font-openSans"
           >
             Search
           </button>
@@ -243,7 +243,7 @@ const PriceRangePicker = (_props: {
           <div
             {...props}
             key={index}
-            className="w-6 h-6 bg-secondary-200 rounded-full flex justify-center items-center"
+            className="w-6 h-6 bg-secondary-100 rounded-full flex justify-center items-center"
           />
         )}
       />
@@ -363,7 +363,7 @@ function HotelCard(_props: {
               </div>
               <Link
                 to={`/hotel/${_props.id}`}
-                className="text-white-100 hover:text-black-400 hover:bg-white-500 border-2 border-white-500 focus:outline-none duration-200 text-lg p-2 px-4 font-semibold flex items-center justify-center gap-1"
+                className="text-white-100 hover:text-black-400 hover:bg-white-100 border-2 border-white-500 focus:outline-none duration-200 text-lg p-2 px-4 font-semibold flex items-center justify-center gap-1"
               >
                 <span>{_props.avalibltyButton}</span>
                 <img src={chevron} alt="chevron right" className="w-5" />

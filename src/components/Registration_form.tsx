@@ -12,7 +12,7 @@ export function RegistrationForm(_props: {
 }) {
   return (
     <section className="p-4">
-      <div className="container border rounded p-6 flex flex-col lg:flex-row gap-6 lg:gap-9 mb-6">
+      <div className="container border rounded p-6 flex flex-col lg:flex-row gap-6 lg:gap-9 mb-6 bg-gray-500 text-black-200">
         <div className="flex-shrink-0">
           <img
             src={_props.baseImg}
@@ -42,7 +42,7 @@ export function RegistrationForm(_props: {
         </div>
       </div>
 
-      <div className="border rounded p-6 sm:p-8 mb-6">
+      <div className="border rounded p-6 sm:p-8 mb-6 bg-gray-500 text-black-200">
         <h2 className="text-lg sm:text-xl mb-4 sm:mb-8 font-openSans">
           {_props.subheading}
         </h2>
@@ -53,7 +53,7 @@ export function RegistrationForm(_props: {
       </div>
 
       <form>
-        <div className="border rounded p-6 sm:p-8 mb-6">
+        <div className="border rounded p-6 sm:p-8 mb-6 bg-gray-500 text-black-200">
           <div className="flex flex-wrap gap-5 sm:gap-7 mb-8">
             {/* Input fields */}
             <div className="flex flex-col gap-2 sm:gap-5 flex-grow min-w-[calc(50%-1rem)]">
@@ -144,13 +144,13 @@ export function RegistrationForm(_props: {
         <div className="flex gap-3 items-center">
           <a
             href="#"
-            className="border py-2 px-4 rounded text-lg bg-white-500 text-black-400 font-semibold"
+            className="border-secondary-100 border py-2 px-4 rounded text-lg bg-secondary-100 text-white-100 font-semibold duration-200 hover:bg-white-200 hover:border-black-100" 
           >
             Registration
           </a>
           <a
             href="#"
-            className="border py-2 px-4 rounded text-lg font-semibold hover:border-white-200 duration-200"
+            className="border py-2 px-4 rounded text-black-200 text-lg font-semibold duration-200 hover:text-white-100 hover:bg-secondary-100 hover:border-secondary-100"
           >
             Return
           </a>

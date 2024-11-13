@@ -13,7 +13,7 @@ export function Destination(_props: {
         </p>
         <a
           href="#"
-          className="p-3 border-2 font-semibold hover:text-black-400 hover:bg-white-500 duration-75 "
+          className="p-3 border-2 font-semibold hover:text-black-400 hover:bg-white-100 duration-75 "
         >
           {_props.button}
         </a>

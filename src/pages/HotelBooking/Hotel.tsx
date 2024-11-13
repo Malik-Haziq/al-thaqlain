@@ -57,31 +57,31 @@ export function HotelDetails() {
         <div className="mb-12 border-b-[1px] py-3">
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             Overview
           </a>
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             Apartment info & price
           </a>
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             Facilities
           </a>
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             The fine print
           </a>
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             Guest reviews
           </a>
@@ -144,7 +144,7 @@ function Details(_props: {
           <div>
             <a
               href="#"
-              className="bg-secondary-200 rounded font-semibold py-4 px-8 duration-200 hover:bg-secondary-100"
+              className="bg-secondary-100 rounded font-semibold py-4 px-8 duration-200 hover:bg-secondary-100"
             >
               Reserve your apartement stay
             </a>
@@ -166,7 +166,7 @@ function Details(_props: {
                   Exceptional
                 </h3>
                 <div className="flex gap-2 items-center">
-                  <p className="p-1 px-2 rounded bg-secondary-200 text-white-100">
+                  <p className="p-1 px-2 rounded bg-secondary-100 text-white-100">
                     {_props.rating}
                   </p>
                 </div>
