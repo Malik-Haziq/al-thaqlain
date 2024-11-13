@@ -3,12 +3,13 @@ import { Destination } from "../../components/Destination";
 import { CTA } from "../../components/CTA";
 import { History } from "../../components/History";
 import { Whatsapp } from "../../components/Whatsapp";
+import bg from "../../assets/contact/contact.webp";
 
 export function Hillah() {
   return (
     <>
-    <Whatsapp></Whatsapp>
-      <Header heading="Hillah" img="headerBg" />
+      <Whatsapp></Whatsapp>
+      <Header heading="Hillah" img={bg} />
       <Hillah_Outlet />
       <section>
         <h2 className="text-5xl text-center text-white-100 mb-32">

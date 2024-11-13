@@ -13,12 +13,13 @@ import place from "../../assets/Transportation/place/b1.webp";
 import place1 from "../../assets/Transportation/place/b2.webp";
 import place2 from "../../assets/Transportation/place/b3.webp";
 import place3 from "../../assets/Transportation/place/b4.webp";
+import bg from "../../assets/contact/contact.webp";
 
 export function Transportation() {
   return (
     <>
       <Whatsapp></Whatsapp>
-      <Header heading="Transportation" img="headerBg" />
+      <Header heading="Transportation" img={bg} />
 
       <Transportation_Outlet />
 
@@ -91,7 +92,12 @@ export function Transportation() {
               to every transportation need conveniently and stress-free on every
               trip.
             </p>
-            <a href="/contact" className="bg-secondary-100 py-3 px-5 rounded hover:bg-black-100 font-medium">Get Started</a>
+            <a
+              href="/contact"
+              className="bg-secondary-100 py-3 px-5 rounded hover:bg-black-100 font-medium"
+            >
+              Get Started
+            </a>
           </div>
           <div className="basis-2/5">
             <img src={bus} alt="Bus" className="w-full" />
@@ -109,7 +115,12 @@ export function Transportation() {
               small groups of travelers, thus giving each their best shot at the
               perfect journey.
             </p>
-            <a href="/contact" className="bg-secondary-100 py-3 px-5 rounded hover:bg-black-100 font-medium">Get Started</a>
+            <a
+              href="/contact"
+              className="bg-secondary-100 py-3 px-5 rounded hover:bg-black-100 font-medium"
+            >
+              Get Started
+            </a>
           </div>
           <div className="basis-2/5">
             <img src={car} alt="Car" className="w-full" />
@@ -125,7 +136,12 @@ export function Transportation() {
               travel experience. Whether for business or pleasure, our services
               promise you timely and comfortable journeys by train.
             </p>
-            <a href="/contact" className="bg-secondary-100 py-3 px-5 rounded hover:bg-black-100 font-medium">Get Started</a>
+            <a
+              href="/contact"
+              className="bg-secondary-100 py-3 px-5 rounded hover:bg-black-100 font-medium"
+            >
+              Get Started
+            </a>
           </div>
           <div className="basis-2/5">
             <img src={train} alt="train" className="w-full" />
@@ -133,7 +149,9 @@ export function Transportation() {
         </section>
         <section className="flex gap-14 items-center justify-between flex-wrap flex-col sm:flex-row-reverse">
           <div className="basis-1/2">
-            <h2 className="text-4xl font-medium mb-6 text-black-100">AirPlane</h2>
+            <h2 className="text-4xl font-medium mb-6 text-black-100">
+              AirPlane
+            </h2>
             <p className="text-black-200 mb-12 text-lg leading-normal">
               Al Thaqlain Company provides first-rate air transportation
               services and ensures a suitable, quick mode of travel for short or
@@ -142,7 +160,12 @@ export function Transportation() {
               Travel timely, comfortably, and hassle-free in the air with Al
               Thaqlain.
             </p>
-            <a href="/contact" className="bg-secondary-100 py-3 px-5 rounded hover:bg-black-100 font-medium">Get Started</a>
+            <a
+              href="/contact"
+              className="bg-secondary-100 py-3 px-5 rounded hover:bg-black-100 font-medium"
+            >
+              Get Started
+            </a>
           </div>
           <div className="basis-2/5">
             <img src={airplane} alt="airplane" className="w-full" />
@@ -154,7 +177,6 @@ export function Transportation() {
     </>
   );
 }
-
 
 function Transportation_Outlet() {
   return (
@@ -169,7 +191,6 @@ function Transportation_Outlet() {
     </>
   );
 }
-
 
 export function Card(_props: {
   img: string;
@@ -187,7 +208,9 @@ export function Card(_props: {
       />
       <div className="px-4 pb-8 flex-grow flex flex-col justify-between">
         <div>
-          <h1 className="text-2xl font-openSans mb-4 text-black-100">{_props.heading}</h1>
+          <h1 className="text-2xl font-openSans mb-4 text-black-100">
+            {_props.heading}
+          </h1>
           <p className="text-sm text-black-200">{_props.para}</p>
         </div>
         <div className="mt-8">

@@ -5,7 +5,6 @@ import { Join } from "../../components/Join";
 import { Whatsapp } from "../../components/Whatsapp";
 import { Link } from "react-router-dom";
 
-
 // destination images
 import najaf from "../../assets/destinations/najaf.webp";
 import kufa from "../../assets/destinations/kufa.webp";
@@ -99,6 +98,7 @@ export function Home() {
       details: "Round-the-clock assistance for travel emergencies and queries.",
     },
   ];
+
   return (
     <>
       <Whatsapp></Whatsapp>

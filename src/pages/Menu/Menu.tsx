@@ -92,7 +92,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">BREAKFAST</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                BREAKFAST
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Omelette - Roti - Tea
               </p>
@@ -105,7 +107,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">LUNCH</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                LUNCH
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Qorma - Roti - Cold Drink
               </p>
@@ -118,7 +122,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">DINER</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                DINER
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Sabzi-Polao-Dal-Cold Drink
               </p>
@@ -139,7 +145,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">BREAKFAST</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                BREAKFAST
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Omelette - Malai - Tea - Roti
               </p>
@@ -152,7 +160,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">LUNCH</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                LUNCH
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Biryani - Dal - Makroni - Custard Cold Drink - Fruit - Water
               </p>
@@ -165,7 +175,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">DINER</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                DINER
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Qorma - Sabzi -Dal- Cold drink Fruit
               </p>
@@ -186,7 +198,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">BREAKFAST</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                BREAKFAST
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Omelette - Malai - Tea - Roti Chana -Hony -Milk
               </p>
@@ -199,7 +213,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">LUNCH</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                LUNCH
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Beef Qorma-Makroni-Custard- Cold drink - Water - Fruit Sada
                 Chawa
@@ -213,7 +229,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">DINER</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                DINER
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Biryani - Mutton Qorma -Dal - Roti kheer - Cold Drink - Salad -
                 Water - Zetoon
@@ -235,7 +253,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">BREAKFAST</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                BREAKFAST
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Omelette - Malai -Jam - Tea Roti - Hony Milk
               </p>
@@ -248,7 +268,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">LUNCH</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                LUNCH
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Sada Chawal- Mutton Qorma -Dal - Roti Finger Chips- Cold Drink -
                 Salad - Fruit 3 Type . Water - Zetoon
@@ -262,7 +284,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">DINER</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                DINER
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Beef Qorma- Biryani - Chiken Rost- Roti Custard-Cold drink -
                 Water - Fruit - Salad 4 Type
@@ -285,7 +309,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">BREAKFAST</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                BREAKFAST
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Omelette - Malai -Jam - Roti - Hony -Milk - Alo Fry chany - Tea
                 - Juce
@@ -299,7 +325,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">LUNCH</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                LUNCH
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Sada Chawal- Fish Fry -Fried rice - Biryani Roti - Chiken Fry-
                 Chiken Kabab Finger Chipe - Sabzi - Cold Drink - Kheer Salad 6
@@ -314,7 +342,9 @@ function Menu_Outlet() {
               alt="Food img"
             />
             <div className="p-6">
-              <h3 className="text-4xl mb-4 text-black-400 font-medium">DINER</h3>
+              <h3 className="text-4xl mb-4 text-black-400 font-medium">
+                DINER
+              </h3>
               <p className="text-lg text-black-200 mb-8">
                 Beef Qorma- Chiken qorma - Polao Makroni -Dal -Chiken rost
                 Finger chipe Kabab -Pizza -Fried rice -Salad 6 type Fruit 4 type

@@ -10,6 +10,7 @@ import bed from "../../assets/hotels/icons/bed.svg";
 import chevron from "../../assets/hotels/icons/chevron.svg";
 import { Link } from "react-router-dom";
 import { Loader } from "../../components/Loader";
+import bg from "../../assets/contact/contact.webp";
 
 const MIN = 0;
 const MAX = 50000;
@@ -82,7 +83,7 @@ export function HotelBooking() {
 
   return (
     <>
-      <Header heading="Hotels" img={"headerBg"} />
+      <Header heading="Hotels" img={bg} />
       <section className="mb-10 -mt-24">
         <form
           onSubmit={handleSubmit}

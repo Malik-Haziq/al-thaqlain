@@ -3,12 +3,13 @@ import { CTA } from "../../components/CTA";
 import visa from "../../assets/visa/visa.webp";
 import visaapl from "../../assets/visa/visa-apl.webp";
 import { Whatsapp } from "../../components/Whatsapp";
+import bg from "../../assets/contact/contact.webp";
 
 export function Visa() {
   return (
     <>
-    <Whatsapp></Whatsapp>
-      <Header heading="Visa Services" img="headerBg" />
+      <Whatsapp></Whatsapp>
+      <Header heading="Visa Services" img={bg} />
       <Visa_Outlet />
       <Visa_Info />
       <CTA />

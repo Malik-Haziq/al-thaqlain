@@ -9,12 +9,13 @@ import hamad from "../../assets/about/hamad.webp";
 import safdar from "../../assets/about/safdar.webp";
 import sa from "../../assets/about/sa.webp";
 import about from "../../assets/about/about.webp";
+import bg from "../../assets/contact/contact.webp";
 
 export function About() {
   return (
     <>
-    <Whatsapp></Whatsapp>
-      <Header heading="About Us" img="headerBg" />
+      <Whatsapp></Whatsapp>
+      <Header heading="About Us" img={bg} />
       <Outlet_About />
       <Form />
     </>
@@ -73,7 +74,9 @@ function Outlet_About() {
         <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
           Our Team
         </span>
-        <h2 className="text-center mb-16 text-black-100">Meet Our Instructors</h2>
+        <h2 className="text-center mb-16 text-black-100">
+          Meet Our Instructors
+        </h2>
         <div className="grid xs:grid-cols-2 md:grid-cols-3 gap-5">
           <div className="border border-white-800 flex justify-center flex-col items-center py-10 px-5 text-center rounded">
             <img src={hamad} alt="hamad" className="w-36 rounded-full mb-8" />
@@ -87,7 +90,9 @@ function Outlet_About() {
           </div>
           <div className="border border-white-800 flex justify-center flex-col items-center py-10 px-5 text-center rounded">
             <img src={safdar} alt="safdar" className="w-36 rounded-full mb-8" />
-            <h3 className="text-2xl text-center text-white-800">Safdar Abbas Al-Sabqi</h3>
+            <h3 className="text-2xl text-center text-white-800">
+              Safdar Abbas Al-Sabqi
+            </h3>
             <p className="text-white-200">CEO Head Office</p>
           </div>
           <div className="border border-white-800 flex justify-center flex-col items-center py-10 px-5 text-center rounded">

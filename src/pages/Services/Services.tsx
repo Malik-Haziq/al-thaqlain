@@ -1,12 +1,13 @@
 import { Header } from "../../components/Header";
 import { Join } from "../../components/Join";
 import { Whatsapp } from "../../components/Whatsapp";
+import bg from "../../assets/contact/contact.webp";
 
 export function Services() {
   return (
     <>
-    <Whatsapp></Whatsapp>
-      <Header heading="Our Services" img="headerBg" />
+      <Whatsapp></Whatsapp>
+      <Header heading="Our Services" img={bg} />
       <Outlet_Service />
       <Join />
     </>
