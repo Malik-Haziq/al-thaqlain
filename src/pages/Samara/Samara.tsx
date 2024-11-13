@@ -12,7 +12,7 @@ export function Samara() {
       <Header heading="Samara" img="headerBg" />
       <Samara_Outlet />
       <section>
-        <h2 className="text-5xl text-center text-white-400 mb-32">
+        <h2 className="text-5xl text-center text-white-100 mb-32">
           Top Destination
         </h2>
         <Destination
@@ -59,7 +59,7 @@ function Samara_Outlet() {
   return (
     <>
       <section className="md:px-20">
-        <p className="text-center text-white-300 text-xl mx-auto">
+        <p className="text-center text-white-100 text-xl mx-auto">
           Samara was a spirited individual whose presence lit up every room she
           entered. With a penchant for adventure, she thrived on exploring new
           ideas and pushing boundaries. Her infectious enthusiasm and genuine

@@ -5,6 +5,7 @@ import { Join } from "../../components/Join";
 import { Whatsapp } from "../../components/Whatsapp";
 import { Link } from "react-router-dom";
 
+
 // destination images
 import najaf from "../../assets/destinations/najaf.webp";
 import kufa from "../../assets/destinations/kufa.webp";
@@ -103,21 +104,21 @@ export function Home() {
       <Whatsapp></Whatsapp>
       <header className="bg-headerBg h-[80vh] bg-no-repeat bg-cover flex justify-center mb-20">
         <div className="max-w-screen-xl p-4 mx-auto flex flex-col gap-4 justify-center">
-          <h1 className="text-white-500">
+          <h1 className="text-white-100">
             Welcome to Al&nbsp;Thaqlain Travel & Tours
           </h1>
-          <p className="text-white-400 text-lg sm:text-xl md:text-2xl sm:w-2/3 mb-6 font-openSans">
+          <p className="text-white-100 text-lg sm:text-xl md:text-2xl sm:w-2/3 mb-6 font-openSans">
             Ziyarat packages to Iraq, Iran & Syria that are specially designed
             to make our customer’s spiritual trip convenient and memorable.
           </p>
-          <Button text="Get in touch" to="/contact" />
+          <Button text="Get in touch" to="/contact" white={true} />
         </div>
       </header>
       <section className="flex flex-col items-center justify-center gap-6">
-        <h2 className="text-center mb-5 text-white-500">
+        <h2 className="text-center mb-5 text-black-100">
           Featured Destinations
         </h2>
-        <div className="w-[3px] h-36 bg-white-500"></div>
+        <div className="w-[3px] h-36 bg-secondary-100"></div>
         <div className="flex flex-wrap items-stretch justify-center gap-8">
           {destinations.map((place) => {
             return (
@@ -136,7 +137,7 @@ export function Home() {
         <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
           Our services
         </span>
-        <h2 className="text-center mb-16">What we provide?</h2>
+        <h2 className="text-center mb-16 text-black-100">What we provide?</h2>
         <div className="flex justify-center items-center gap-8 flex-wrap">
           {services.map((service, i) => (
             <ServiceCard
@@ -149,12 +150,12 @@ export function Home() {
           ))}
         </div>
       </section>
-      <div className="bg-black-100">
+      <div className="bg-gray-300">
         <section className="flex flex-col items-center justify-center py-14">
           <span className="uppercase text-secondary-100 tracking-[6px] mb-2">
             Benefits
           </span>
-          <h2 className="text-center mb-16">Why choose us?</h2>
+          <h2 className="text-center mb-16 text-white-800">Why choose us?</h2>
           <div className="flex items-center justify-center gap-10 flex-wrap">
             {benefits.map((obj, i) => (
               <BenefitCard
@@ -186,10 +187,10 @@ function DestinationCard(_props: {
           className="destination-img w-96 h-full overflow-hidden cursor-pointer"
         />
         <div className="destination-overlay h-full w-full absolute top-0 flex items-center flex-col justify-center bg-[rgba(1,1,1,.4)] hover:bg-[rgba(1,1,1,.6)] duration-300">
-          <h3 className="destination-name uppercase text-3xl font-medium text-white-500 duration-300">
+          <h3 className="destination-name uppercase text-3xl font-medium text-white-100 duration-300">
             {_props.placeName}
           </h3>
-          <span className="destination-discover text-sm text-white-400 border-b uppercase -translate-y-6 opacity-0 scale-50 duration-300">
+          <span className="destination-discover text-sm text-white-100 border-b border-white-100 uppercase -translate-y-6 opacity-0 scale-50 duration-300">
             Discover
           </span>
         </div>
@@ -200,12 +201,12 @@ function DestinationCard(_props: {
 
 function BenefitCard(_props: { heading: string; details: string }) {
   return (
-    <div className="border-2 border-white-100 flex flex-col gap-3 px-6 py-10 md:max-w-[350px]">
-      <h3 className="text-2xl font-medium">{_props.heading}</h3>
+    <div className="border-2 border-white-800 bg-gray-400 flex flex-col gap-3 px-6 py-10 md:max-w-[350px]">
+      <h3 className="text-2xl font-medium text-black-100">{_props.heading}</h3>
       <p className="mb-3 text-white-200">{_props.details}</p>
       <Link
         to="/"
-        className="on-hover w-fit text-white-300 border-b-[2px] border-white-100 hover:border-white-500 hover:text-white-500 duration-200 relative"
+        className="on-hover w-fit text-black-100 border-b-[2px] border-white-100 hover:border-secondary-100 hover:text-secondary-100 duration-200 relative"
       >
         View more
       </Link>
@@ -228,14 +229,14 @@ function ServiceCard(_props: {
           className="destination-img w-96 h-full overflow-hidden cursor-pointer"
         />
         <div className="destination-overlay h-full w-full absolute top-0 flex items-start flex-col justify-end px-4 pb-4 bg-[rgba(1,1,1,.4)] hover:bg-[rgba(1,1,1,.6)] duration-300">
-          <h3 className="destination-name text-3xl font-medium text-white-500 duration-300 mb-2">
+          <h3 className="destination-name text-3xl font-medium text-white-100 duration-300 mb-2">
             {_props.service}
           </h3>
           <div className="destination-discover opacity-0 duration-300">
-            <p className="destination-discover text-sm text-white-400 opacity-0 duration-300">
+            <p className="destination-discover text-sm text-white-100 opacity-0 duration-300">
               {_props.details}
             </p>
-            <span className="on-hover w-fit text-white-300 border-b-[2px] border-white-100 hover:border-white-500 hover:text-white-500 duration-200 relative">
+            <span className="on-hover w-fit text-white-100 border-b-[2px] border-white-100 hover:border-white-500 hover:text-white-100 duration-200 relative">
               View more
             </span>
           </div>

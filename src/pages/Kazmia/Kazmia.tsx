@@ -11,7 +11,7 @@ export function Kazmia() {
       <Header heading="Kazmia" img="headerBg" />
       <Kazmia_Outlet />
       <section>
-        <h2 className="text-5xl text-center text-white-400 mb-32">
+        <h2 className="text-5xl text-center text-white-100 mb-32">
           Top Destination
         </h2>
         <Destination
@@ -58,7 +58,7 @@ function Kazmia_Outlet() {
   return (
     <>
       <section className="md:px-20">
-        <p className="text-center text-white-300 text-xl mx-auto">
+        <p className="text-center text-white-100 text-xl mx-auto">
           Kazmia, a land steeped in mysticism and ancient lore, beckons with its
           winding valleys and towering peaks cloaked in mist. Its cities,
           adorned with intricate carvings and vibrant markets bustling with

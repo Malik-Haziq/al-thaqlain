@@ -11,7 +11,7 @@ export function Hillah() {
       <Header heading="Hillah" img="headerBg" />
       <Hillah_Outlet />
       <section>
-        <h2 className="text-5xl text-center text-white-400 mb-32">
+        <h2 className="text-5xl text-center text-white-100 mb-32">
           Top Destination
         </h2>
         <Destination
@@ -58,7 +58,7 @@ function Hillah_Outlet() {
   return (
     <>
       <section className="md:px-20">
-        <p className="text-center text-white-300 text-xl mx-auto">
+        <p className="text-center text-white-100 text-xl mx-auto">
           Hillah, a city in central Iraq, lies along the banks of the Euphrates
           River, embodying a blend of ancient history and modernity. Known for
           its historical significance dating back to Babylonian times, Hillah

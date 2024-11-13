@@ -12,7 +12,7 @@ export function Karbala() {
       <Header heading="Karbala" img="headerBg" />
       <Karbala_Outlet />
       <section>
-        <h2 className="text-5xl text-center text-white-400 mb-32">
+        <h2 className="text-5xl text-center text-white-100 mb-32">
           Top Destination
         </h2>
         <Destination
@@ -59,7 +59,7 @@ function Karbala_Outlet() {
   return (
     <>
       <section className="md:px-20">
-        <p className="text-center text-white-300 text-xl mx-auto">
+        <p className="text-center text-white-100 text-xl mx-auto">
           Karbala, located in Iraq, is a city of profound religious significance
           in Shia Islam. It is renowned for the tragic Battle of Karbala in 680
           AD, where Imam Hussein, the grandson of Prophet Muhammad, was

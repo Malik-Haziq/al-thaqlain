@@ -37,16 +37,20 @@ export function Join() {
   }
 
   return (
-    <div className="bg-secondary-200 text-white-500">
+    <div className="bg-secondary-100 text-white-100">
       <section className="flex items-center justify-center flex-col py-14">
-        <div className="mb-16 flex items-center justify-center flex-col text-center gap-4">
+        <div className="mb-12 flex items-center justify-center flex-col text-center gap-4">
           <h2>Join our newsletter</h2>
           <p>
             Sign up for our newsletter to receive the latest travel deals, tips,
             and news straight to your inbox.
           </p>
         </div>
-        <form action="submit" onSubmit={handleSubmit}>
+        <form
+          action="submit"
+          className="flex gap-3 p-2 bg-white-100"
+          onSubmit={handleSubmit}
+        >
           <input
             name="email"
             type="email"
@@ -55,15 +59,18 @@ export function Join() {
               setEmail(e.target.value)
             }
             required
-            placeholder="Enter your email"
-            className="sm:w-96 p-3 outline-none text-black-100 rounded-none bg-white-500 border-2 focus:border-white-100"
+            placeholder="example@example.com"
+            className="sm:w-96 p-3 px-7 border-none outline-none text-gray-600 bg-white placeholder:text-black-100"
             disabled={isLoading}
           />
           <button
             type="submit"
-            className="py-3 px-5 outline-none rounded-none bg-white-500 border-2 border-l-0 focus:border-white-100 text-black-300 font-medium"
+            className="py-3 px-6  text-white-100 font-medium bg-secondary-100 hover:bg-white-200"
+            style={{
+              boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+            }}
           >
-            Submit
+            Subscribe
           </button>
         </form>
 

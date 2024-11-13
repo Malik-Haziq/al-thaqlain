@@ -11,7 +11,7 @@ export function Najaf() {
       <Header heading="Najaf" img="headerBg" />
       <Najaf_Outlet />
       <section>
-        <h2 className="text-5xl text-center text-white-400 mb-32">
+        <h2 className="text-5xl text-center text-white-100 mb-32">
           Top Destination
         </h2>
         <Destination
@@ -58,7 +58,7 @@ function Najaf_Outlet() {
   return (
     <>
       <section className="md:px-20">
-        <p className="text-center text-white-300 text-xl mx-auto">
+        <p className="text-center text-white-100 text-xl mx-auto">
           Najaf, revered as one of Shia Islam's holiest cities, is home to the
           revered shrine of Imam Ali ibn Abi Talib. Pilgrims from around the
           globe visit Najaf to pay homage at his shrine, seeking spiritual

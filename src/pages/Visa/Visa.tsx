@@ -20,7 +20,7 @@ function Visa_Outlet() {
   return (
     <>
       <section className="md:px-20">
-        <p className="text-center text-white-300 text-2xl mx-auto">
+        <p className="text-center text-white-800 text-2xl mx-auto">
           We at ALTHAQLAIN TRAVEL & TOUR providing Visa Services to our
           customers, which includes, all kind of visa like Visit or Tourism
           Visa, Normal Visit Visa, Political Visa, Service Visa, Transit Visa,
@@ -29,8 +29,8 @@ function Visa_Outlet() {
       </section>
       <section className="flex flex-col items-center gap-16">
         <div className="flex gap-16 items-center justify-between flex-col lg:flex-row">
-          <div className="basis-2/3 space-y-4 text-lg text-white-300 text-center sm:text-left">
-            <h2 className="text-5xl text-white-500 mb-6">
+          <div className="basis-2/3 space-y-4 text-lg text-black-100 text-center sm:text-left">
+            <h2 className="text-5xl text-black-100 mb-6">
               Visit or Tourism Visa
             </h2>
             <p>
@@ -96,8 +96,8 @@ function Visa_Card(_props: { heading: string; para: string }) {
   return (
     <>
       <div className="border py-8 px-6 text-center">
-        <h3 className="text-4xl mb-8 text-white-500">{_props.heading}</h3>
-        <p className="text-base text-white-400">{_props.para}</p>
+        <h3 className="text-4xl mb-8 text-black-100">{_props.heading}</h3>
+        <p className="text-base text-black-200">{_props.para}</p>
       </div>
     </>
   );
@@ -106,9 +106,9 @@ function Visa_Card(_props: { heading: string; para: string }) {
 function Visa_Info() {
   return (
     <>
-      <section className="text-white-300 flex flex-col md:flex-row items-stretch justify-between gap-8">
-        <div className="bg-black-100 flex flex-col items-center justify-center text-center py-8 px-6 basis-1/2">
-          <h2 className="text-white-500 text-4xl mb-8">Multi Visa</h2>
+      <section className="text-white-100 flex flex-col md:flex-row items-stretch justify-between gap-8">
+        <div className="bg-secondary-100 flex flex-col items-center justify-center text-center py-8 px-6 basis-1/2">
+          <h2 className="text-white-100 text-4xl mb-8">Multi Visa</h2>
           <p className="leading-normal text-lg">
             This Visa is granted for a period of three months, six months, or
             one year after obtaining the legal conditions. <br />
@@ -117,8 +117,8 @@ function Visa_Info() {
             the section of foreign No. 37344 on 22 Dec. 2009)
           </p>
         </div>
-        <div className="bg-black-100 flex flex-col text-center py-8 px-6 basis-1/2">
-          <h2 className="text-white-500 text-4xl mb-8">
+        <div className="bg-gray-200 flex flex-col text-center py-8 px-6 basis-1/2">
+          <h2 className="text-white-100 text-4xl mb-8">
             Visa fee for Zairean Groups
           </h2>
           <p className="leading-normal text-lg">
@@ -128,8 +128,8 @@ function Visa_Info() {
         </div>
       </section>
       <section className="flex gap-16 lg:items-center justify-between flex-col lg:flex-row">
-        <div className="basis-3/5 text-lg text-white-300">
-          <h2 className="text-4xl mb-12 text-white-500">
+        <div className="basis-3/5 text-lg text-black-200">
+          <h2 className="text-4xl mb-12 text-black-100">
             Requirements of the Visa request
           </h2>
           <p className="mb-4 text-white-200">
@@ -173,8 +173,8 @@ function Visa_Info() {
           <img src={visaapl} className="" alt="visa application" />
         </div>
       </section>
-      <section className="text-lg text-white-400">
-        <h2 className="text-4xl mb-12 text-white-500">INSTRUCTIONS</h2>
+      <section className="text-lg text-black-200">
+        <h2 className="text-4xl mb-12 text-black-100">INSTRUCTIONS</h2>
         <p className="mb-4">
           1. When the presence of banned to enter the territory of the Republic
           of Iraq for the cause of public health, national security, morals, or

@@ -57,31 +57,31 @@ export function HotelDetails() {
         <div className="mb-12 border-b-[1px] py-3">
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             Overview
           </a>
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             Apartment info & price
           </a>
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             Facilities
           </a>
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             The fine print
           </a>
           <a
             href="#"
-            className="p-4 px-16 duration-200 text-white-400 text-lg font-medium hover:bg-white-500 hover:text-black-400"
+            className="p-4 px-16 duration-200 text-white-100 text-lg font-medium hover:bg-white-100 hover:text-black-400"
           >
             Guest reviews
           </a>
@@ -99,7 +99,7 @@ export function HotelDetails() {
         />
 
         <div>
-          <h2 className="font-semibold text-2xl text-white-400 font-openSans mb-6">
+          <h2 className="font-semibold text-2xl text-white-100 font-openSans mb-6">
             Most popular facilities
           </h2>
 
@@ -132,7 +132,7 @@ function Details(_props: {
         <div className="flex gap-2 items-center mb-8">
           <div className="basis-3/4">
             <div>
-              <h2 className="text-white-500 mb-4 text-2xl font-semibold font-openSans">
+              <h2 className="text-white-100 mb-4 text-2xl font-semibold font-openSans">
                 {_props.name}
               </h2>
               <div className="flex gap-2">
@@ -144,7 +144,7 @@ function Details(_props: {
           <div>
             <a
               href="#"
-              className="bg-secondary-200 rounded font-semibold py-4 px-8 duration-200 hover:bg-secondary-100"
+              className="bg-secondary-100 rounded font-semibold py-4 px-8 duration-200 hover:bg-secondary-100"
             >
               Reserve your apartement stay
             </a>
@@ -162,11 +162,11 @@ function Details(_props: {
           <div className="basis-1/4">
             <div className="border rounded mb-4">
               <div className="border-b-[1px] p-4 flex items-center justify-between">
-                <h3 className=" text-white-400 text-lg font-semibold font-openSans">
+                <h3 className=" text-white-100 text-lg font-semibold font-openSans">
                   Exceptional
                 </h3>
                 <div className="flex gap-2 items-center">
-                  <p className="p-1 px-2 rounded bg-secondary-200 text-white-500">
+                  <p className="p-1 px-2 rounded bg-secondary-100 text-white-100">
                     {_props.rating}
                   </p>
                 </div>
@@ -195,7 +195,7 @@ function Details(_props: {
         </div>
       </div>
       <div className="flex gap-10 mb-16">
-        <pre className="text-white-400">{_props.description}</pre>
+        <pre className="text-white-100">{_props.description}</pre>
       </div>
     </>
   );

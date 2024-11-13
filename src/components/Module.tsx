@@ -27,7 +27,7 @@ export function Module(_props: {
     <>
       <div className="fixed inset-0 bg-gray-800 bg-opacity-90 z-40"></div>
       <section className="flex justify-center fixed top-10 left-1/4 z-50">
-        <div className="p-8 px-12 bg-white-500 rounded w-5/6">
+        <div className="p-8 px-12 bg-white-100 rounded w-5/6">
           <h1 className=" text-4xl  text-black-400 mb-6 font-semibold text-center">
             {_props.heading}
           </h1>

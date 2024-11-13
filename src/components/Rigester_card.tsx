@@ -21,7 +21,7 @@ export function RegisterCard(_props: {
           <div className="pr-4 pl-4">
             <h1 className="text-lg font-openSans mb-6">{_props.heading}</h1>
             <p className="text-sm leading-normal">{_props.para}</p>
-            <h2 className="text-white-500 text-lg mt-8 font-openSans font-semibold">
+            <h2 className="text-white-100 text-lg mt-8 font-openSans font-semibold">
               {_props.date}
             </h2>
             <div className="flex mt-4 justify-between mb-4">
@@ -37,13 +37,13 @@ export function RegisterCard(_props: {
             <div>
               <a
                 href="#"
-                className="border py-2 px-4 text-white-400 font-semibold border-gray-400 rounded"
+                className="border py-2 px-4 text-white-100 font-semibold border-gray-400 rounded"
               >
                 Register
               </a>
             </div>
             <div>
-              <p className="text-white-500 text-md">
+              <p className="text-white-100 text-md">
                 <span className="font-medium">Price : </span>
                 {_props.rate}
               </p>

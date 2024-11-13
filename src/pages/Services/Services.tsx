@@ -26,7 +26,7 @@ function Outlet_Service() {
       <section className="px-8">
         <div className="grid grid-cols-3 gap-5">
           <div className="border flex justify-center flex-col items-center p-8 hover:border-yellow-400 cursor-pointer">
-            <h3 className="text-white-100 mb-4 text-2xl font-medium">01</h3>
+            <h3 className="text-black-100 mb-4 text-2xl font-medium">01</h3>
             <h2 className="text-2xl mb-6">Ziarat Tour Planning</h2>
             <p className="text-center mb-8">
               Our experienced travel advisors will work with you to create a
@@ -42,7 +42,7 @@ function Outlet_Service() {
             </a>
           </div>
           <div className="border flex justify-center flex-col items-center p-8 hover:border-white-100 border-yellow-400 cursor-pointer">
-            <h3 className="text-white-100 mb-4 text-2xl font-medium">02</h3>
+            <h3 className="text-black-100 mb-4 text-2xl font-medium">02</h3>
             <h2 className="text-2xl mb-6">Airline Ticketing</h2>
             <p className="text-center mb-14">
               We offer airline ticketing for both domestic and international
@@ -58,7 +58,7 @@ function Outlet_Service() {
             </a>
           </div>
           <div className="border flex justify-center flex-col items-center p-8 hover:border-yellow-400 cursor-pointer">
-            <h3 className="text-white-100 mb-4 text-2xl font-medium">03</h3>
+            <h3 className="text-black-100 mb-4 text-2xl font-medium">03</h3>
             <h2 className="text-2xl mb-6">Accommodations</h2>
             <p className="text-center mb-8">
               We work with a variety of hotels, around Iraq to provide our
@@ -74,7 +74,7 @@ function Outlet_Service() {
             </a>
           </div>
           <div className="border flex justify-center flex-col items-center p-8 hover:border-white-100 border-yellow-400 cursor-pointer">
-            <h3 className="text-white-100 mb-4 text-2xl font-medium">04</h3>
+            <h3 className="text-black-100 mb-4 text-2xl font-medium">04</h3>
             <h2 className="text-2xl mb-6">Transportation</h2>
             <p className="text-center mb-16">
               We can arrange transportation to and from the airport, as well as
@@ -90,7 +90,7 @@ function Outlet_Service() {
             </a>
           </div>
           <div className="border flex justify-center flex-col items-center p-8 hover:border-yellow-400 cursor-pointer">
-            <h3 className="text-white-100 mb-4 text-2xl font-medium">05</h3>
+            <h3 className="text-black-100 mb-4 text-2xl font-medium">05</h3>
             <h2 className="text-2xl mb-6">Travel Insurance</h2>
             <p className="text-center mb-16">
               We offer travel insurance to protect you in case of unexpected
@@ -106,7 +106,7 @@ function Outlet_Service() {
             </a>
           </div>
           <div className="border flex justify-center flex-col items-center p-8  hover:border-white-100 border-yellow-400 cursor-pointer">
-            <h3 className="text-white-100 mb-4 text-2xl font-medium">06</h3>
+            <h3 className="text-black-100 mb-4 text-2xl font-medium">06</h3>
             <h2 className="text-2xl mb-6">24/7 Customer Support</h2>
             <p className="text-center mb-8">
               Our team is available around the clock to assist you with any

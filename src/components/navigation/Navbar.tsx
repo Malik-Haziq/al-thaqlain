@@ -57,13 +57,13 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="border-gray-200 max-w-screen-xl mx-auto font-openSans">
+      <nav className="border-gray-200 bg-secondary-100 xl:px-32 mx-auto font-openSans">
         <div className="flex flex-wrap items-center justify-between p-4">
           <Link to="/">
             <img src={logo} className="h-16" alt="Al Thaqlain Logo" />
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <Button text={"Get started"} to="/contact" />
+            <Button text={"Get started"} to="/contact" white={true} />
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
@@ -97,12 +97,12 @@ export function Navbar() {
             id="navbar-cta"
             ref={dropdownRef}
           >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 text-white-300 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 text-white-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <Link
                   to="/"
-                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:bg-transparent md:hover:text-white-500 ${
-                    currentPage === "Home" && "text-white-500"
+                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:bg-transparent md:hover:text-white-100 ${
+                    currentPage === "Home" && "text-white-100"
                   }`}
                   aria-current="page"
                   onClick={handleClick}
@@ -113,8 +113,8 @@ export function Navbar() {
               <li>
                 <Link
                   to="/about"
-                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:hover:bg-transparent md:hover:text-white-500 ${
-                    currentPage === "About" && "text-white-500"
+                  className={`block py-2 px-3 md:p-0 duration-300 rounded md:hover:bg-transparent md:hover:text-white-100 ${
+                    currentPage === "About" && "text-white-100"
                   }`}
                   onClick={handleClick}
                 >
@@ -124,7 +124,7 @@ export function Navbar() {
               <li className="relative" ref={serviceDropdownRef}>
                 <button
                   id="dropdownNavbarLink"
-                  className="flex items-center justify-between w-full duration-300 py-2 px-3 text-white-300 rounded md:hover:bg-transparent md:border-0 md:hover:text-white-500 md:p-0 md:w-auto"
+                  className="flex items-center justify-between w-full duration-300 py-2 px-3 text-white-100 rounded md:hover:bg-transparent md:border-0 md:hover:text-white-100 md:p-0 md:w-auto"
                   onClick={handleServiceDropdown}
                 >
                   Services
@@ -147,17 +147,17 @@ export function Navbar() {
                 <div
                   className={`${
                     serviceDropdown ? "z-10" : "hidden"
-                  } font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 absolute top-8 left-0`}
+                  } font-normal bg-white-100 divide-y rounded-lg shadow w-44 absolute top-8 left-0`}
                 >
                   <ul
-                    className="py-2 text-sm text-white-300 font-medium"
+                    className="py-2 text-sm text-black-100 font-medium"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <Link
                         to="hotel-booking"
-                        className={`block px-4 py-2 hover:bg-gray-200 ${
-                          currentPage === "Hotel Booking" && "text-white-500"
+                        className={`block px-4 py-2 hover:bg-gray-300 hover:text-secondary-100 ${
+                          currentPage === "Hotel Booking" && "text-white-100"
                         }`}
                         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                           handleClick(e);
@@ -170,8 +170,8 @@ export function Navbar() {
                     <li>
                       <Link
                         to="visa"
-                        className={`block px-4 py-2 hover:bg-gray-200 ${
-                          currentPage === "Visa" && "text-white-500"
+                        className={`block px-4 py-2 hover:bg-gray-300 hover:text-secondary-100 ${
+                          currentPage === "Visa" && "text-white-100"
                         }`}
                         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                           handleClick(e);
@@ -184,8 +184,8 @@ export function Navbar() {
                     <li>
                       <Link
                         to="transportation"
-                        className={`block px-4 py-2 hover:bg-gray-200 ${
-                          currentPage === "Transportation" && "text-white-500"
+                        className={`block px-4 py-2 hover:bg-gray-300 hover:text-secondary-100 ${
+                          currentPage === "Transportation" && "text-white-100"
                         }`}
                         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                           handleClick(e);
@@ -198,8 +198,8 @@ export function Navbar() {
                     <li>
                       <Link
                         to="food"
-                        className={`block px-4 py-2 hover:bg-gray-200 ${
-                          currentPage === "Food" && "text-white-500"
+                        className={`block px-4 py-2 hover:bg-gray-300 hover:text-secondary-100 ${
+                          currentPage === "Food" && "text-white-100"
                         }`}
                         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                           handleClick(e);
@@ -215,8 +215,8 @@ export function Navbar() {
               <li>
                 <Link
                   to="/contact"
-                  className={`block py-2 px-3 md:p-0 rounded md:hover:bg-transparent md:hover:text-white-500 ${
-                    currentPage === "Contact" && "text-white-500"
+                  className={`block py-2 px-3 md:p-0 rounded md:hover:bg-transparent md:hover:text-white-100 ${
+                    currentPage === "Contact" && "text-white-100"
                   }`}
                   onClick={handleClick}
                 >
