@@ -102,7 +102,7 @@ export function Navbar() {
                 <Link
                   to="/"
                   className={`block py-2 px-3 md:p-0 duration-300 rounded md:bg-transparent md:hover:text-white-100 ${
-                    currentPage === "Home" && "text-black-100"
+                    currentPage === "Home" && "text-white-100"
                   }`}
                   aria-current="page"
                   onClick={handleClick}
@@ -114,7 +114,7 @@ export function Navbar() {
                 <Link
                   to="/about"
                   className={`block py-2 px-3 md:p-0 duration-300 rounded md:hover:bg-transparent md:hover:text-white-100 ${
-                    currentPage === "About" && "text-black-100"
+                    currentPage === "About" && "text-white-100"
                   }`}
                   onClick={handleClick}
                 >
@@ -216,7 +216,7 @@ export function Navbar() {
                 <Link
                   to="/contact"
                   className={`block py-2 px-3 md:p-0 rounded md:hover:bg-transparent md:hover:text-white-100 ${
-                    currentPage === "Contact" && "text-black-100"
+                    currentPage === "Contact" && "text-white-100"
                   }`}
                   onClick={handleClick}
                 >

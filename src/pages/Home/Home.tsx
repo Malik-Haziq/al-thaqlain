@@ -22,6 +22,7 @@ import ziyarat from "../../assets/services/ziyarat.webp";
 import insurance from "../../assets/services/insurance.webp";
 import airline from "../../assets/services/airline.webp";
 import customerSupport from "../../assets/services/customer-support.webp";
+import bg from "../../assets/contact/contact.webp";
 
 export function Home() {
   const destinations = [
@@ -102,7 +103,12 @@ export function Home() {
   return (
     <>
       <Whatsapp></Whatsapp>
-      <header className="bg-headerBg h-[80vh] bg-no-repeat bg-cover flex justify-center mb-20">
+      <header
+        className="bg-headerBg h-[80vh] bg-no-repeat bg-cover flex justify-center mb-20"
+        style={{
+          backgroundImage: `linear-gradient(rgba(1,1,1,.3), rgba(1,1,1,.3)), url(${bg})`,
+        }}
+      >
         <div className="max-w-screen-xl p-4 mx-auto flex flex-col gap-4 justify-center">
           <h1 className="text-white-100">
             Welcome to Al&nbsp;Thaqlain Travel & Tours

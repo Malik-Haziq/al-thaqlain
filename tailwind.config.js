@@ -9,7 +9,7 @@ export default {
           100: "#003B95",
         },
         black: {
-          100: "#0A0A0A", // Other Text 
+          100: "#0A0A0A", // Other Text
           200: "#1A1A1A", // Heading
           300: "#000000",
           400: "#333333",
@@ -31,11 +31,6 @@ export default {
           100: "#095E54",
         },
       },
-      backgroundImage: {
-        headerBg:
-          "linear-gradient(rgba(1,1,1,.3), rgba(1,1,1,.3)), url('src/assets/contact/contact.webp')",
-      },
-
       screens: {
         xs: "520px",
         mdx: "870px",
